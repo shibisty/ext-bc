@@ -12,7 +12,10 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "bookmark-status-checker@example.com",
-      "strict_min_version": "115.0"
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "action": {

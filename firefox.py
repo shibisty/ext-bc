@@ -1,0 +1,1 @@
+python -c "import zipfile, os; root='dist/firefox'; out='dist/bookmark-status-checker-firefox-new.zip'; z=zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED); [z.write(os.path.join(r,f),os.path.relpath(os.path.join(r,f),root).replace(os.sep,'/')) for r,d,fs in os.walk(root) for f in fs]; z.close()"
