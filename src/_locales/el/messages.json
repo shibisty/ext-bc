@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Έλεγχος κατάστασης σελιδοδεικτών" },
+  "extDescription": { "message": "Ελέγχει τους σελιδοδείκτες σας έναν προς έναν και εμφανίζει τον κωδικό κατάστασης HTTP (200, 404, 500 κ.λπ.)" },
+  "popupTitle": { "message": "Σελιδοδείκτες" },
+  "syncBtnTitle": { "message": "Χειροκίνητος συγχρονισμός" },
+  "checkNowBtnTitle": { "message": "Έλεγχος επόμενου σελιδοδείκτη τώρα" },
+  "searchPlaceholder": { "message": "Αναζήτηση по τίτλο, URL ή κωδικό (200, 404…)" },
+  "intervalLabel": { "message": "Κάθε" },
+  "interval15": { "message": "15 λεπτά" },
+  "interval30": { "message": "30 λεπτά" },
+  "interval60": { "message": "1 ώρα" },
+  "interval180": { "message": "3 ώρες" },
+  "interval360": { "message": "6 ώρες" },
+  "interval1440": { "message": "24 ώρες" },
+  "loading": { "message": "Φόρτωση…" },
+  "emptyNoBookmarks": { "message": "Δεν βρέθηκαν σελιδοδείκτες" },
+  "emptyNoResults": { "message": "Δεν βρέθηκε τίποτα" },
+  "progressLabel": {
+    "message": "$1 από $2 — επόμενο στην ουρά",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Τελευταίος έλεγχος: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Δεν έχει ελεγχθεί ακόμα" },
+  "timeJustNow": { "message": "μόλις τώρα" },
+  "timeMinAgo": {
+    "message": "πριν από $1 λεπτά",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "πριν από $1 ώρες",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "πριν από $1 ημέρες",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Καρφιτσωμένα" },
+  "pinTooltip": { "message": "Καρφίτσωμα στην κορυφή" },
+  "unpinTooltip": { "message": "Ξεκαρφίτσωμα" },
+  "deleteTooltip": { "message": "Διαγραφή σελιδοδείκτη" },
+  "deleteConfirm": {
+    "message": "Διαγραφή του σελιδοδείκτη «$1»;",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Έλεγχος τώρα" },
+  "contextOpenNewTab": { "message": "Άνοιγμα σε νέα καρτέλα" },
+  "contextPin": { "message": "Καρφίτσωμα στην κορυφή" },
+  "contextUnpin": { "message": "Ξεκαρφίτσωμα" },
+  "contextDelete": { "message": "Διαγραφή σελιδοδείκτη" },
+  "unnamedFolder": { "message": "(χωρίς τίτλο)" },
+  "collapseAllTitle": { "message": "Σύμπτυξη/ανάπτυξη όλων των φακέλων" },
+  "sidePanelBtnTitleOff": { "message": "Άνοιγμα στο πλαϊνό πάνελ" },
+  "sidePanelBtnTitleOn": { "message": "Η λειτουργία πλαϊνού πάνελ είναι ενεργή — κάντε κλικ για απενεργοποίηση" },
+  "sidePanelBtnTitle": { "message": "Άνοιγμα στο πλαϊνό πάνελ" },
+  "settingsBtnTitle": { "message": "Ρυθμίσεις" },
+  "settingsTitle": { "message": "Ρυθμίσεις" },
+  "settingLanguage": { "message": "Γλώσσα" },
+  "settingAuto": { "message": "Αυτόματα (πρόγραμμα περιήγησης)" },
+  "settingTheme": { "message": "Θέμα" },
+  "settingThemeDark": { "message": "Σκοτεινό" },
+  "settingThemeLight": { "message": "Φωτεινό" },
+  "settingInterval": { "message": "Έλεγχος κάθε" },
+  "settingRefreshNow": { "message": "Ανανέωση τώρα" },
+  "settingBack": { "message": "← Πίσω" },
+  "interval1": { "message": "1 λεπτό" },
+  "intervalOff": { "message": "Ανενεργό — χωρίς αυτόματο έλεγχο" },
+  "autoCheckOffHint": { "message": "Ο αυτόματος έλεγχος είναι ανενεργός — χρησιμοποιήστε ▶ για χειροκίνητο έλεγχο" },
+  "selectionHint": {
+    "message": "Επιλεγμένα: $1 — Enter για άνοιγμα, Delete για διαγραφή",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Διαγραφή $1 επιλεγμένων σελιδοδεικτών;",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Διαγραφή επιλεγμένων ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Ανοιχτό τώρα" },
+  "contextOpenSelected": {
+    "message": "Άνοιγμα $1 επιλεγμένων σε νέες καρτέλες",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Απενεργοποίηση αυτόματου ελέγχου για αυτόν τον σελιδοδείκτη" },
+  "enableCheckTooltip": { "message": "Επανενεργοποίηση αυτόματου ελέγχου" },
+  "contextDisableCheck": { "message": "Απενεργοποίηση αυτόματου ελέγχου" },
+  "contextEnableCheck": { "message": "Ενεργοποίηση αυτόματου ελέγχου" },
+  "checkDisabledBadge": { "message": "ΑΝΕΝ" },
+  "allChecksDisabled": { "message": "Όλοι οι έλεγχοι απενεργοποιημένοι" }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Järjehoidjate oleku kontrollija" },
+  "extDescription": { "message": "Kontrollib teie järjehoidjaid ükshaaval ja näitab HTTP olekukoodi (200, 404, 500 jne)" },
+  "popupTitle": { "message": "Järjehoidjad" },
+  "syncBtnTitle": { "message": "Sünkroniseeri käsitsi" },
+  "checkNowBtnTitle": { "message": "Kontrolli järgmist järjehoidjat kohe" },
+  "searchPlaceholder": { "message": "Otsi pealkirja, URL-i või koodi järgi (200, 404…)" },
+  "intervalLabel": { "message": "Iga" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 tund" },
+  "interval180": { "message": "3 tundi" },
+  "interval360": { "message": "6 tundi" },
+  "interval1440": { "message": "24 tundi" },
+  "loading": { "message": "Laadimine…" },
+  "emptyNoBookmarks": { "message": "Järjehoidjaid ei leitud" },
+  "emptyNoResults": { "message": "Midagi ei leitud" },
+  "progressLabel": {
+    "message": "$1 $2-st — järgmine järjekorras",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Viimane kontroll: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Pole veel kontrollitud" },
+  "timeJustNow": { "message": "just nüüd" },
+  "timeMinAgo": {
+    "message": "$1 min tagasi",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 t tagasi",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 p tagasi",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Kinnitatud" },
+  "pinTooltip": { "message": "Kinnita üles" },
+  "unpinTooltip": { "message": "Eemalda kinnitus" },
+  "deleteTooltip": { "message": "Kustuta järjehoidja" },
+  "deleteConfirm": {
+    "message": "Kas kustutada järjehoidja „$1“?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Kontrolli kohe" },
+  "contextOpenNewTab": { "message": "Ava uuel kaardil" },
+  "contextPin": { "message": "Kinnita üles" },
+  "contextUnpin": { "message": "Eemalda kinnitus" },
+  "contextDelete": { "message": "Kustuta järjehoidja" },
+  "unnamedFolder": { "message": "(nimetu)" },
+  "collapseAllTitle": { "message": "Ahenda/laienda kõik kaustad" },
+  "sidePanelBtnTitleOff": { "message": "Ava külgpaneelis" },
+  "sidePanelBtnTitleOn": { "message": "Külgpaneeli režiim on sees — klõpsa väljalülitamiseks" },
+  "sidePanelBtnTitle": { "message": "Ava külgpaneelis" },
+  "settingsBtnTitle": { "message": "Seaded" },
+  "settingsTitle": { "message": "Seaded" },
+  "settingLanguage": { "message": "Keel" },
+  "settingAuto": { "message": "Automaatne (brauser)" },
+  "settingTheme": { "message": "Teema" },
+  "settingThemeDark": { "message": "Tume" },
+  "settingThemeLight": { "message": "Hele" },
+  "settingInterval": { "message": "Kontrolli iga" },
+  "settingRefreshNow": { "message": "Värskenda kohe" },
+  "settingBack": { "message": "← Tagasi" },
+  "interval1": { "message": "1 minut" },
+  "intervalOff": { "message": "Väljas — ära kontrolli automaatselt" },
+  "autoCheckOffHint": { "message": "Automaatne kontroll on väljas — kasuta käsitsi kontrollimiseks nuppu ▶" },
+  "selectionHint": {
+    "message": "Valitud $1 — avamiseks Enter, eemaldamiseks Delete",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Kas kustutada $1 valitud järjehoidjat?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Kustuta valitud ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Hetkel avatud" },
+  "contextOpenSelected": {
+    "message": "Ava $1 valitud uutel kaartidel",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Keela selle järjehoidja automaatne kontroll" },
+  "enableCheckTooltip": { "message": "Luba automaatne kontroll uuesti" },
+  "contextDisableCheck": { "message": "Keela automaatne kontroll" },
+  "contextEnableCheck": { "message": "Luba automaatne kontroll" },
+  "checkDisabledBadge": { "message": "VÄLJAS" },
+  "allChecksDisabled": { "message": "Kõik kontrollid on keelatud" }
+}

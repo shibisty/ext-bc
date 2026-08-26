@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Verificator de stare a marcajelor" },
+  "extDescription": { "message": "Verifică marcajele tale unul câte unul și afișează codul de stare HTTP (200, 404, 500 etc.)" },
+  "popupTitle": { "message": "Marcaje" },
+  "syncBtnTitle": { "message": "Sincronizează manual" },
+  "checkNowBtnTitle": { "message": "Verifică următorul marcaj acum" },
+  "searchPlaceholder": { "message": "Caută după titlu, URL sau cod (200, 404…)" },
+  "intervalLabel": { "message": "La fiecare" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 oră" },
+  "interval180": { "message": "3 ore" },
+  "interval360": { "message": "6 ore" },
+  "interval1440": { "message": "24 ore" },
+  "loading": { "message": "Se încarcă…" },
+  "emptyNoBookmarks": { "message": "Nu s-au găsit marcaje" },
+  "emptyNoResults": { "message": "Nu s-a găsit nimic" },
+  "progressLabel": {
+    "message": "$1 din $2 — următorul în coadă",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Ultima verificare: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Neverificat încă" },
+  "timeJustNow": { "message": "chiar acum" },
+  "timeMinAgo": {
+    "message": "acum $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "acum $1 h",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "acum $1 z",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Fixate" },
+  "pinTooltip": { "message": "Fixează în partea de sus" },
+  "unpinTooltip": { "message": "Anulează fixarea" },
+  "deleteTooltip": { "message": "Șterge marcajul" },
+  "deleteConfirm": {
+    "message": "Ștergi marcajul „$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Verifică acum" },
+  "contextOpenNewTab": { "message": "Deschide într-o filă nouă" },
+  "contextPin": { "message": "Fixează în partea de sus" },
+  "contextUnpin": { "message": "Anulează fixarea" },
+  "contextDelete": { "message": "Șterge marcajul" },
+  "unnamedFolder": { "message": "(fără titlu)" },
+  "collapseAllTitle": { "message": "Restrânge/extinde toate folderele" },
+  "sidePanelBtnTitleOff": { "message": "Deschide în panoul lateral" },
+  "sidePanelBtnTitleOn": { "message": "Modul panou lateral este activat — clic pentru dezactivare" },
+  "sidePanelBtnTitle": { "message": "Deschide în panoul lateral" },
+  "settingsBtnTitle": { "message": "Setări" },
+  "settingsTitle": { "message": "Setări" },
+  "settingLanguage": { "message": "Limbă" },
+  "settingAuto": { "message": "Automat (browser)" },
+  "settingTheme": { "message": "Temă" },
+  "settingThemeDark": { "message": "Întunecată" },
+  "settingThemeLight": { "message": "Deschisă" },
+  "settingInterval": { "message": "Verifică la fiecare" },
+  "settingRefreshNow": { "message": "Reîmprospătează acum" },
+  "settingBack": { "message": "← Înapoi" },
+  "interval1": { "message": "1 minut" },
+  "intervalOff": { "message": "Dezactivat — nu verifica automat" },
+  "autoCheckOffHint": { "message": "Verificarea automată este dezactivată — folosește ▶ pentru verificare manuală" },
+  "selectionHint": {
+    "message": "$1 selectat — Enter pentru deschidere, Delete pentru ștergere",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Ștergi cele $1 marcaje selectate?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Șterge selectatele ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Deschis acum" },
+  "contextOpenSelected": {
+    "message": "Deschide cele $1 selectate în file noi",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Dezactivează verificarea automată pentru acest marcaj" },
+  "enableCheckTooltip": { "message": "Reactivează verificarea automată" },
+  "contextDisableCheck": { "message": "Dezactivează verificarea automată" },
+  "contextEnableCheck": { "message": "Activează verificarea automată" },
+  "checkDisabledBadge": { "message": "DEZACT." },
+  "allChecksDisabled": { "message": "Toate verificările sunt dezactivate" }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "বুকমার্ক স্ট্যাটাস চেকার" },
+  "extDescription": { "message": "আপনার বুকমার্কগুলো একে একে পরীক্ষা করে এবং HTTP স্ট্যাটাস কোড (200, 404, 500, ইত্যাদি) প্রদর্শন করে" },
+  "popupTitle": { "message": "বুকমার্কস" },
+  "syncBtnTitle": { "message": "ম্যানুয়ালি সিঙ্ক করুন" },
+  "checkNowBtnTitle": { "message": "এখনই পরবর্তী বুকমার্ক পরীক্ষা করুন" },
+  "searchPlaceholder": { "message": "শিরোনাম, URL বা কোড দিয়ে খুঁজুন (200, 404…)" },
+  "intervalLabel": { "message": "প্রতি" },
+  "interval15": { "message": "15 মিনিট" },
+  "interval30": { "message": "30 মিনিট" },
+  "interval60": { "message": "1 ঘণ্টা" },
+  "interval180": { "message": "3 ঘণ্টা" },
+  "interval360": { "message": "6 ঘণ্টা" },
+  "interval1440": { "message": "24 ঘণ্টা" },
+  "loading": { "message": "লোড হচ্ছে…" },
+  "emptyNoBookmarks": { "message": "কোনো বুকমার্ক পাওয়া যায়নি" },
+  "emptyNoResults": { "message": "কিছুই পাওয়া যায়নি" },
+  "progressLabel": {
+    "message": "$2 এর মধ্যে $1 — পরবর্তীতে কিউতে আছে",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "সর্বশেষ পরীক্ষা: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "এখনও পরীক্ষা করা হয়নি" },
+  "timeJustNow": { "message": "ঠিক এখন" },
+  "timeMinAgo": {
+    "message": "$1 মিনিট আগে",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 ঘণ্টা আগে",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 দিন আগে",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 পিন করা হয়েছে" },
+  "pinTooltip": { "message": "উপরে পিন করুন" },
+  "unpinTooltip": { "message": "পিন সরান" },
+  "deleteTooltip": { "message": "বুকমার্ক মুছুন" },
+  "deleteConfirm": {
+    "message": "“$1” বুকমার্কটি মুছে ফেলবেন?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "এখনই পরীক্ষা করুন" },
+  "contextOpenNewTab": { "message": "নতুন ট্যাবে খুলুন" },
+  "contextPin": { "message": "উপরে পিন করুন" },
+  "contextUnpin": { "message": "পিন সরান" },
+  "contextDelete": { "message": "বুকমার্ক মুছুন" },
+  "unnamedFolder": { "message": "(শিরোনামহীন)" },
+  "collapseAllTitle": { "message": "সব ফোল্ডার সংকুচিত/প্রসারিত করুন" },
+  "sidePanelBtnTitleOff": { "message": "সাইড প্যানেলে খুলুন" },
+  "sidePanelBtnTitleOn": { "message": "সাইড প্যানেল মোড চালু আছে — বন্ধ করতে ক্লিক করুন" },
+  "sidePanelBtnTitle": { "message": "সাইড প্যানেলে খুলুন" },
+  "settingsBtnTitle": { "message": "সেটিংস" },
+  "settingsTitle": { "message": "সেটিংস" },
+  "settingLanguage": { "message": "ভাষা" },
+  "settingAuto": { "message": "স্বয়ংক্রিয় (ব্রাউজার)" },
+  "settingTheme": { "message": "থিম" },
+  "settingThemeDark": { "message": "ডার্ক" },
+  "settingThemeLight": { "message": "লাইট" },
+  "settingInterval": { "message": "পরীক্ষার বিরতি" },
+  "settingRefreshNow": { "message": "এখনই রিফ্রেশ করুন" },
+  "settingBack": { "message": "← পেছনে যান" },
+  "interval1": { "message": "1 মিনিট" },
+  "intervalOff": { "message": "বন্ধ — স্বয়ংক্রিয়ভাবে পরীক্ষা করবেন না" },
+  "autoCheckOffHint": { "message": "স্বয়ংক্রিয় পরীক্ষা বন্ধ আছে — ম্যানুয়ালি পরীক্ষা করতে ▶ ব্যবহার করুন" },
+  "selectionHint": {
+    "message": "$1 টি নির্বাচিত — খুলতে Enter, মুছতে Delete চাপুন",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "নির্বাচিত $1 টি বুকমার্ক মুছে ফেলবেন?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "নির্বাচিতগুলো মুছুন ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "এখন খোলা আছে" },
+  "contextOpenSelected": {
+    "message": "নির্বাচিত $1 টি নতুন ট্যাবে খুলুন",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "এই বুকমার্কের জন্য স্বয়ংক্রিয় পরীক্ষা নিষ্ক্রিয় করুন" },
+  "enableCheckTooltip": { "message": "স্বয়ংক্রিয় পরীক্ষা পুনরায় সক্রিয় করুন" },
+  "contextDisableCheck": { "message": "স্বয়ংক্রিয় পরীক্ষা নিষ্ক্রিয় করুন" },
+  "contextEnableCheck": { "message": "স্বয়ংক্রিয় পরীক্ষা সক্রিয় করুন" },
+  "checkDisabledBadge": { "message": "বন্ধ" },
+  "allChecksDisabled": { "message": "সব পরীক্ষা নিষ্ক্রিয় করা হয়েছে" }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Preverjanje stanja zaznamkov" },
+  "extDescription": { "message": "Preveri vaše zaznamke enega za drugim in prikaže kodo stanja HTTP (200, 404, 500 itd.)" },
+  "popupTitle": { "message": "Zaznamki" },
+  "syncBtnTitle": { "message": "Sinhroniziraj ročno" },
+  "checkNowBtnTitle": { "message": "Preveri naslednji zaznamek zdaj" },
+  "searchPlaceholder": { "message": "Iskanje po naslovu, URL ali kodi (200, 404…)" },
+  "intervalLabel": { "message": "Vsakih" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 h" },
+  "interval180": { "message": "3 h" },
+  "interval360": { "message": "6 h" },
+  "interval1440": { "message": "24 h" },
+  "loading": { "message": "Nalaganje…" },
+  "emptyNoBookmarks": { "message": "Ni najdenih zaznamkov" },
+  "emptyNoResults": { "message": "Nič najdenega" },
+  "progressLabel": {
+    "message": "$1 od $2 — naslednji v vrsti",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Zadnje preverjanje: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Še ni preverjeno" },
+  "timeJustNow": { "message": "pravkar" },
+  "timeMinAgo": {
+    "message": "pred $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "pred $1 h",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "pred $1 d",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Pripeto" },
+  "pinTooltip": { "message": "Pripni na vrh" },
+  "unpinTooltip": { "message": "Odpni" },
+  "deleteTooltip": { "message": "Izbriši zaznamek" },
+  "deleteConfirm": {
+    "message": "Izbrišem zaznamek „$1“?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Preveri zdaj" },
+  "contextOpenNewTab": { "message": "Odpri v novem zavihku" },
+  "contextPin": { "message": "Pripni na vrh" },
+  "contextUnpin": { "message": "Odpni" },
+  "contextDelete": { "message": "Izbriši zaznamek" },
+  "unnamedFolder": { "message": "(brez naslova)" },
+  "collapseAllTitle": { "message": "Strni/razširi vse mape" },
+  "sidePanelBtnTitleOff": { "message": "Odpri v stranski plošči" },
+  "sidePanelBtnTitleOn": { "message": "Način stranske plošče je vklopljen — kliknite za izklop" },
+  "sidePanelBtnTitle": { "message": "Odpri v stranski plošči" },
+  "settingsBtnTitle": { "message": "Nastavitve" },
+  "settingsTitle": { "message": "Nastavitve" },
+  "settingLanguage": { "message": "Jezik" },
+  "settingAuto": { "message": "Samodejno (brskalnik)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Temna" },
+  "settingThemeLight": { "message": "Svetla" },
+  "settingInterval": { "message": "Preveri vsakih" },
+  "settingRefreshNow": { "message": "Osveži zdaj" },
+  "settingBack": { "message": "← Nazaj" },
+  "interval1": { "message": "1 min" },
+  "intervalOff": { "message": "Izklopljeno — ne preverjaj samodejno" },
+  "autoCheckOffHint": { "message": "Samodejno preverjanje je izklopljeno — uporabite ▶ za ročno preverjanje" },
+  "selectionHint": {
+    "message": "Izbrano: $1 — Enter za odpiranje, Delete za brisanje",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Izbrišem $1 izbranih zaznamkov?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Izbriši izbrano ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Odprto zdaj" },
+  "contextOpenSelected": {
+    "message": "Odpri $1 izbranih v novih zavihkih",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Onemogoči samodejno preverjanje za ta zaznamek" },
+  "enableCheckTooltip": { "message": "Ponovno omogoči samodejno preverjanje" },
+  "contextDisableCheck": { "message": "Onemogoči samodejno preverjanje" },
+  "contextEnableCheck": { "message": "Omogoči samodejno preverjanje" },
+  "checkDisabledBadge": { "message": "IZKL." },
+  "allChecksDisabled": { "message": "Vsa preverjanja so onemogočena" }
+}

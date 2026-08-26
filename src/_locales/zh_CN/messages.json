@@ -1,0 +1,94 @@
+{
+ "extName": {  "message":  "书签状态检查器" },
+ "extDescription": {  "message":  "逐个检查您的书签并显示 HTTP 状态码（200、404、500 等）" },
+ "popupTitle": {  "message":  "书签" },
+ "syncBtnTitle": {  "message":  "手动同步" },
+ "checkNowBtnTitle": {  "message":  "立即检查下一个书签" },
+ "searchPlaceholder": {  "message":  "按标题、URL 或状态码搜索（200、404…）" },
+ "intervalLabel": {  "message":  "每" },
+ "interval15": {  "message":  "15 分钟" },
+ "interval30": {  "message":  "30 分钟" },
+ "interval60": {  "message":  "1 小时" },
+ "interval180": {  "message":  "3 小时" },
+ "interval360": {  "message":  "6 小时" },
+ "interval1440": {  "message":  "24 小时" },
+ "loading": {  "message":  "加载中…" },
+ "emptyNoBookmarks": {  "message":  "未找到书签" },
+ "emptyNoResults": {  "message":  "未找到任何内容" },
+ "progressLabel": {
+ "message":  "$1 / $2 — 队列中的下一个",
+ "placeholders": {  "1": {  "content":  "$1" },  "2": {  "content":  "$2" } }
+},
+ "lastCheckPrefix": {
+ "message":  "上次检查：$1",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "neverChecked": {  "message":  "尚未检查" },
+ "timeJustNow": {  "message":  "刚刚" },
+ "timeMinAgo": {
+ "message":  "$1 分钟前",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeHoursAgo": {
+ "message":  "$1 小时前",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeDaysAgo": {
+ "message":  "$1 天前",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "pinnedSectionLabel": {  "message":  "📌 已固定" },
+ "pinTooltip": {  "message":  "置顶" },
+ "unpinTooltip": {  "message":  "取消置顶" },
+ "deleteTooltip": {  "message":  "删除书签" },
+ "deleteConfirm": {
+ "message":  "确定要删除书签「$1」吗？",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextCheckNow": {  "message":  "立即检查" },
+ "contextOpenNewTab": {  "message":  "在新标签页中打开" },
+ "contextPin": {  "message":  "置顶" },
+ "contextUnpin": {  "message":  "取消置顶" },
+ "contextDelete": {  "message":  "删除书签" },
+ "unnamedFolder": {  "message":  "（无标题）" },
+ "collapseAllTitle": {  "message":  "折叠/展开所有文件夹" },
+ "sidePanelBtnTitleOff": {  "message":  "在侧边栏中打开" },
+ "sidePanelBtnTitleOn": {  "message":  "侧边栏模式已启用 — 点击以禁用" },
+ "sidePanelBtnTitle": {  "message":  "在侧边栏中打开" },
+ "settingsBtnTitle": {  "message":  "设置" },
+ "settingsTitle": {  "message":  "设置" },
+ "settingLanguage": {  "message":  "语言" },
+ "settingAuto": {  "message":  "自动（浏览器）" },
+ "settingTheme": {  "message":  "主题" },
+ "settingThemeDark": {  "message":  "深色" },
+ "settingThemeLight": {  "message":  "浅色" },
+ "settingInterval": {  "message":  "检查间隔" },
+ "settingRefreshNow": {  "message":  "立即刷新" },
+ "settingBack": {  "message":  "← 返回" },
+ "interval1": {  "message":  "1 分钟" },
+ "intervalOff": {  "message":  "已禁用 — 不自动检查" },
+ "autoCheckOffHint": {  "message":  "自动检查已禁用 — 使用 ▶ 进行手动检查" },
+ "selectionHint": {
+ "message":  "已选择 $1 项 — 按 Enter 打开，按 Delete 删除",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "deleteManyConfirm": {
+ "message":  "确定要删除选中的 $1 个书签吗？",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextDeleteSelected": {
+ "message":  "删除选中项 ($1)",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "currentPageBadge": {  "message":  "当前已打开" },
+ "contextOpenSelected": {
+ "message":  "在新标签页中打开选中的 $1 项",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "disableCheckTooltip": {  "message":  "禁用此书签的自动检查" },
+ "enableCheckTooltip": {  "message":  "重新启用自动检查" },
+ "contextDisableCheck": {  "message":  "禁用自动检查" },
+ "contextEnableCheck": {  "message":  "启用自动检查" },
+ "checkDisabledBadge": {  "message":  "已禁用" },
+ "allChecksDisabled": {  "message":  "所有检查均已禁用" }
+}

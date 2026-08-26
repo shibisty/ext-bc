@@ -1,0 +1,219 @@
+{
+  "extName": {
+    "message": "Bookmark Status Checker"
+  },
+  "extDescription": {
+    "message": "Проверяет закладки по очереди и показывает код ответа сервера (200, 404, 500 и т.д.)"
+  },
+  "popupTitle": {
+    "message": "Закладки"
+  },
+  "syncBtnTitle": {
+    "message": "Синхронизировать вручную"
+  },
+  "checkNowBtnTitle": {
+    "message": "Проверить следующую закладку сейчас"
+  },
+  "searchPlaceholder": {
+    "message": "Поиск по названию, адресу или коду (200, 404…)"
+  },
+  "intervalLabel": {
+    "message": "Раз в"
+  },
+  "interval15": {
+    "message": "15 мин"
+  },
+  "interval30": {
+    "message": "30 мин"
+  },
+  "interval60": {
+    "message": "1 час"
+  },
+  "interval180": {
+    "message": "3 часа"
+  },
+  "interval360": {
+    "message": "6 часов"
+  },
+  "interval1440": {
+    "message": "24 часа"
+  },
+  "loading": {
+    "message": "Загрузка…"
+  },
+  "emptyNoBookmarks": {
+    "message": "Закладок не найдено"
+  },
+  "emptyNoResults": {
+    "message": "Ничего не найдено"
+  },
+  "progressLabel": {
+    "message": "$1 из $2 — следующая на очереди",
+    "placeholders": {
+      "1": { "content": "$1" },
+      "2": { "content": "$2" }
+    }
+  },
+  "lastCheckPrefix": {
+    "message": "Последняя проверка: $1",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "neverChecked": {
+    "message": "Ещё не проверялось"
+  },
+  "timeJustNow": {
+    "message": "только что"
+  },
+  "timeMinAgo": {
+    "message": "$1 мин назад",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "timeHoursAgo": {
+    "message": "$1 ч назад",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "timeDaysAgo": {
+    "message": "$1 дн назад",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "pinnedSectionLabel": {
+    "message": "📌 Закреплённые"
+  },
+  "pinTooltip": {
+    "message": "Закрепить наверху"
+  },
+  "unpinTooltip": {
+    "message": "Открепить"
+  },
+  "deleteTooltip": {
+    "message": "Удалить закладку"
+  },
+  "deleteConfirm": {
+    "message": "Удалить закладку «$1»?",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "contextCheckNow": {
+    "message": "Проверить сейчас"
+  },
+  "contextOpenNewTab": {
+    "message": "Открыть в новой вкладке"
+  },
+  "contextPin": {
+    "message": "Закрепить наверху"
+  },
+  "contextUnpin": {
+    "message": "Открепить"
+  },
+  "contextDelete": {
+    "message": "Удалить закладку"
+  },
+  "unnamedFolder": {
+    "message": "(без названия)"
+  },
+  "collapseAllTitle": {
+    "message": "Свернуть/развернуть все папки"
+  },
+  "sidePanelBtnTitleOff": {
+    "message": "Открыть в боковой панели"
+  },
+  "sidePanelBtnTitleOn": {
+    "message": "Режим боковой панели включён — клик, чтобы выключить"
+  },
+  "sidePanelBtnTitle": {
+    "message": "Открыть в боковой панели"
+  },
+  "settingsBtnTitle": {
+    "message": "Настройки"
+  },
+  "settingsTitle": {
+    "message": "Настройки"
+  },
+  "settingLanguage": {
+    "message": "Язык"
+  },
+  "settingAuto": {
+    "message": "Автоматически (по браузеру)"
+  },
+  "settingTheme": {
+    "message": "Тема"
+  },
+  "settingThemeDark": {
+    "message": "Тёмная"
+  },
+  "settingThemeLight": {
+    "message": "Светлая"
+  },
+  "settingInterval": {
+    "message": "Проверять каждые"
+  },
+  "settingRefreshNow": {
+    "message": "Обновить сейчас"
+  },
+  "settingBack": {
+    "message": "← Назад"
+  },
+  "interval1": {
+    "message": "1 минуту"
+  },
+  "intervalOff": {
+    "message": "Отключено — не проверять"
+  },
+  "autoCheckOffHint": {
+    "message": "Автопроверка отключена — ▶ для проверки вручную"
+  },
+  "selectionHint": {
+    "message": "Выбрано: $1 — Enter открыть, Delete удалить",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "deleteManyConfirm": {
+    "message": "Удалить выбранные закладки ($1)?",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "contextDeleteSelected": {
+    "message": "Удалить выбранные ($1)",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "currentPageBadge": {
+    "message": "Открыта сейчас"
+  },
+  "contextOpenSelected": {
+    "message": "Открыть выбранные ($1) в новых вкладках",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "disableCheckTooltip": {
+    "message": "Отключить автопроверку для этой закладки"
+  },
+  "enableCheckTooltip": {
+    "message": "Снова включить автопроверку"
+  },
+  "contextDisableCheck": {
+    "message": "Отключить автопроверку"
+  },
+  "contextEnableCheck": {
+    "message": "Включить автопроверку"
+  },
+  "checkDisabledBadge": {
+    "message": "OFF"
+  },
+  "allChecksDisabled": {
+    "message": "Все проверки отключены"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "புக்மார்க் நிலை சரிபார்ப்பான்" },
+  "extDescription": { "message": "உங்கள் புக்மார்க்குகளை ஒவ்வொன்றாக சரிபார்த்து HTTP நிலை குறியீட்டை (200, 404, 500 போன்றவை) காட்டுகிறது" },
+  "popupTitle": { "message": "புக்மார்க்குகள்" },
+  "syncBtnTitle": { "message": "கைமுறையாக ஒத்திசை" },
+  "checkNowBtnTitle": { "message": "அடுத்த புக்மார்க்கை இப்போது சரிபார்" },
+  "searchPlaceholder": { "message": "தலைப்பு, URL அல்லது குறியீடு மூலம் தேடு (200, 404…)" },
+  "intervalLabel": { "message": "ஒவ்வொரு" },
+  "interval15": { "message": "15 நிமி" },
+  "interval30": { "message": "30 நிமி" },
+  "interval60": { "message": "1 மணி" },
+  "interval180": { "message": "3 மணி" },
+  "interval360": { "message": "6 மணி" },
+  "interval1440": { "message": "24 மணி" },
+  "loading": { "message": "ஏற்றுகிறது…" },
+  "emptyNoBookmarks": { "message": "புக்மார்க்குகள் எதுவும் கண்டறியப்படவில்லை" },
+  "emptyNoResults": { "message": "எதுவும் கண்டறியப்படவில்லை" },
+  "progressLabel": {
+    "message": "$2 இல் $1 — வரிசையில் அடுத்து",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "கடைசி சரிபார்ப்பு: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "இன்னும் சரிபார்க்கப்படவில்லை" },
+  "timeJustNow": { "message": "இப்போதுதான்" },
+  "timeMinAgo": {
+    "message": "$1 நிமிடங்களுக்கு முன்",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 மணி நேரத்திற்கு முன்",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 நாட்களுக்கு முன்",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 பொருத்தப்பட்டவை" },
+  "pinTooltip": { "message": "மேலே பொருத்து" },
+  "unpinTooltip": { "message": "பொருத்தத்தை நீக்கு" },
+  "deleteTooltip": { "message": "புக்மார்க் நீக்கு" },
+  "deleteConfirm": {
+    "message": "\"$1\" புக்மார்க்கை நீக்கவா?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "இப்போது சரிபார்" },
+  "contextOpenNewTab": { "message": "புதிய தத்தலில் திற" },
+  "contextPin": { "message": "மேலே பொருத்து" },
+  "contextUnpin": { "message": "பொருத்தத்தை நீக்கு" },
+  "contextDelete": { "message": "புக்மார்க் நீக்கு" },
+  "unnamedFolder": { "message": "(தலைப்பில்லா)" },
+  "collapseAllTitle": { "message": "அனைத்து கோப்புறைகளையும் சுருக்கு/விரி" },
+  "sidePanelBtnTitleOff": { "message": "பக்க பலகையில் திற" },
+  "sidePanelBtnTitleOn": { "message": "பக்க பலகை பயன்முறை இயங்குகிறது — அணைக்க கிளிக் செய்" },
+  "sidePanelBtnTitle": { "message": "பக்க பலகையில் திற" },
+  "settingsBtnTitle": { "message": "அமைப்புகள்" },
+  "settingsTitle": { "message": "அமைப்புகள்" },
+  "settingLanguage": { "message": "மொழி" },
+  "settingAuto": { "message": "தானியங்கி (உலாவி)" },
+  "settingTheme": { "message": "தீம்" },
+  "settingThemeDark": { "message": "இருண்ட" },
+  "settingThemeLight": { "message": "வெளிச்சமான" },
+  "settingInterval": { "message": "சரிபார்ப்பு இடைவெளி" },
+  "settingRefreshNow": { "message": "இப்போது புதுப்பி" },
+  "settingBack": { "message": "← பின்" },
+  "interval1": { "message": "1 நிமி" },
+  "intervalOff": { "message": "அணை — தானாக சரிபார்க்காதே" },
+  "autoCheckOffHint": { "message": "தானியங்கி சரிபார்ப்பு அணைக்கப்பட்டுள்ளது — கைமுறை சரிபார்ப்புக்கு ▶ பயன்படுத்து" },
+  "selectionHint": {
+    "message": "$1 தேர்ந்தெடுக்கப்பட்டது — திறக்க Enter, நீக்க Delete அழுத்து",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "தேர்ந்தெடுக்கப்பட்ட $1 புக்மார்க்குகளை நீக்கவா?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "தேர்ந்தெடுக்கப்பட்டவற்றை நீக்கு ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "இப்போது திறந்துள்ளது" },
+  "contextOpenSelected": {
+    "message": "தேர்ந்தெடுக்கப்பட்ட $1 ஐ புதிய தத்தல்களில் திற",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "இந்த புக்மார்க்குக்கான தானியங்கி சரிபார்ப்பை முடக்கு" },
+  "enableCheckTooltip": { "message": "தானியங்கி சரிபார்ப்பை மீண்டும் இயக்கு" },
+  "contextDisableCheck": { "message": "தானியங்கி சரிபார்ப்பை முடக்கு" },
+  "contextEnableCheck": { "message": "தானியங்கி சரிபார்ப்பை இயக்கு" },
+  "checkDisabledBadge": { "message": "அணை" },
+  "allChecksDisabled": { "message": "அனைத்து சரிபார்ப்புகளும் முடக்கப்பட்டுள்ளன" }
+}

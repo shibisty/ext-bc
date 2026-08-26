@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Kirjanmerkkien tilan tarkistus" },
+  "extDescription": { "message": "Tarkistaa kirjanmerkkisi yksi kerrallaan ja näyttää HTTP-tilakoodin (200, 404, 500 jne.)" },
+  "popupTitle": { "message": "Kirjanmerkit" },
+  "syncBtnTitle": { "message": "Synkronoi manuaalisesti" },
+  "checkNowBtnTitle": { "message": "Tarkista seuraava kirjanmerkki nyt" },
+  "searchPlaceholder": { "message": "Hae otsikon, URL-osoitteen tai koodin mukaan (200, 404…)" },
+  "intervalLabel": { "message": "Joka" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 tunti" },
+  "interval180": { "message": "3 tuntia" },
+  "interval360": { "message": "6 tuntia" },
+  "interval1440": { "message": "24 tuntia" },
+  "loading": { "message": "Ladataan…" },
+  "emptyNoBookmarks": { "message": "Kirjanmerkkejä ei löytynyt" },
+  "emptyNoResults": { "message": "Ei tuloksia" },
+  "progressLabel": {
+    "message": "$1/$2 — seuraava jonossa",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Viimeisin tarkistus: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Ei vielä tarkistettu" },
+  "timeJustNow": { "message": "juuri nyt" },
+  "timeMinAgo": {
+    "message": "$1 min sitten",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 t sitten",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 pv sitten",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Kiinnitetyt" },
+  "pinTooltip": { "message": "Kiinnitä ylös" },
+  "unpinTooltip": { "message": "Poista kiinnitys" },
+  "deleteTooltip": { "message": "Poista kirjanmerkki" },
+  "deleteConfirm": {
+    "message": "Poistetaanko kirjanmerkki \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Tarkista nyt" },
+  "contextOpenNewTab": { "message": "Avaa uudessa välilehdessä" },
+  "contextPin": { "message": "Kiinnitä ylös" },
+  "contextUnpin": { "message": "Poista kiinnitys" },
+  "contextDelete": { "message": "Poista kirjanmerkki" },
+  "unnamedFolder": { "message": "(nimetön)" },
+  "collapseAllTitle": { "message": "Kutista/laajenna kaikki kansiot" },
+  "sidePanelBtnTitleOff": { "message": "Avaa sivupaneelissa" },
+  "sidePanelBtnTitleOn": { "message": "Sivupaneelitila on päällä — napsauta poistaaksesi käytöstä" },
+  "sidePanelBtnTitle": { "message": "Avaa sivupaneelissa" },
+  "settingsBtnTitle": { "message": "Asetukset" },
+  "settingsTitle": { "message": "Asetukset" },
+  "settingLanguage": { "message": "Kieli" },
+  "settingAuto": { "message": "Automaattinen (selain)" },
+  "settingTheme": { "message": "Teema" },
+  "settingThemeDark": { "message": "Tumma" },
+  "settingThemeLight": { "message": "Vaalea" },
+  "settingInterval": { "message": "Tarkista joka" },
+  "settingRefreshNow": { "message": "Päivitä nyt" },
+  "settingBack": { "message": "← Takaisin" },
+  "interval1": { "message": "1 minuutti" },
+  "intervalOff": { "message": "Pois — ei automaattista tarkistusta" },
+  "autoCheckOffHint": { "message": "Automaattinen tarkistus on pois päältä — käytä ▶ manuaaliseen tarkistukseen" },
+  "selectionHint": {
+    "message": "$1 valittu — Enter avataksesi, Delete poistaaksesi",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Poistetaanko $1 valittua kirjanmerkkiä?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Poista valitut ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Auki nyt" },
+  "contextOpenSelected": {
+    "message": "Avaa $1 valittua uudessa välilehdessä",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Poista automaattinen tarkistus käytöstä tälle kirjanmerkille" },
+  "enableCheckTooltip": { "message": "Ota automaattinen tarkistus uudelleen käyttöön" },
+  "contextDisableCheck": { "message": "Poista automaattinen tarkistus käytöstä" },
+  "contextEnableCheck": { "message": "Ota automaattinen tarkistus käyttöön" },
+  "checkDisabledBadge": { "message": "POIS" },
+  "allChecksDisabled": { "message": "Kaikki tarkistukset pois käytöstä" }
+}

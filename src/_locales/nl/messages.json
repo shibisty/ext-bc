@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Bladwijzerstatuscontrole" },
+  "extDescription": { "message": "Controleert uw bladwijzers één voor één en toont de HTTP-statuscode (200, 404, 500, enz.)" },
+  "popupTitle": { "message": "Bladwijzers" },
+  "syncBtnTitle": { "message": "Handmatig synchroniseren" },
+  "checkNowBtnTitle": { "message": "Volgende bladwijzer nu controleren" },
+  "searchPlaceholder": { "message": "Zoeken op titel, URL of code (200, 404…)" },
+  "intervalLabel": { "message": "Elke" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 uur" },
+  "interval180": { "message": "3 uur" },
+  "interval360": { "message": "6 uur" },
+  "interval1440": { "message": "24 uur" },
+  "loading": { "message": "Laden…" },
+  "emptyNoBookmarks": { "message": "Geen bladwijzers gevonden" },
+  "emptyNoResults": { "message": "Niets gevonden" },
+  "progressLabel": {
+    "message": "$1 van $2 — volgende in de wachtrij",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Laatste controle: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Nog niet gecontroleerd" },
+  "timeJustNow": { "message": "zojuist" },
+  "timeMinAgo": {
+    "message": "$1 min geleden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 uur geleden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 dag geleden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Vastgezet" },
+  "pinTooltip": { "message": "Bovenaan vastzetten" },
+  "unpinTooltip": { "message": "Losmaken" },
+  "deleteTooltip": { "message": "Bladwijzer verwijderen" },
+  "deleteConfirm": {
+    "message": "Bladwijzer „$1” verwijderen?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Nu controleren" },
+  "contextOpenNewTab": { "message": "Openen in nieuw tabblad" },
+  "contextPin": { "message": "Bovenaan vastzetten" },
+  "contextUnpin": { "message": "Losmaken" },
+  "contextDelete": { "message": "Bladwijzer verwijderen" },
+  "unnamedFolder": { "message": "(naamloos)" },
+  "collapseAllTitle": { "message": "Alle mappen samenvouwen/uitvouwen" },
+  "sidePanelBtnTitleOff": { "message": "Openen in zijpaneel" },
+  "sidePanelBtnTitleOn": { "message": "Zijpaneelmodus is ingeschakeld — klik om uit te schakelen" },
+  "sidePanelBtnTitle": { "message": "Openen in zijpaneel" },
+  "settingsBtnTitle": { "message": "Instellingen" },
+  "settingsTitle": { "message": "Instellingen" },
+  "settingLanguage": { "message": "Taal" },
+  "settingAuto": { "message": "Automatisch (browser)" },
+  "settingTheme": { "message": "Thema" },
+  "settingThemeDark": { "message": "Donker" },
+  "settingThemeLight": { "message": "Licht" },
+  "settingInterval": { "message": "Controleren elke" },
+  "settingRefreshNow": { "message": "Nu vernieuwen" },
+  "settingBack": { "message": "← Terug" },
+  "interval1": { "message": "1 minuut" },
+  "intervalOff": { "message": "Uit — niet automatisch controleren" },
+  "autoCheckOffHint": { "message": "Automatische controle is uitgeschakeld — gebruik ▶ om handmatig te controleren" },
+  "selectionHint": {
+    "message": "$1 geselecteerd — Enter om te openen, Delete om te verwijderen",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "$1 geselecteerde bladwijzers verwijderen?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Geselecteerde verwijderen ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Nu geopend" },
+  "contextOpenSelected": {
+    "message": "$1 geselecteerde openen in nieuwe tabbladen",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Automatische controle voor deze bladwijzer uitschakelen" },
+  "enableCheckTooltip": { "message": "Automatische controle opnieuw inschakelen" },
+  "contextDisableCheck": { "message": "Automatische controle uitschakelen" },
+  "contextEnableCheck": { "message": "Automatische controle inschakelen" },
+  "checkDisabledBadge": { "message": "UIT" },
+  "allChecksDisabled": { "message": "Alle controles uitgeschakeld" }
+}

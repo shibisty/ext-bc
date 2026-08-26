@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Перевірка статусу закладок" },
+  "extDescription": { "message": "Послідовно перевіряє ваші закладки та показує HTTP-код статусу (200, 404, 500 тощо)" },
+  "popupTitle": { "message": "Закладки" },
+  "syncBtnTitle": { "message": "Синхронізувати вручну" },
+  "checkNowBtnTitle": { "message": "Перевірити наступну закладку зараз" },
+  "searchPlaceholder": { "message": "Пошук за назвою, URL або кодом (200, 404…)" },
+  "intervalLabel": { "message": "Кожні" },
+  "interval15": { "message": "15 хв" },
+  "interval30": { "message": "30 хв" },
+  "interval60": { "message": "1 год" },
+  "interval180": { "message": "3 год" },
+  "interval360": { "message": "6 год" },
+  "interval1440": { "message": "24 год" },
+  "loading": { "message": "Завантаження…" },
+  "emptyNoBookmarks": { "message": "Закладок не знайдено" },
+  "emptyNoResults": { "message": "Нічого не знайдено" },
+  "progressLabel": {
+    "message": "$1 з $2 — наступна в черзі",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Остання перевірка: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Ще не перевірено" },
+  "timeJustNow": { "message": "щойно" },
+  "timeMinAgo": {
+    "message": "$1 хв тому",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 год тому",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 д тому",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Закріплені" },
+  "pinTooltip": { "message": "Закріпити зверху" },
+  "unpinTooltip": { "message": "Відкріпити" },
+  "deleteTooltip": { "message": "Видалити закладку" },
+  "deleteConfirm": {
+    "message": "Видалити закладку «$1»?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Перевірити зараз" },
+  "contextOpenNewTab": { "message": "Відкрити в новій вкладці" },
+  "contextPin": { "message": "Закріпити зверху" },
+  "contextUnpin": { "message": "Відкріпити" },
+  "contextDelete": { "message": "Видалити закладку" },
+  "unnamedFolder": { "message": "(без назви)" },
+  "collapseAllTitle": { "message": "Згорнути/розгорнути всі папки" },
+  "sidePanelBtnTitleOff": { "message": "Відкрити на бічній панелі" },
+  "sidePanelBtnTitleOn": { "message": "Режим бічної панелі увімкнено — натисніть, щоб вимкнути" },
+  "sidePanelBtnTitle": { "message": "Відкрити на бічній панелі" },
+  "settingsBtnTitle": { "message": "Налаштування" },
+  "settingsTitle": { "message": "Налаштування" },
+  "settingLanguage": { "message": "Мова" },
+  "settingAuto": { "message": "Авто (браузер)" },
+  "settingTheme": { "message": "Тема" },
+  "settingThemeDark": { "message": "Темна" },
+  "settingThemeLight": { "message": "Світла" },
+  "settingInterval": { "message": "Перевіряти кожні" },
+  "settingRefreshNow": { "message": "Оновити зараз" },
+  "settingBack": { "message": "← Назад" },
+  "interval1": { "message": "1 хвилина" },
+  "intervalOff": { "message": "Вимкнено — не перевіряти автоматично" },
+  "autoCheckOffHint": { "message": "Автоперевірку вимкнено — використовуйте ▶ для ручної перевірки" },
+  "selectionHint": {
+    "message": "Вибрано $1 — Enter для відкриття, Delete для видалення",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Видалити вибрані закладки ($1)?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Видалити вибрані ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Відкрито зараз" },
+  "contextOpenSelected": {
+    "message": "Відкрити вибрані ($1) у нових вкладках",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Вимкнути автоперевірку для цієї закладки" },
+  "enableCheckTooltip": { "message": "Увімкнути автоперевірку знову" },
+  "contextDisableCheck": { "message": "Вимкнути автоперевірку" },
+  "contextEnableCheck": { "message": "Увімкнути автоперевірку" },
+  "checkDisabledBadge": { "message": "ВИМК" },
+  "allChecksDisabled": { "message": "Усі перевірки вимкнено" }
+}

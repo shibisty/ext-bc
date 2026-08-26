@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "બુકમાર્ક સ્થિતિ ચકાસણી" },
+  "extDescription": { "message": "તમારા બુકમાર્ક્સને એક પછી એક ચકાસે છે અને HTTP સ્ટેટસ કોડ (200, 404, 500, વગેરે) બતાવે છે" },
+  "popupTitle": { "message": "બુકમાર્ક્સ" },
+  "syncBtnTitle": { "message": "મેન્યુઅલી સિંક કરો" },
+  "checkNowBtnTitle": { "message": "હવે પછીનું બુકમાર્ક ચકાસો" },
+  "searchPlaceholder": { "message": "શીર્ષક, URL અથવા કોડ દ્વારા શોધો (200, 404…)" },
+  "intervalLabel": { "message": "દર" },
+  "interval15": { "message": "15 મિનિટ" },
+  "interval30": { "message": "30 મિનિટ" },
+  "interval60": { "message": "1 કલાક" },
+  "interval180": { "message": "3 કલાક" },
+  "interval360": { "message": "6 કલાક" },
+  "interval1440": { "message": "24 કલાક" },
+  "loading": { "message": "લોડ થઈ રહ્યું છે…" },
+  "emptyNoBookmarks": { "message": "કોઈ બુકમાર્ક મળ્યું નથી" },
+  "emptyNoResults": { "message": "કંઈ મળ્યું નથી" },
+  "progressLabel": {
+    "message": "$2 માંથી $1 — કતારમાં આગળનું",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "છેલ્લી ચકાસણી: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "હજુ સુધી ચકાસાયેલ નથી" },
+  "timeJustNow": { "message": "અત્યારે જ" },
+  "timeMinAgo": {
+    "message": "$1 મિનિટ પહેલાં",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 કલાક પહેલાં",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 દિવસ પહેલાં",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 પિન કરેલા" },
+  "pinTooltip": { "message": "ટોચ પર પિન કરો" },
+  "unpinTooltip": { "message": "પિન દૂર કરો" },
+  "deleteTooltip": { "message": "બુકમાર્ક કાઢી નાખો" },
+  "deleteConfirm": {
+    "message": "શું તમે “$1” બુકમાર્ક કાઢી નાખવા માંગો છો?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "હવે ચકાસો" },
+  "contextOpenNewTab": { "message": "નવી ટૅબમાં ખોલો" },
+  "contextPin": { "message": "ટોચ પર પિન કરો" },
+  "contextUnpin": { "message": "પિન દૂર કરો" },
+  "contextDelete": { "message": "બુકમાર્ક કાઢી નાખો" },
+  "unnamedFolder": { "message": "(નામ વિનાનું)" },
+  "collapseAllTitle": { "message": "બધા ફોલ્ડર્સ સંકુચિત/વિસ્તૃત કરો" },
+  "sidePanelBtnTitleOff": { "message": "સાઇડ પેનલમાં ખોલો" },
+  "sidePanelBtnTitleOn": { "message": "સાઇડ પેનલ મોડ ચાલુ છે — બંધ કરવા માટે ક્લિક કરો" },
+  "sidePanelBtnTitle": { "message": "સાઇડ પેનલમાં ખોલો" },
+  "settingsBtnTitle": { "message": "સેટિંગ્સ" },
+  "settingsTitle": { "message": "સેટિંગ્સ" },
+  "settingLanguage": { "message": "ભાષા" },
+  "settingAuto": { "message": "સ્વચાલિત (બ્રાઉઝર)" },
+  "settingTheme": { "message": "થીમ" },
+  "settingThemeDark": { "message": "ડાર્ક" },
+  "settingThemeLight": { "message": "લાઇટ" },
+  "settingInterval": { "message": "ચકાસણી અંતરાલ" },
+  "settingRefreshNow": { "message": "હવે રિફ્રેશ કરો" },
+  "settingBack": { "message": "← પાછા" },
+  "interval1": { "message": "1 મિનિટ" },
+  "intervalOff": { "message": "બંધ — સ્વચાલિત ચકાસણી ન કરો" },
+  "autoCheckOffHint": { "message": "સ્વચાલિત ચકાસણી બંધ છે — મેન્યુઅલી ચકાસવા માટે ▶ નો ઉપયોગ કરો" },
+  "selectionHint": {
+    "message": "$1 પસંદ કરેલ — ખોલવા માટે Enter, કાઢી નાખવા માટે Delete દબાવો",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "શું તમે પસંદ કરેલા $1 બુકમાર્ક્સ કાઢી નાખવા માંગો છો?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "પસંદ કરેલા કાઢી નાખો ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "હાલમાં ખુલ્લું" },
+  "contextOpenSelected": {
+    "message": "પસંદ કરેલા $1 નવી ટૅબમાં ખોલો",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "આ બુકમાર્ક માટે સ્વચાલિત ચકાસણી અક્ષમ કરો" },
+  "enableCheckTooltip": { "message": "સ્વચાલિત ચકાસણી ફરીથી સક્ષમ કરો" },
+  "contextDisableCheck": { "message": "સ્વચાલિત ચકાસણી અક્ષમ કરો" },
+  "contextEnableCheck": { "message": "સ્વચાલિત ચકાસણી સક્ષમ કરો" },
+  "checkDisabledBadge": { "message": "બંધ" },
+  "allChecksDisabled": { "message": "બધી ચકાસણીઓ અક્ષમ કરેલી છે" }
+}

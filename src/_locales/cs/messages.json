@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Kontrola stavu záložek" },
+  "extDescription": { "message": "Kontroluje vaše záložky jednu po druhé a zobrazuje stavový kód HTTP (200, 404, 500 atd.)" },
+  "popupTitle": { "message": "Záložky" },
+  "syncBtnTitle": { "message": "Synchronizovat ručně" },
+  "checkNowBtnTitle": { "message": "Zkontrolovat další záložku" },
+  "searchPlaceholder": { "message": "Hledat podle názvu, URL nebo kódu (200, 404…)" },
+  "intervalLabel": { "message": "Každých" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 hod" },
+  "interval180": { "message": "3 hod" },
+  "interval360": { "message": "6 hod" },
+  "interval1440": { "message": "24 hod" },
+  "loading": { "message": "Načítání…" },
+  "emptyNoBookmarks": { "message": "Nenalezeny žádné záložky" },
+  "emptyNoResults": { "message": "Nic nenalezeno" },
+  "progressLabel": {
+    "message": "$1 z $2 — další ve frontě",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Poslední kontrola: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Zatím nezkontrolováno" },
+  "timeJustNow": { "message": "právě teď" },
+  "timeMinAgo": {
+    "message": "před $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "před $1 h",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "před $1 d",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Připnuté" },
+  "pinTooltip": { "message": "Připnout nahoru" },
+  "unpinTooltip": { "message": "Odepnout" },
+  "deleteTooltip": { "message": "Smazat záložku" },
+  "deleteConfirm": {
+    "message": "Smazat záložku „$1“?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Zkontrolovat nyní" },
+  "contextOpenNewTab": { "message": "Otevřít na nové kartě" },
+  "contextPin": { "message": "Připnout nahoru" },
+  "contextUnpin": { "message": "Odepnout" },
+  "contextDelete": { "message": "Smazat záložku" },
+  "unnamedFolder": { "message": "(bez názvu)" },
+  "collapseAllTitle": { "message": "Sbalit/rozbalit všechny složky" },
+  "sidePanelBtnTitleOff": { "message": "Otevřít v postranním panelu" },
+  "sidePanelBtnTitleOn": { "message": "Režim postranního panelu je zapnutý – kliknutím vypněte" },
+  "sidePanelBtnTitle": { "message": "Otevřít v postranním panelu" },
+  "settingsBtnTitle": { "message": "Nastavení" },
+  "settingsTitle": { "message": "Nastavení" },
+  "settingLanguage": { "message": "Jazyk" },
+  "settingAuto": { "message": "Automaticky (prohlížeč)" },
+  "settingTheme": { "message": "Motiv" },
+  "settingThemeDark": { "message": "Tmavý" },
+  "settingThemeLight": { "message": "Světlý" },
+  "settingInterval": { "message": "Kontrolovat každých" },
+  "settingRefreshNow": { "message": "Obnovit nyní" },
+  "settingBack": { "message": "← Zpět" },
+  "interval1": { "message": "1 minuta" },
+  "intervalOff": { "message": "Vypnuto – nekontrolovat automaticky" },
+  "autoCheckOffHint": { "message": "Automatická kontrola je vypnutá – použijte ▶ pro ruční kontrolu" },
+  "selectionHint": {
+    "message": "Vybráno: $1 – Enter pro otevření, Delete pro smazání",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Smazat $1 vybraných záložek?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Smazat vybrané ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Nyní otevřeno" },
+  "contextOpenSelected": {
+    "message": "Otevřít $1 vybraných na nových kartách",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Vypnout automatickou kontrolu pro tuto záložku" },
+  "enableCheckTooltip": { "message": "Znovu zapnout automatickou kontrolu" },
+  "contextDisableCheck": { "message": "Vypnout automatickou kontrolu" },
+  "contextEnableCheck": { "message": "Zapnout automatickou kontrolu" },
+  "checkDisabledBadge": { "message": "VYP" },
+  "allChecksDisabled": { "message": "Všechny kontroly vypnuty" }
+}

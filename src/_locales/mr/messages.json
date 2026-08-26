@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "बुकमार्क स्थिती तपासक" },
+  "extDescription": { "message": "तुमचे बुकमार्क एकएक करून तपासतो आणि HTTP स्थिती कोड (200, 404, 500 इ.) दाखवतो" },
+  "popupTitle": { "message": "बुकमार्क" },
+  "syncBtnTitle": { "message": "मॅन्युअली सिंक करा" },
+  "checkNowBtnTitle": { "message": "पुढील बुकमार्क आता तपासा" },
+  "searchPlaceholder": { "message": "शीर्षक, URL किंवा कोडनुसार शोधा (200, 404…)" },
+  "intervalLabel": { "message": "दर" },
+  "interval15": { "message": "15 मि." },
+  "interval30": { "message": "30 मि." },
+  "interval60": { "message": "1 ता." },
+  "interval180": { "message": "3 ता." },
+  "interval360": { "message": "6 ता." },
+  "interval1440": { "message": "24 ता." },
+  "loading": { "message": "लोड होत आहे…" },
+  "emptyNoBookmarks": { "message": "कोणतेही बुकमार्क सापडले नाहीत" },
+  "emptyNoResults": { "message": "काहीही सापडले नाही" },
+  "progressLabel": {
+    "message": "$2 पैकी $1 — रांगेत पुढील",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "शेवटची तपासणी: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "अजून तपासलेले नाही" },
+  "timeJustNow": { "message": "आत्ताच" },
+  "timeMinAgo": {
+    "message": "$1 मि. पूर्वी",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 ता. पूर्वी",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 दिवस पूर्वी",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 पिन केलेले" },
+  "pinTooltip": { "message": "वर पिन करा" },
+  "unpinTooltip": { "message": "पिन काढा" },
+  "deleteTooltip": { "message": "बुकमार्क हटवा" },
+  "deleteConfirm": {
+    "message": "\"$1\" हा बुकमार्क हटवायचा का?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "आता तपासा" },
+  "contextOpenNewTab": { "message": "नवीन टॅबमध्ये उघडा" },
+  "contextPin": { "message": "वर पिन करा" },
+  "contextUnpin": { "message": "पिन काढा" },
+  "contextDelete": { "message": "बुकमार्क हटवा" },
+  "unnamedFolder": { "message": "(शिर्षकहीन)" },
+  "collapseAllTitle": { "message": "सर्व फोल्डर्स संकुचित/विस्तृत करा" },
+  "sidePanelBtnTitleOff": { "message": "साइड पॅनलमध्ये उघडा" },
+  "sidePanelBtnTitleOn": { "message": "साइड पॅनल मोड चालू आहे — बंद करण्यासाठी क्लिक करा" },
+  "sidePanelBtnTitle": { "message": "साइड पॅनलमध्ये उघडा" },
+  "settingsBtnTitle": { "message": "सेटिंग्ज" },
+  "settingsTitle": { "message": "सेटिंग्ज" },
+  "settingLanguage": { "message": "भाषा" },
+  "settingAuto": { "message": "स्वयंचलित (ब्राउझर)" },
+  "settingTheme": { "message": "थीम" },
+  "settingThemeDark": { "message": "गडद" },
+  "settingThemeLight": { "message": "फिकट" },
+  "settingInterval": { "message": "तपासणी अंतराल" },
+  "settingRefreshNow": { "message": "आता रीफ्रेश करा" },
+  "settingBack": { "message": "← मागे" },
+  "interval1": { "message": "1 मि." },
+  "intervalOff": { "message": "बंद — स्वयंचलित तपासणी करू नका" },
+  "autoCheckOffHint": { "message": "स्वयंचलित तपासणी बंद आहे — मॅन्युअल तपासणीसाठी ▶ वापरा" },
+  "selectionHint": {
+    "message": "$1 निवडलेले — उघडण्यासाठी Enter, हटवण्यासाठी Delete दाबा",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "निवडलेले $1 बुकमार्क हटवायचे का?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "निवडलेले हटवा ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "सध्या उघडे" },
+  "contextOpenSelected": {
+    "message": "निवडलेले $1 नवीन टॅबमध्ये उघडा",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "या बुकमार्कसाठी स्वयंचलित तपासणी अक्षम करा" },
+  "enableCheckTooltip": { "message": "स्वयंचलित तपासणी पुन्हा सक्षम करा" },
+  "contextDisableCheck": { "message": "स्वयंचलित तपासणी अक्षम करा" },
+  "contextEnableCheck": { "message": "स्वयंचलित तपासणी सक्षम करा" },
+  "checkDisabledBadge": { "message": "बंद" },
+  "allChecksDisabled": { "message": "सर्व तपासण्या अक्षम केल्या आहेत" }
+}

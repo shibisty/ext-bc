@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Könyvjelzők állapotellenőrzője" },
+  "extDescription": { "message": "Egyenként ellenőrzi a könyvjelzőit, és megjeleníti a HTTP-állapotkódot (200, 404, 500 stb.)" },
+  "popupTitle": { "message": "Könyvjelzők" },
+  "syncBtnTitle": { "message": "Szinkronizálás kézzel" },
+  "checkNowBtnTitle": { "message": "Következő könyvjelző ellenőrzése most" },
+  "searchPlaceholder": { "message": "Keresés cím, URL vagy kód szerint (200, 404…)" },
+  "intervalLabel": { "message": "Minden" },
+  "interval15": { "message": "15 perc" },
+  "interval30": { "message": "30 perc" },
+  "interval60": { "message": "1 óra" },
+  "interval180": { "message": "3 óra" },
+  "interval360": { "message": "6 óra" },
+  "interval1440": { "message": "24 óra" },
+  "loading": { "message": "Betöltés…" },
+  "emptyNoBookmarks": { "message": "Nincsenek könyvjelzők" },
+  "emptyNoResults": { "message": "Nincs találat" },
+  "progressLabel": {
+    "message": "$1 / $2 — következő a sorban",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Utolsó ellenőrzés: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Még nem ellenőrzött" },
+  "timeJustNow": { "message": "éppen most" },
+  "timeMinAgo": {
+    "message": "$1 perce",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 órája",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 napja",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Rögzített" },
+  "pinTooltip": { "message": "Rögzítés felül" },
+  "unpinTooltip": { "message": "Rögzítés feloldása" },
+  "deleteTooltip": { "message": "Könyvjelző törlése" },
+  "deleteConfirm": {
+    "message": "Törli a(z) „$1” könyvjelzőt?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Ellenőrzés most" },
+  "contextOpenNewTab": { "message": "Megnyitás új lapon" },
+  "contextPin": { "message": "Rögzítés felül" },
+  "contextUnpin": { "message": "Rögzítés feloldása" },
+  "contextDelete": { "message": "Könyvjelző törlése" },
+  "unnamedFolder": { "message": "(névtelen)" },
+  "collapseAllTitle": { "message": "Összes mappa összecsukása/kinyitása" },
+  "sidePanelBtnTitleOff": { "message": "Megnyitás oldalsó panelen" },
+  "sidePanelBtnTitleOn": { "message": "Oldalsó panel mód bekapcsolva — kattintson a kikapcsoláshoz" },
+  "sidePanelBtnTitle": { "message": "Megnyitás oldalsó panelen" },
+  "settingsBtnTitle": { "message": "Beállítások" },
+  "settingsTitle": { "message": "Beállítások" },
+  "settingLanguage": { "message": "Nyelv" },
+  "settingAuto": { "message": "Automatikus (böngésző)" },
+  "settingTheme": { "message": "Téma" },
+  "settingThemeDark": { "message": "Sötét" },
+  "settingThemeLight": { "message": "Világos" },
+  "settingInterval": { "message": "Ellenőrzés minden" },
+  "settingRefreshNow": { "message": "Frissítés most" },
+  "settingBack": { "message": "← Vissza" },
+  "interval1": { "message": "1 perc" },
+  "intervalOff": { "message": "Ki — nincs automatikus ellenőrzés" },
+  "autoCheckOffHint": { "message": "Az automatikus ellenőrzés ki van kapcsolva — használja a ▶ gombot a kézi ellenőrzéshez" },
+  "selectionHint": {
+    "message": "$1 kiválasztva — Enter a megnyitáshoz, Delete a törléshez",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Törli a(z) $1 kiválasztott könyvjelzőt?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Kiválasztottak törlése ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Most nyitva" },
+  "contextOpenSelected": {
+    "message": "$1 kiválasztott megnyitása új lapokon",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Automatikus ellenőrzés kikapcsolása ennél a könyvjelzőnél" },
+  "enableCheckTooltip": { "message": "Automatikus ellenőrzés újbóli bekapcsolása" },
+  "contextDisableCheck": { "message": "Automatikus ellenőrzés kikapcsolása" },
+  "contextEnableCheck": { "message": "Automatikus ellenőrzés bekapcsolása" },
+  "checkDisabledBadge": { "message": "KI" },
+  "allChecksDisabled": { "message": "Minden ellenőrzés kikapcsolva" }
+}

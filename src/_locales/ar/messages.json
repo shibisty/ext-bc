@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "فاحص حالة الإشارات المرجعية" },
+  "extDescription": { "message": "يفحص إشاراتك المرجعية واحدة تلو الأخرى ويعرض رمز حالة HTTP (200, 404, 500، إلخ)" },
+  "popupTitle": { "message": "الإشارات المرجعية" },
+  "syncBtnTitle": { "message": "مزامنة يدوية" },
+  "checkNowBtnTitle": { "message": "فحص الإشارة المرجعية التالية الآن" },
+  "searchPlaceholder": { "message": "البحث حسب العنوان، أو الرابط (URL)، أو الرمز (200, 404…)" },
+  "intervalLabel": { "message": "كل" },
+  "interval15": { "message": "15 دقيقة" },
+  "interval30": { "message": "30 دقيقة" },
+  "interval60": { "message": "ساعة واحدة" },
+  "interval180": { "message": "3 ساعات" },
+  "interval360": { "message": "6 ساعات" },
+  "interval1440": { "message": "24 ساعة" },
+  "loading": { "message": "جارٍ التحميل…" },
+  "emptyNoBookmarks": { "message": "لم يتم العثور على إشارات مرجعية" },
+  "emptyNoResults": { "message": "لم يتم العثور على شيء" },
+  "progressLabel": {
+    "message": "$1 من $2 — التالي في قائمة الانتظار",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "آخر فحص: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "لم يتم الفحص بعد" },
+  "timeJustNow": { "message": "الآن" },
+  "timeMinAgo": {
+    "message": "منذ $1 دقيقة",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "منذ $1 ساعة",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "منذ $1 يوم",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 المثبتة" },
+  "pinTooltip": { "message": "تثبيت في الأعلى" },
+  "unpinTooltip": { "message": "إلغاء التثبيت" },
+  "deleteTooltip": { "message": "حذف الإشارة المرجعية" },
+  "deleteConfirm": {
+    "message": "حذف الإشارة المرجعية “$1”؟",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "فحص الآن" },
+  "contextOpenNewTab": { "message": "فتح في علامة تبويب جديدة" },
+  "contextPin": { "message": "تثبيت في الأعلى" },
+  "contextUnpin": { "message": "إلغاء التثبيت" },
+  "contextDelete": { "message": "حذف الإشارة المرجعية" },
+  "unnamedFolder": { "message": "(بدون عنوان)" },
+  "collapseAllTitle": { "message": "طي/توسيع كل المجلدات" },
+  "sidePanelBtnTitleOff": { "message": "فتح في اللوحة الجانبية" },
+  "sidePanelBtnTitleOn": { "message": "وضع اللوحة الجانبية مفعّل — انقر للإيقاف" },
+  "sidePanelBtnTitle": { "message": "فتح في اللوحة الجانبية" },
+  "settingsBtnTitle": { "message": "الإعدادات" },
+  "settingsTitle": { "message": "الإعدادات" },
+  "settingLanguage": { "message": "اللغة" },
+  "settingAuto": { "message": "تلقائي (المتصفح)" },
+  "settingTheme": { "message": "المظهر" },
+  "settingThemeDark": { "message": "داكن" },
+  "settingThemeLight": { "message": "فاتح" },
+  "settingInterval": { "message": "فحص كل" },
+  "settingRefreshNow": { "message": "تحديث الآن" },
+  "settingBack": { "message": "← رجوع" },
+  "interval1": { "message": "دقيقة واحدة" },
+  "intervalOff": { "message": "معطّل — لا تفحص تلقائياً" },
+  "autoCheckOffHint": { "message": "الفحص التلقائي معطّل — استخدم ▶ للفحص يدوياً" },
+  "selectionHint": {
+    "message": "تم تحديد $1 — اضغط Enter للفتح، أو Delete للحذف",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "حذف $1 إشارة مرجعية محددة؟",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "حذف المحدد ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "مفتوح الآن" },
+  "contextOpenSelected": {
+    "message": "فتح $1 محددة في علامات تبويب جديدة",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "تعطيل الفحص التلقائي لهذه الإشارة المرجعية" },
+  "enableCheckTooltip": { "message": "إعادة تمكين الفحص التلقائي" },
+  "contextDisableCheck": { "message": "تعطيل الفحص التلقائي" },
+  "contextEnableCheck": { "message": "تفعيل الفحص التلقائي" },
+  "checkDisabledBadge": { "message": "معطّل" },
+  "allChecksDisabled": { "message": "جميع عمليات الفحص معطّلة" }
+}

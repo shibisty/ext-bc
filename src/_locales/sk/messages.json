@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Kontrola stavu záložiek" },
+  "extDescription": { "message": "Kontroluje vaše záložky jednu po druhej a zobrazuje stavový kód HTTP (200, 404, 500 atď.)" },
+  "popupTitle": { "message": "Záložky" },
+  "syncBtnTitle": { "message": "Synchronizovať ručne" },
+  "checkNowBtnTitle": { "message": "Skontrolovať ďalšiu záložku teraz" },
+  "searchPlaceholder": { "message": "Hľadať podľa názvu, URL alebo kódu (200, 404…)" },
+  "intervalLabel": { "message": "Každých" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 hod" },
+  "interval180": { "message": "3 hod" },
+  "interval360": { "message": "6 hod" },
+  "interval1440": { "message": "24 hod" },
+  "loading": { "message": "Načítava sa…" },
+  "emptyNoBookmarks": { "message": "Nenašli sa žiadne záložky" },
+  "emptyNoResults": { "message": "Nič sa nenašlo" },
+  "progressLabel": {
+    "message": "$1 z $2 — ďalšia v rade",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Posledná kontrola: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Zatiaľ neskontrolované" },
+  "timeJustNow": { "message": "práve teraz" },
+  "timeMinAgo": {
+    "message": "pred $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "pred $1 hod",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "pred $1 d",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Pripnuté" },
+  "pinTooltip": { "message": "Pripnúť nahor" },
+  "unpinTooltip": { "message": "Zrušiť pripnutie" },
+  "deleteTooltip": { "message": "Odstrániť záložku" },
+  "deleteConfirm": {
+    "message": "Odstrániť záložku „$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Skontrolovať teraz" },
+  "contextOpenNewTab": { "message": "Otvoriť na novej karte" },
+  "contextPin": { "message": "Pripnúť nahor" },
+  "contextUnpin": { "message": "Zrušiť pripnutie" },
+  "contextDelete": { "message": "Odstrániť záložku" },
+  "unnamedFolder": { "message": "(bez názvu)" },
+  "collapseAllTitle": { "message": "Zbaliť/rozbaliť všetky priečinky" },
+  "sidePanelBtnTitleOff": { "message": "Otvoriť v bočnom paneli" },
+  "sidePanelBtnTitleOn": { "message": "Režim bočného panela je zapnutý – kliknutím vypnete" },
+  "sidePanelBtnTitle": { "message": "Otvoriť v bočnom paneli" },
+  "settingsBtnTitle": { "message": "Nastavenia" },
+  "settingsTitle": { "message": "Nastavenia" },
+  "settingLanguage": { "message": "Jazyk" },
+  "settingAuto": { "message": "Automaticky (prehliadač)" },
+  "settingTheme": { "message": "Motív" },
+  "settingThemeDark": { "message": "Tmavý" },
+  "settingThemeLight": { "message": "Svetlý" },
+  "settingInterval": { "message": "Kontrolovať každých" },
+  "settingRefreshNow": { "message": "Obnoviť teraz" },
+  "settingBack": { "message": "← Späť" },
+  "interval1": { "message": "1 minúta" },
+  "intervalOff": { "message": "Vypnuté – nekontrolovať automaticky" },
+  "autoCheckOffHint": { "message": "Automatická kontrola je vypnutá – použite ▶ na ručnú kontrolu" },
+  "selectionHint": {
+    "message": "Vybraté: $1 – Enter na otvorenie, Delete na odstránenie",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Odstrániť $1 vybraných záložiek?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Odstrániť vybrané ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Teraz otvorené" },
+  "contextOpenSelected": {
+    "message": "Otvoriť $1 vybraných na nových kartách",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Vypnúť automatickú kontrolu pre túto záložku" },
+  "enableCheckTooltip": { "message": "Znovu zapnúť automatickú kontrolu" },
+  "contextDisableCheck": { "message": "Vypnúť automatickú kontrolu" },
+  "contextEnableCheck": { "message": "Zapnúť automatickú kontrolu" },
+  "checkDisabledBadge": { "message": "VYP" },
+  "allChecksDisabled": { "message": "Všetky kontroly vypnuté" }
+}

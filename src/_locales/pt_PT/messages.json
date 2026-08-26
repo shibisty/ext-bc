@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Verificador de estado dos marcadores" },
+  "extDescription": { "message": "Verifica os seus marcadores um por um e apresenta o código de estado HTTP (200, 404, 500, etc.)" },
+  "popupTitle": { "message": "Marcadores" },
+  "syncBtnTitle": { "message": "Sincronizar manualmente" },
+  "checkNowBtnTitle": { "message": "Verificar o próximo marcador agora" },
+  "searchPlaceholder": { "message": "Pesquisar por título, URL ou código (200, 404…)" },
+  "intervalLabel": { "message": "A cada" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 hora" },
+  "interval180": { "message": "3 horas" },
+  "interval360": { "message": "6 horas" },
+  "interval1440": { "message": "24 horas" },
+  "loading": { "message": "A carregar…" },
+  "emptyNoBookmarks": { "message": "Nenhum marcador encontrado" },
+  "emptyNoResults": { "message": "Nada encontrado" },
+  "progressLabel": {
+    "message": "$1 de $2 — próximo na fila",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Última verificação: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Ainda não verificado" },
+  "timeJustNow": { "message": "agora mesmo" },
+  "timeMinAgo": {
+    "message": "há $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "há $1 h",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "há $1 d",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Afixados" },
+  "pinTooltip": { "message": "Afixar no topo" },
+  "unpinTooltip": { "message": "Desafixar" },
+  "deleteTooltip": { "message": "Eliminar marcador" },
+  "deleteConfirm": {
+    "message": "Eliminar o marcador \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Verificar agora" },
+  "contextOpenNewTab": { "message": "Abrir em novo separador" },
+  "contextPin": { "message": "Afixar no topo" },
+  "contextUnpin": { "message": "Desafixar" },
+  "contextDelete": { "message": "Eliminar marcador" },
+  "unnamedFolder": { "message": "(sem título)" },
+  "collapseAllTitle": { "message": "Recolher/expandir todas as pastas" },
+  "sidePanelBtnTitleOff": { "message": "Abrir no painel lateral" },
+  "sidePanelBtnTitleOn": { "message": "Modo painel lateral ativado — clique para desativar" },
+  "sidePanelBtnTitle": { "message": "Abrir no painel lateral" },
+  "settingsBtnTitle": { "message": "Definições" },
+  "settingsTitle": { "message": "Definições" },
+  "settingLanguage": { "message": "Idioma" },
+  "settingAuto": { "message": "Automático (navegador)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Escuro" },
+  "settingThemeLight": { "message": "Claro" },
+  "settingInterval": { "message": "Verificar a cada" },
+  "settingRefreshNow": { "message": "Atualizar agora" },
+  "settingBack": { "message": "← Voltar" },
+  "interval1": { "message": "1 minuto" },
+  "intervalOff": { "message": "Desativado — não verificar automaticamente" },
+  "autoCheckOffHint": { "message": "Verificação automática desativada — use ▶ para verificar manualmente" },
+  "selectionHint": {
+    "message": "$1 selecionado(s) — Enter para abrir, Delete para remover",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Eliminar os $1 marcadores selecionados?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Eliminar selecionados ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Aberto agora" },
+  "contextOpenSelected": {
+    "message": "Abrir $1 selecionados em novos separadores",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Desativar verificação automática para este marcador" },
+  "enableCheckTooltip": { "message": "Reativar verificação automática" },
+  "contextDisableCheck": { "message": "Desativar verificação automática" },
+  "contextEnableCheck": { "message": "Ativar verificação automática" },
+  "checkDisabledBadge": { "message": "DESAT." },
+  "allChecksDisabled": { "message": "Todas as verificações desativadas" }
+}

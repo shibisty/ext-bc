@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Controllo stato segnalibri" },
+  "extDescription": { "message": "Controlla i tuoi segnalibri uno per uno e mostra il codice di stato HTTP (200, 404, 500, ecc.)" },
+  "popupTitle": { "message": "Segnalibri" },
+  "syncBtnTitle": { "message": "Sincronizza manualmente" },
+  "checkNowBtnTitle": { "message": "Controlla il prossimo segnalibro ora" },
+  "searchPlaceholder": { "message": "Cerca per titolo, URL o codice (200, 404…)" },
+  "intervalLabel": { "message": "Ogni" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 ora" },
+  "interval180": { "message": "3 ore" },
+  "interval360": { "message": "6 ore" },
+  "interval1440": { "message": "24 ore" },
+  "loading": { "message": "Caricamento…" },
+  "emptyNoBookmarks": { "message": "Nessun segnalibro trovato" },
+  "emptyNoResults": { "message": "Nessun risultato" },
+  "progressLabel": {
+    "message": "$1 di $2 — prossimo in coda",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Ultimo controllo: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Non ancora controllato" },
+  "timeJustNow": { "message": "proprio ora" },
+  "timeMinAgo": {
+    "message": "$1 min fa",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 h fa",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 g fa",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Fissati" },
+  "pinTooltip": { "message": "Fissa in alto" },
+  "unpinTooltip": { "message": "Rimuovi fissaggio" },
+  "deleteTooltip": { "message": "Elimina segnalibro" },
+  "deleteConfirm": {
+    "message": "Eliminare il segnalibro «$1»?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Controlla ora" },
+  "contextOpenNewTab": { "message": "Apri in una nuova scheda" },
+  "contextPin": { "message": "Fissa in alto" },
+  "contextUnpin": { "message": "Rimuovi fissaggio" },
+  "contextDelete": { "message": "Elimina segnalibro" },
+  "unnamedFolder": { "message": "(senza nome)" },
+  "collapseAllTitle": { "message": "Comprimi/espandi tutte le cartelle" },
+  "sidePanelBtnTitleOff": { "message": "Apri nel pannello laterale" },
+  "sidePanelBtnTitleOn": { "message": "Modalità pannello laterale attiva — clicca per disattivare" },
+  "sidePanelBtnTitle": { "message": "Apri nel pannello laterale" },
+  "settingsBtnTitle": { "message": "Impostazioni" },
+  "settingsTitle": { "message": "Impostazioni" },
+  "settingLanguage": { "message": "Lingua" },
+  "settingAuto": { "message": "Auto (browser)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Scuro" },
+  "settingThemeLight": { "message": "Chiaro" },
+  "settingInterval": { "message": "Controlla ogni" },
+  "settingRefreshNow": { "message": "Aggiorna ora" },
+  "settingBack": { "message": "← Indietro" },
+  "interval1": { "message": "1 minuto" },
+  "intervalOff": { "message": "Off — non controllare automaticamente" },
+  "autoCheckOffHint": { "message": "Controllo automatico disattivato — usa ▶ per controllare manualmente" },
+  "selectionHint": {
+    "message": "$1 selezionati — Invio per aprire, Canc per eliminare",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Eliminare i $1 segnalibri selezionati?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Elimina selezionati ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Aperto ora" },
+  "contextOpenSelected": {
+    "message": "Apri i $1 selezionati in nuove schede",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Disattiva controllo automatico per questo segnalibro" },
+  "enableCheckTooltip": { "message": "Riattiva controllo automatico" },
+  "contextDisableCheck": { "message": "Disattiva controllo automatico" },
+  "contextEnableCheck": { "message": "Attiva controllo automatico" },
+  "checkDisabledBadge": { "message": "OFF" },
+  "allChecksDisabled": { "message": "Tutti i controlli disattivati" }
+}

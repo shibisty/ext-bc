@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "బుక్‌మార్క్ స్థితి తనిఖీ" },
+  "extDescription": { "message": "మీ బుక్‌మార్క్‌లను ఒక్కొక్కటిగా తనిఖీ చేసి, HTTP స్థితి కోడ్‌ను (200, 404, 500, మొదలైనవి) చూపుతుంది" },
+  "popupTitle": { "message": "బుక్‌మార్క్‌లు" },
+  "syncBtnTitle": { "message": "మాన్యువల్‌గా సింక్ చేయి" },
+  "checkNowBtnTitle": { "message": "తర్వాతి బుక్‌మార్క్‌ను ఇప్పుడు తనిఖీ చేయి" },
+  "searchPlaceholder": { "message": "శీర్షిక, URL లేదా కోడ్ ద్వారా వెతకండి (200, 404…)" },
+  "intervalLabel": { "message": "ప్రతి" },
+  "interval15": { "message": "15 నిమి" },
+  "interval30": { "message": "30 నిమి" },
+  "interval60": { "message": "1 గం" },
+  "interval180": { "message": "3 గం" },
+  "interval360": { "message": "6 గం" },
+  "interval1440": { "message": "24 గం" },
+  "loading": { "message": "లోడ్ అవుతోంది…" },
+  "emptyNoBookmarks": { "message": "బుక్‌మార్క్‌లు ఏవీ కనుగొనబడలేదు" },
+  "emptyNoResults": { "message": "ఏమీ కనుగొనబడలేదు" },
+  "progressLabel": {
+    "message": "$2 లో $1 — క్యూలో తర్వాత",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "చివరి తనిఖీ: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "ఇంకా తనిఖీ చేయబడలేదు" },
+  "timeJustNow": { "message": "ఇప్పుడే" },
+  "timeMinAgo": {
+    "message": "$1 నిమిషాల క్రితం",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 గంటల క్రితం",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 రోజుల క్రితం",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 పిన్ చేసినవి" },
+  "pinTooltip": { "message": "పైన పిన్ చేయి" },
+  "unpinTooltip": { "message": "పిన్ తీసివేయి" },
+  "deleteTooltip": { "message": "బుక్‌మార్క్‌ను తొలగించు" },
+  "deleteConfirm": {
+    "message": "“$1” బుక్‌మార్క్‌ను తొలగించాలా?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "ఇప్పుడు తనిఖీ చేయి" },
+  "contextOpenNewTab": { "message": "కొత్త ట్యాబ్‌లో తెరువు" },
+  "contextPin": { "message": "పైన పిన్ చేయి" },
+  "contextUnpin": { "message": "పిన్ తీసివేయి" },
+  "contextDelete": { "message": "బుక్‌మార్క్‌ను తొలగించు" },
+  "unnamedFolder": { "message": "(శీర్షిక లేనిది)" },
+  "collapseAllTitle": { "message": "అన్ని ఫోల్డర్‌లను కుదించు/విస్తరించు" },
+  "sidePanelBtnTitleOff": { "message": "సైడ్ ప్యానెల్‌లో తెరువు" },
+  "sidePanelBtnTitleOn": { "message": "సైడ్ ప్యానెల్ మోడ్ ఆన్ అయింది — ఆఫ్ చేయడానికి క్లిక్ చేయండి" },
+  "sidePanelBtnTitle": { "message": "సైడ్ ప్యానెల్‌లో తెరువు" },
+  "settingsBtnTitle": { "message": "సెట్టింగ్‌లు" },
+  "settingsTitle": { "message": "సెట్టింగ్‌లు" },
+  "settingLanguage": { "message": "భాష" },
+  "settingAuto": { "message": "ఆటో (బ్రౌజర్)" },
+  "settingTheme": { "message": "థీమ్" },
+  "settingThemeDark": { "message": "ముదురు" },
+  "settingThemeLight": { "message": "లేత" },
+  "settingInterval": { "message": "తనిఖీ అంతరం" },
+  "settingRefreshNow": { "message": "ఇప్పుడు రిఫ్రెష్ చేయి" },
+  "settingBack": { "message": "← వెనుకకు" },
+  "interval1": { "message": "1 నిమి" },
+  "intervalOff": { "message": "ఆఫ్ — ఆటోగా తనిఖీ చేయవద్దు" },
+  "autoCheckOffHint": { "message": "ఆటో-తనిఖీ ఆఫ్ అయింది — మాన్యువల్ తనిఖీ కోసం ▶ ను ఉపయోగించండి" },
+  "selectionHint": {
+    "message": "$1 ఎంపిక చేయబడింది — తెరవడానికి Enter, తొలగించడానికి Delete నొక్కండి",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "ఎంపిక చేసిన $1 బుక్‌మార్క్‌లను తొలగించాలా?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "ఎంపిక చేసిన వాటిని తొలగించు ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "ఇప్పుడు తెరిచి ఉంది" },
+  "contextOpenSelected": {
+    "message": "ఎంపిక చేసిన $1 ను కొత్త ట్యాబ్‌లలో తెరువు",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "ఈ బుక్‌మార్క్ కోసం ఆటో-తనిఖీని నిలిపివేయి" },
+  "enableCheckTooltip": { "message": "ఆటో-తనిఖీని మళ్లీ ప్రారంభించు" },
+  "contextDisableCheck": { "message": "ఆటో-తనిఖీని నిలిపివేయి" },
+  "contextEnableCheck": { "message": "ఆటో-తనిఖీని ప్రారంభించు" },
+  "checkDisabledBadge": { "message": "ఆఫ్" },
+  "allChecksDisabled": { "message": "అన్ని తనిఖీలు నిలిపివేయబడ్డాయి" }
+}

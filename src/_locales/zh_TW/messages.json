@@ -1,0 +1,94 @@
+{
+ "extName": {  "message":  "書籤狀態檢查器" },
+ "extDescription": {  "message":  "逐一檢查您的書籤並顯示 HTTP 狀態碼（200、404、500 等）" },
+ "popupTitle": {  "message":  "書籤" },
+ "syncBtnTitle": {  "message":  "手動同步" },
+ "checkNowBtnTitle": {  "message":  "立即檢查下一個書籤" },
+ "searchPlaceholder": {  "message":  "依標題、URL 或狀態碼搜尋（200、404…）" },
+ "intervalLabel": {  "message":  "每" },
+ "interval15": {  "message":  "15 分鐘" },
+ "interval30": {  "message":  "30 分鐘" },
+ "interval60": {  "message":  "1 小時" },
+ "interval180": {  "message":  "3 小時" },
+ "interval360": {  "message":  "6 小時" },
+ "interval1440": {  "message":  "24 小時" },
+ "loading": {  "message":  "載入中…" },
+ "emptyNoBookmarks": {  "message":  "未找到書籤" },
+ "emptyNoResults": {  "message":  "未找到任何內容" },
+ "progressLabel": {
+ "message":  "$1 / $2 — 佇列中下一個 ",
+ "placeholders": {  "1": {  "content":  "$1" },  "2": {  "content":  "$2" } }
+},
+ "lastCheckPrefix": {
+ "message":  "上次檢查：$1 ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "neverChecked": {  "message":  "尚未檢查" },
+ "timeJustNow": {  "message":  "剛剛" },
+ "timeMinAgo": {
+ "message":  "$1 分鐘前 ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeHoursAgo": {
+ "message":  "$1 小時前 ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeDaysAgo": {
+ "message":  "$1 天前 ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "pinnedSectionLabel": {  "message":  "📌 已固定" },
+ "pinTooltip": {  "message":  "置頂" },
+ "unpinTooltip": {  "message":  "取消置頂" },
+ "deleteTooltip": {  "message":  "刪除書籤" },
+ "deleteConfirm": {
+ "message":  "確定要刪除書籤「$1」嗎？ ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextCheckNow": {  "message":  "立即檢查" },
+ "contextOpenNewTab": {  "message":  "在新分頁中開啟" },
+ "contextPin": {  "message":  "置頂" },
+ "contextUnpin": {  "message":  "取消置頂" },
+ "contextDelete": {  "message":  "刪除書籤" },
+ "unnamedFolder": {  "message":  "（無標題）" },
+ "collapseAllTitle": {  "message":  "摺疊/展開所有資料夾" },
+ "sidePanelBtnTitleOff": {  "message":  "在側邊欄中開啟" },
+ "sidePanelBtnTitleOn": {  "message":  "側邊欄模式已啟用 — 點擊以停用" },
+ "sidePanelBtnTitle": {  "message":  "在側邊欄中開啟" },
+ "settingsBtnTitle": {  "message":  "設定" },
+ "settingsTitle": {  "message":  "設定" },
+ "settingLanguage": {  "message":  "語言" },
+ "settingAuto": {  "message":  "自動（瀏覽器）" },
+ "settingTheme": {  "message":  "主題" },
+ "settingThemeDark": {  "message":  "深色" },
+ "settingThemeLight": {  "message":  "淺色" },
+ "settingInterval": {  "message":  "檢查間隔" },
+ "settingRefreshNow": {  "message":  "立即重新整理" },
+ "settingBack": {  "message":  "← 返回" },
+ "interval1": {  "message":  "1 分鐘" },
+ "intervalOff": {  "message":  "已停用 — 不自動檢查" },
+ "autoCheckOffHint": {  "message":  "自動檢查已停用 — 使用 ▶ 進行手動檢查" },
+ "selectionHint": {
+ "message":  "已選取 $1 項 — 按 Enter 開啟，按 Delete 刪除 ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "deleteManyConfirm": {
+ "message":  "確定要刪除選取的 $1 個書籤嗎？ ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextDeleteSelected": {
+ "message":  "刪除選取項目 ($1) ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "currentPageBadge": {  "message":  "目前開啟中" },
+ "contextOpenSelected": {
+ "message":  "在新分頁中開啟選取的 $1 項 ",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "disableCheckTooltip": {  "message":  "停用此書籤的自動檢查" },
+ "enableCheckTooltip": {  "message":  "重新啟用自動檢查" },
+ "contextDisableCheck": {  "message":  "停用自動檢查" },
+ "contextEnableCheck": {  "message":  "啟用自動檢查" },
+ "checkDisabledBadge": {  "message":  "已停用" },
+ "allChecksDisabled": {  "message":  "所有檢查均已停用" }
+}

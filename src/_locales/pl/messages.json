@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Sprawdzanie statusu zakładek" },
+  "extDescription": { "message": "Sprawdza Twoje zakładki jedna po drugiej i wyświetla kod stanu HTTP (200, 404, 500 itp.)" },
+  "popupTitle": { "message": "Zakładki" },
+  "syncBtnTitle": { "message": "Synchronizuj ręcznie" },
+  "checkNowBtnTitle": { "message": "Sprawdź następną zakładkę teraz" },
+  "searchPlaceholder": { "message": "Szukaj według tytułu, URL lub kodu (200, 404…)" },
+  "intervalLabel": { "message": "Co" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 godz." },
+  "interval180": { "message": "3 godz." },
+  "interval360": { "message": "6 godz." },
+  "interval1440": { "message": "24 godz." },
+  "loading": { "message": "Ładowanie…" },
+  "emptyNoBookmarks": { "message": "Nie znaleziono zakładek" },
+  "emptyNoResults": { "message": "Nic nie znaleziono" },
+  "progressLabel": {
+    "message": "$1 z $2 — następna w kolejce",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Ostatnie sprawdzenie: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Jeszcze nie sprawdzono" },
+  "timeJustNow": { "message": "właśnie teraz" },
+  "timeMinAgo": {
+    "message": "$1 min temu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 godz. temu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 dni temu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Przypięte" },
+  "pinTooltip": { "message": "Przypnij na górze" },
+  "unpinTooltip": { "message": "Odepnij" },
+  "deleteTooltip": { "message": "Usuń zakładkę" },
+  "deleteConfirm": {
+    "message": "Usunąć zakładkę „$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Sprawdź teraz" },
+  "contextOpenNewTab": { "message": "Otwórz w nowej karcie" },
+  "contextPin": { "message": "Przypnij na górze" },
+  "contextUnpin": { "message": "Odepnij" },
+  "contextDelete": { "message": "Usuń zakładkę" },
+  "unnamedFolder": { "message": "(bez tytułu)" },
+  "collapseAllTitle": { "message": "Zwiń/rozwiń wszystkie foldery" },
+  "sidePanelBtnTitleOff": { "message": "Otwórz w panelu bocznym" },
+  "sidePanelBtnTitleOn": { "message": "Tryb panelu bocznego jest włączony — kliknij, aby wyłączyć" },
+  "sidePanelBtnTitle": { "message": "Otwórz w panelu bocznym" },
+  "settingsBtnTitle": { "message": "Ustawienia" },
+  "settingsTitle": { "message": "Ustawienia" },
+  "settingLanguage": { "message": "Język" },
+  "settingAuto": { "message": "Automatycznie (przeglądarka)" },
+  "settingTheme": { "message": "Motyw" },
+  "settingThemeDark": { "message": "Ciemny" },
+  "settingThemeLight": { "message": "Jasny" },
+  "settingInterval": { "message": "Sprawdzaj co" },
+  "settingRefreshNow": { "message": "Odśwież teraz" },
+  "settingBack": { "message": "← Wstecz" },
+  "interval1": { "message": "1 min" },
+  "intervalOff": { "message": "Wyłączone — nie sprawdzaj automatycznie" },
+  "autoCheckOffHint": { "message": "Automatyczne sprawdzanie jest wyłączone — użyj ▶ do ręcznego sprawdzania" },
+  "selectionHint": {
+    "message": "Wybrano: $1 — Enter, aby otworzyć, Delete, aby usunąć",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Usunąć $1 wybranych zakładek?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Usuń wybrane ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Otwarte teraz" },
+  "contextOpenSelected": {
+    "message": "Otwórz $1 wybranych w nowych kartach",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Wyłącz automatyczne sprawdzanie dla tej zakładki" },
+  "enableCheckTooltip": { "message": "Ponownie włącz automatyczne sprawdzanie" },
+  "contextDisableCheck": { "message": "Wyłącz automatyczne sprawdzanie" },
+  "contextEnableCheck": { "message": "Włącz automatyczne sprawdzanie" },
+  "checkDisabledBadge": { "message": "WYŁ." },
+  "allChecksDisabled": { "message": "Wszystkie sprawdzenia wyłączone" }
+}

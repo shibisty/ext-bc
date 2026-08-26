@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "ブックマークステータスチェッカー" },
+  "extDescription": { "message": "ブックマークを1つずつ確認し、HTTPステータスコード（200, 404, 500など）を表示します。" },
+  "popupTitle": { "message": "ブックマーク" },
+  "syncBtnTitle": { "message": "手動で同期" },
+  "checkNowBtnTitle": { "message": "次のブックマークを今すぐ確認" },
+  "searchPlaceholder": { "message": "タイトル、URL、またはコードで検索 (200, 404…)" },
+  "intervalLabel": { "message": "間隔" },
+  "interval15": { "message": "15分" },
+  "interval30": { "message": "30分" },
+  "interval60": { "message": "1時間" },
+  "interval180": { "message": "3時間" },
+  "interval360": { "message": "6時間" },
+  "interval1440": { "message": "24時間" },
+  "loading": { "message": "読み込み中…" },
+  "emptyNoBookmarks": { "message": "ブックマークが見つかりません" },
+  "emptyNoResults": { "message": "該当するものが見つかりません" },
+  "progressLabel": {
+    "message": "$2件中$1件 — 次の処理待ち",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "最終確認: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "まだ確認されていません" },
+  "timeJustNow": { "message": "たった今" },
+  "timeMinAgo": {
+    "message": "$1分前",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1時間前",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1日前",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 ピン留め" },
+  "pinTooltip": { "message": "上にピン留め" },
+  "unpinTooltip": { "message": "ピン留めを解除" },
+  "deleteTooltip": { "message": "ブックマークを削除" },
+  "deleteConfirm": {
+    "message": "ブックマーク「$1」を削除しますか？",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "今すぐ確認" },
+  "contextOpenNewTab": { "message": "新しいタブで開く" },
+  "contextPin": { "message": "上にピン留め" },
+  "contextUnpin": { "message": "ピン留めを解除" },
+  "contextDelete": { "message": "ブックマークを削除" },
+  "unnamedFolder": { "message": "(無題)" },
+  "collapseAllTitle": { "message": "すべてのフォルダを折りたたむ/展開する" },
+  "sidePanelBtnTitleOff": { "message": "サイドパネルで開く" },
+  "sidePanelBtnTitleOn": { "message": "サイドパネルモードがオンです — クリックしてオフにする" },
+  "sidePanelBtnTitle": { "message": "サイドパネルで開く" },
+  "settingsBtnTitle": { "message": "設定" },
+  "settingsTitle": { "message": "設定" },
+  "settingLanguage": { "message": "言語" },
+  "settingAuto": { "message": "自動 (ブラウザ)" },
+  "settingTheme": { "message": "テーマ" },
+  "settingThemeDark": { "message": "ダーク" },
+  "settingThemeLight": { "message": "ライト" },
+  "settingInterval": { "message": "確認間隔" },
+  "settingRefreshNow": { "message": "今すぐ更新" },
+  "settingBack": { "message": "← 戻る" },
+  "interval1": { "message": "1分" },
+  "intervalOff": { "message": "オフ — 自動確認しない" },
+  "autoCheckOffHint": { "message": "自動確認はオフです — 手動で確認するには ▶ を使用してください" },
+  "selectionHint": {
+    "message": "$1件選択中 — Enterで開く、Deleteで削除",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "選択した$1件のブックマークを削除しますか？",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "選択した項目を削除 ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "現在開いています" },
+  "contextOpenSelected": {
+    "message": "選択した$1件を新しいタブで開く",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "このブックマークの自動確認を無効にする" },
+  "enableCheckTooltip": { "message": "自動確認を再度有効にする" },
+  "contextDisableCheck": { "message": "自動確認を無効にする" },
+  "contextEnableCheck": { "message": "自動確認を有効にする" },
+  "checkDisabledBadge": { "message": "オフ" },
+  "allChecksDisabled": { "message": "すべての確認が無効になっています" }
+}

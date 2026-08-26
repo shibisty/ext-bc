@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Bogmærkestatus-tjekker" },
+  "extDescription": { "message": "Tjekker dine bogmærker ét for ét og viser HTTP-statuskoden (200, 404, 500 osv.)" },
+  "popupTitle": { "message": "Bogmærker" },
+  "syncBtnTitle": { "message": "Synkroniser manuelt" },
+  "checkNowBtnTitle": { "message": "Tjek det næste bogmærke nu" },
+  "searchPlaceholder": { "message": "Søg efter titel, URL eller kode (200, 404…)" },
+  "intervalLabel": { "message": "Hver" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 time" },
+  "interval180": { "message": "3 timer" },
+  "interval360": { "message": "6 timer" },
+  "interval1440": { "message": "24 timer" },
+  "loading": { "message": "Indlæser…" },
+  "emptyNoBookmarks": { "message": "Ingen bogmærker fundet" },
+  "emptyNoResults": { "message": "Intet fundet" },
+  "progressLabel": {
+    "message": "$1 af $2 — næste i kø",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Sidste tjek: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Ikke tjekket endnu" },
+  "timeJustNow": { "message": "lige nu" },
+  "timeMinAgo": {
+    "message": "$1 min siden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 t siden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 d siden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Fastgjort" },
+  "pinTooltip": { "message": "Fastgør til toppen" },
+  "unpinTooltip": { "message": "Frigør" },
+  "deleteTooltip": { "message": "Slet bogmærke" },
+  "deleteConfirm": {
+    "message": "Slet bogmærket „$1“?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Tjek nu" },
+  "contextOpenNewTab": { "message": "Åbn i ny fane" },
+  "contextPin": { "message": "Fastgør til toppen" },
+  "contextUnpin": { "message": "Frigør" },
+  "contextDelete": { "message": "Slet bogmærke" },
+  "unnamedFolder": { "message": "(uden titel)" },
+  "collapseAllTitle": { "message": "Skjul/udvid alle mapper" },
+  "sidePanelBtnTitleOff": { "message": "Åbn i sidepanel" },
+  "sidePanelBtnTitleOn": { "message": "Sidepanel-tilstand er slået til — klik for at slå fra" },
+  "sidePanelBtnTitle": { "message": "Åbn i sidepanel" },
+  "settingsBtnTitle": { "message": "Indstillinger" },
+  "settingsTitle": { "message": "Indstillinger" },
+  "settingLanguage": { "message": "Sprog" },
+  "settingAuto": { "message": "Auto (browser)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Mørk" },
+  "settingThemeLight": { "message": "Lys" },
+  "settingInterval": { "message": "Tjek hver" },
+  "settingRefreshNow": { "message": "Opdater nu" },
+  "settingBack": { "message": "← Tilbage" },
+  "interval1": { "message": "1 minut" },
+  "intervalOff": { "message": "Fra — tjek ikke automatisk" },
+  "autoCheckOffHint": { "message": "Automatisk tjek er slået fra — brug ▶ for at tjekke manuelt" },
+  "selectionHint": {
+    "message": "$1 valgt — Enter for at åbne, Slet for at fjerne",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Slet $1 valgte bogmærker?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Slet valgte ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Åben nu" },
+  "contextOpenSelected": {
+    "message": "Åbn $1 valgte i nye faner",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Deaktiver automatisk tjek for dette bogmærke" },
+  "enableCheckTooltip": { "message": "Genaktiver automatisk tjek" },
+  "contextDisableCheck": { "message": "Deaktiver automatisk tjek" },
+  "contextEnableCheck": { "message": "Aktiver automatisk tjek" },
+  "checkDisabledBadge": { "message": "FRA" },
+  "allChecksDisabled": { "message": "Alle tjek deaktiveret" }
+}

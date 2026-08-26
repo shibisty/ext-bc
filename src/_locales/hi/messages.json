@@ -1,0 +1,241 @@
+{
+  "extName": {
+    "message": "Bookmark Status जाँचेंer"
+  },
+  "extDescription": {
+    "message": "जाँचेंs your बुकमार्कs one by one and shows the HTTP status code (200, 404, 500, etc.)"
+  },
+  "popupTitle": {
+    "message": "बुकमार्क"
+  },
+  "syncBtnTitle": {
+    "message": "Sync manually"
+  },
+  "checkNowBtnTitle": {
+    "message": "जाँचें the next बुकमार्क now"
+  },
+  "searchPlaceholder": {
+    "message": "Search by title, address or code (200, 404…)"
+  },
+  "intervalLabel": {
+    "message": "Every"
+  },
+  "interval15": {
+    "message": "15 मिनट"
+  },
+  "interval30": {
+    "message": "30 मिनट"
+  },
+  "interval60": {
+    "message": "1 घंटे"
+  },
+  "interval180": {
+    "message": "3 घंटे"
+  },
+  "interval360": {
+    "message": "6 घंटे"
+  },
+  "interval1440": {
+    "message": "24 घंटे"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "emptyNoBookmarks": {
+    "message": "No बुकमार्कs found"
+  },
+  "emptyNoResults": {
+    "message": "Nothing found"
+  },
+  "progressLabel": {
+    "message": "$1 of $2 — next in queue",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
+    }
+  },
+  "lastCheckPrefix": {
+    "message": "Last जाँच: $1",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "neverChecked": {
+    "message": "Not जाँचed yet"
+  },
+  "timeJustNow": {
+    "message": "just now"
+  },
+  "timeMinAgo": {
+    "message": "$1 मिनट trước",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeHoursAgo": {
+    "message": "$1 घंटे trước",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "timeDaysAgo": {
+    "message": "$1 दिन trước",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "pinnedSectionLabel": {
+    "message": "📌 Pinned"
+  },
+  "pinTooltip": {
+    "message": "Pin to top"
+  },
+  "unpinTooltip": {
+    "message": "Unpin"
+  },
+  "deleteTooltip": {
+    "message": "हटाएँ बुकमार्क"
+  },
+  "deleteConfirm": {
+    "message": "हटाएँ बुकमार्क “$1”?",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextCheckNow": {
+    "message": "जाँचें now"
+  },
+  "contextOpenNewTab": {
+    "message": "खोलें in new tab"
+  },
+  "contextPin": {
+    "message": "Pin to top"
+  },
+  "contextUnpin": {
+    "message": "Unpin"
+  },
+  "contextDelete": {
+    "message": "हटाएँ बुकमार्क"
+  },
+  "unnamedFolder": {
+    "message": "(untitled)"
+  },
+  "collapseAllTitle": {
+    "message": "Collapse/expand all folders"
+  },
+  "sidePanelBtnTitleOff": {
+    "message": "खोलें in side panel"
+  },
+  "sidePanelBtnTitleOn": {
+    "message": "Side panel mode is on — click to turn off"
+  },
+  "sidePanelBtnTitle": {
+    "message": "खोलें in side panel"
+  },
+  "settingsBtnTitle": {
+    "message": "सेटिंग्स"
+  },
+  "settingsTitle": {
+    "message": "सेटिंग्स"
+  },
+  "settingLanguage": {
+    "message": "भाषा"
+  },
+  "settingAuto": {
+    "message": "Auto (browser)"
+  },
+  "settingTheme": {
+    "message": "थीम"
+  },
+  "settingThemeDark": {
+    "message": "गहरा"
+  },
+  "settingThemeLight": {
+    "message": "हल्का"
+  },
+  "settingInterval": {
+    "message": "जाँचें every"
+  },
+  "settingRefreshNow": {
+    "message": "Refresh now"
+  },
+  "settingBack": {
+    "message": "← Back"
+  },
+  "interval1": {
+    "message": "1 मिनट"
+  },
+  "intervalOff": {
+    "message": "Off — don't auto-जाँच"
+  },
+  "autoCheckOffHint": {
+    "message": "Auto-जाँच is off — use ▶ to जाँच manually"
+  },
+  "selectionHint": {
+    "message": "$1 selected — Enter to open, हटाएँ to remove",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteManyConfirm": {
+    "message": "हटाएँ $1 selected बुकमार्कs?",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "contextDeleteSelected": {
+    "message": "हटाएँ selected ($1)",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "currentPageBadge": {
+    "message": "खोलें now"
+  },
+  "contextOpenSelected": {
+    "message": "खोलें $1 selected in new tabs",
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
+  },
+  "disableCheckTooltip": {
+    "message": "अक्षम करें auto-जाँच for this बुकमार्क"
+  },
+  "enableCheckTooltip": {
+    "message": "Re-enable auto-जाँच"
+  },
+  "contextDisableCheck": {
+    "message": "अक्षम करें auto-जाँच"
+  },
+  "contextEnableCheck": {
+    "message": "सक्षम करें auto-जाँच"
+  },
+  "checkDisabledBadge": {
+    "message": "OFF"
+  },
+  "allChecksDisabled": {
+    "message": "All जाँचs disabled"
+  }
+}

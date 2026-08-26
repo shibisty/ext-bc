@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Pemeriksa Status Bookmark" },
+  "extDescription": { "message": "Memeriksa bookmark Anda satu per satu dan menampilkan kode status HTTP (200, 404, 500, dll.)" },
+  "popupTitle": { "message": "Bookmark" },
+  "syncBtnTitle": { "message": "Sinkronkan secara manual" },
+  "checkNowBtnTitle": { "message": "Periksa bookmark berikutnya sekarang" },
+  "searchPlaceholder": { "message": "Cari berdasarkan judul, URL, atau kode (200, 404…)" },
+  "intervalLabel": { "message": "Setiap" },
+  "interval15": { "message": "15 mnt" },
+  "interval30": { "message": "30 mnt" },
+  "interval60": { "message": "1 jam" },
+  "interval180": { "message": "3 jam" },
+  "interval360": { "message": "6 jam" },
+  "interval1440": { "message": "24 jam" },
+  "loading": { "message": "Memuat…" },
+  "emptyNoBookmarks": { "message": "Tidak ada bookmark yang ditemukan" },
+  "emptyNoResults": { "message": "Tidak ada yang ditemukan" },
+  "progressLabel": {
+    "message": "$1 dari $2 — berikutnya dalam antrean",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Pemeriksaan terakhir: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Belum pernah diperiksa" },
+  "timeJustNow": { "message": "baru saja" },
+  "timeMinAgo": {
+    "message": "$1 menit yang lalu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 jam yang lalu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 hari yang lalu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Disematkan" },
+  "pinTooltip": { "message": "Sematkan ke atas" },
+  "unpinTooltip": { "message": "Lepas sematan" },
+  "deleteTooltip": { "message": "Hapus bookmark" },
+  "deleteConfirm": {
+    "message": "Hapus bookmark \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Periksa sekarang" },
+  "contextOpenNewTab": { "message": "Buka di tab baru" },
+  "contextPin": { "message": "Sematkan ke atas" },
+  "contextUnpin": { "message": "Lepas sematan" },
+  "contextDelete": { "message": "Hapus bookmark" },
+  "unnamedFolder": { "message": "(tanpa judul)" },
+  "collapseAllTitle": { "message": "Ciutkan/luaskan semua folder" },
+  "sidePanelBtnTitleOff": { "message": "Buka di panel samping" },
+  "sidePanelBtnTitleOn": { "message": "Mode panel samping aktif — klik untuk menonaktifkan" },
+  "sidePanelBtnTitle": { "message": "Buka di panel samping" },
+  "settingsBtnTitle": { "message": "Pengaturan" },
+  "settingsTitle": { "message": "Pengaturan" },
+  "settingLanguage": { "message": "Bahasa" },
+  "settingAuto": { "message": "Otomatis (browser)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Gelap" },
+  "settingThemeLight": { "message": "Terang" },
+  "settingInterval": { "message": "Periksa setiap" },
+  "settingRefreshNow": { "message": "Segarkan sekarang" },
+  "settingBack": { "message": "← Kembali" },
+  "interval1": { "message": "1 menit" },
+  "intervalOff": { "message": "Mati — jangan periksa otomatis" },
+  "autoCheckOffHint": { "message": "Pemeriksaan otomatis mati — gunakan ▶ untuk memeriksa secara manual" },
+  "selectionHint": {
+    "message": "$1 dipilih — Enter untuk membuka, Delete untuk menghapus",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Hapus $1 bookmark yang dipilih?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Hapus yang dipilih ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Sedang dibuka" },
+  "contextOpenSelected": {
+    "message": "Buka $1 yang dipilih di tab baru",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Nonaktifkan pemeriksaan otomatis untuk bookmark ini" },
+  "enableCheckTooltip": { "message": "Aktifkan kembali pemeriksaan otomatis" },
+  "contextDisableCheck": { "message": "Nonaktifkan pemeriksaan otomatis" },
+  "contextEnableCheck": { "message": "Aktifkan pemeriksaan otomatis" },
+  "checkDisabledBadge": { "message": "MATI" },
+  "allChecksDisabled": { "message": "Semua pemeriksaan dinonaktifkan" }
+}

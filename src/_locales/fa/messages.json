@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "بررسی‌کننده وضعیت نشانک‌ها" },
+  "extDescription": { "message": "نشانک‌های شما را یکی‌یکی بررسی می‌کند و کد وضعیت HTTP (مانند 200, 404, 500 و غیره) را نمایش می‌دهد" },
+  "popupTitle": { "message": "نشانک‌ها" },
+  "syncBtnTitle": { "message": "همگام‌سازی دستی" },
+  "checkNowBtnTitle": { "message": "بررسی نشانک بعدی همین الان" },
+  "searchPlaceholder": { "message": "جستجو بر اساس عنوان، نشانی (URL) یا کد (200, 404…)" },
+  "intervalLabel": { "message": "هر" },
+  "interval15": { "message": "15 دقیقه" },
+  "interval30": { "message": "30 دقیقه" },
+  "interval60": { "message": "1 ساعت" },
+  "interval180": { "message": "3 ساعت" },
+  "interval360": { "message": "6 ساعت" },
+  "interval1440": { "message": "24 ساعت" },
+  "loading": { "message": "در حال بارگذاری…" },
+  "emptyNoBookmarks": { "message": "هیچ نشانکی یافت نشد" },
+  "emptyNoResults": { "message": "موردی یافت نشد" },
+  "progressLabel": {
+    "message": "$1 از $2 — بعدی در صف",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "آخرین بررسی: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "هنوز بررسی نشده است" },
+  "timeJustNow": { "message": "همین الان" },
+  "timeMinAgo": {
+    "message": "$1 دقیقه پیش",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 ساعت پیش",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 روز پیش",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 سنجاق‌شده" },
+  "pinTooltip": { "message": "سنجاق کردن به بالا" },
+  "unpinTooltip": { "message": "برداشتن سنجاق" },
+  "deleteTooltip": { "message": "حذف نشانک" },
+  "deleteConfirm": {
+    "message": "آیا نشانک «$1» حذف شود؟",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "بررسی همین الان" },
+  "contextOpenNewTab": { "message": "باز کردن در برگه جدید" },
+  "contextPin": { "message": "سنجاق کردن به بالا" },
+  "contextUnpin": { "message": "برداشتن سنجاق" },
+  "contextDelete": { "message": "حذف نشانک" },
+  "unnamedFolder": { "message": "(بدون عنوان)" },
+  "collapseAllTitle": { "message": "باز/بسته کردن همه پوشه‌ها" },
+  "sidePanelBtnTitleOff": { "message": "باز کردن در نوار کناری" },
+  "sidePanelBtnTitleOn": { "message": "حالت نوار کناری فعال است — برای غیرفعال کردن کلیک کنید" },
+  "sidePanelBtnTitle": { "message": "باز کردن در نوار کناری" },
+  "settingsBtnTitle": { "message": "تنظیمات" },
+  "settingsTitle": { "message": "تنظیمات" },
+  "settingLanguage": { "message": "زبان" },
+  "settingAuto": { "message": "خودکار (مرورگر)" },
+  "settingTheme": { "message": "پوسته" },
+  "settingThemeDark": { "message": "تیره" },
+  "settingThemeLight": { "message": "روشن" },
+  "settingInterval": { "message": "بررسی هر" },
+  "settingRefreshNow": { "message": "بازنشانی همین الان" },
+  "settingBack": { "message": "← بازگشت" },
+  "interval1": { "message": "1 دقیقه" },
+  "intervalOff": { "message": "خاموش — بررسی خودکار انجام نشود" },
+  "autoCheckOffHint": { "message": "بررسی خودکار خاموش است — برای بررسی دستی از ▶ استفاده کنید" },
+  "selectionHint": {
+    "message": "$1 مورد انتخاب شده — Enter برای باز کردن، Delete برای حذف",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "آیا $1 نشانک انتخاب‌شده حذف شود؟",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "حذف موارد انتخاب‌شده ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "اکنون باز است" },
+  "contextOpenSelected": {
+    "message": "باز کردن $1 مورد انتخاب‌شده در برگه‌های جدید",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "غیرفعال کردن بررسی خودکار برای این نشانک" },
+  "enableCheckTooltip": { "message": "فعال‌سازی مجدد بررسی خودکار" },
+  "contextDisableCheck": { "message": "غیرفعال کردن بررسی خودکار" },
+  "contextEnableCheck": { "message": "فعال کردن بررسی خودکار" },
+  "checkDisabledBadge": { "message": "خاموش" },
+  "allChecksDisabled": { "message": "همه بررسی‌ها غیرفعال هستند" }
+}

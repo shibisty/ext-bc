@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "북마크 상태 확인기" },
+  "extDescription": { "message": "북마크를 하나씩 확인하고 HTTP 상태 코드(200, 404, 500 등)를 표시합니다" },
+  "popupTitle": { "message": "북마크" },
+  "syncBtnTitle": { "message": "수동 동기화" },
+  "checkNowBtnTitle": { "message": "다음 북마크 지금 확인" },
+  "searchPlaceholder": { "message": "제목, URL 또는 코드로 검색 (200, 404…)" },
+  "intervalLabel": { "message": "매" },
+  "interval15": { "message": "15분" },
+  "interval30": { "message": "30분" },
+  "interval60": { "message": "1시간" },
+  "interval180": { "message": "3시간" },
+  "interval360": { "message": "6시간" },
+  "interval1440": { "message": "24시간" },
+  "loading": { "message": "로딩 중…" },
+  "emptyNoBookmarks": { "message": "북마크를 찾을 수 없습니다" },
+  "emptyNoResults": { "message": "결과 없음" },
+  "progressLabel": {
+    "message": "$2개 중 $1개 — 다음 대기 중",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "마지막 확인: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "아직 확인되지 않음" },
+  "timeJustNow": { "message": "방금 전" },
+  "timeMinAgo": {
+    "message": "$1분 전",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1시간 전",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1일 전",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 고정됨" },
+  "pinTooltip": { "message": "상단에 고정" },
+  "unpinTooltip": { "message": "고정 해제" },
+  "deleteTooltip": { "message": "북마크 삭제" },
+  "deleteConfirm": {
+    "message": "\"$1\" 북마크를 삭제하시겠습니까?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "지금 확인" },
+  "contextOpenNewTab": { "message": "새 탭에서 열기" },
+  "contextPin": { "message": "상단에 고정" },
+  "contextUnpin": { "message": "고정 해제" },
+  "contextDelete": { "message": "북마크 삭제" },
+  "unnamedFolder": { "message": "(제목 없음)" },
+  "collapseAllTitle": { "message": "모든 폴더 접기/펼치기" },
+  "sidePanelBtnTitleOff": { "message": "사이드 패널에서 열기" },
+  "sidePanelBtnTitleOn": { "message": "사이드 패널 모드 활성화 — 클릭하여 비활성화" },
+  "sidePanelBtnTitle": { "message": "사이드 패널에서 열기" },
+  "settingsBtnTitle": { "message": "설정" },
+  "settingsTitle": { "message": "설정" },
+  "settingLanguage": { "message": "언어" },
+  "settingAuto": { "message": "자동 (브라우저)" },
+  "settingTheme": { "message": "테마" },
+  "settingThemeDark": { "message": "어두운" },
+  "settingThemeLight": { "message": "밝은" },
+  "settingInterval": { "message": "확인 간격" },
+  "settingRefreshNow": { "message": "지금 새로고침" },
+  "settingBack": { "message": "← 뒤로" },
+  "interval1": { "message": "1분" },
+  "intervalOff": { "message": "꺼짐 — 자동 확인 안 함" },
+  "autoCheckOffHint": { "message": "자동 확인이 꺼져 있습니다 — 수동 확인을 위해 ▶ 사용" },
+  "selectionHint": {
+    "message": "$1개 선택됨 — 열려면 Enter, 삭제하려면 Delete",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "선택한 북마크 $1개를 삭제하시겠습니까?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "선택 항목 삭제 ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "현재 열림" },
+  "contextOpenSelected": {
+    "message": "선택한 $1개를 새 탭에서 열기",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "이 북마크의 자동 확인 비활성화" },
+  "enableCheckTooltip": { "message": "자동 확인 다시 활성화" },
+  "contextDisableCheck": { "message": "자동 확인 비활성화" },
+  "contextEnableCheck": { "message": "자동 확인 활성화" },
+  "checkDisabledBadge": { "message": "꺼짐" },
+  "allChecksDisabled": { "message": "모든 확인 비활성화됨" }
+}

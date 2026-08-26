@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmarks 2 - Bookmarks Checker",
+  "version": "1.3.1",
+  "description": "Checks your bookmarks one by one and shows the HTTP status code (200, 404, 500, etc.)",
+  "default_locale": "en",
+  "permissions": ["bookmarks", "storage", "alarms", "tabs", "sidePanel"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bookmarks 2 - Bookmarks Checker",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

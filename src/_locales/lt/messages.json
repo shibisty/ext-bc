@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Žymių būsenos tikrintuvas" },
+  "extDescription": { "message": "Tikrina jūsų žymes vieną po kitos ir rodo HTTP būsenos kodą (200, 404, 500 ir kt.)" },
+  "popupTitle": { "message": "Žymės" },
+  "syncBtnTitle": { "message": "Sinchronizuoti rankiniu būdu" },
+  "checkNowBtnTitle": { "message": "Tikrinti kitą žymę dabar" },
+  "searchPlaceholder": { "message": "Ieškoti pagal pavadinimą, URL arba kodą (200, 404…)" },
+  "intervalLabel": { "message": "Kas" },
+  "interval15": { "message": "15 min." },
+  "interval30": { "message": "30 min." },
+  "interval60": { "message": "1 val." },
+  "interval180": { "message": "3 val." },
+  "interval360": { "message": "6 val." },
+  "interval1440": { "message": "24 val." },
+  "loading": { "message": "Įkeliama…" },
+  "emptyNoBookmarks": { "message": "Žymių nerasta" },
+  "emptyNoResults": { "message": "Nerasta nieko" },
+  "progressLabel": {
+    "message": "$1 iš $2 — kitas eilėje",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Paskutinis tikrinimas: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Dar netikrinta" },
+  "timeJustNow": { "message": "ką tik" },
+  "timeMinAgo": {
+    "message": "prieš $1 min.",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "prieš $1 val.",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "prieš $1 d.",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Prisegtos" },
+  "pinTooltip": { "message": "Prisegti viršuje" },
+  "unpinTooltip": { "message": "Atsegti" },
+  "deleteTooltip": { "message": "Ištrinti žymę" },
+  "deleteConfirm": {
+    "message": "Ištrinti žymę „$1“?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Tikrinti dabar" },
+  "contextOpenNewTab": { "message": "Atidaryti naujame skirtuke" },
+  "contextPin": { "message": "Prisegti viršuje" },
+  "contextUnpin": { "message": "Atsegti" },
+  "contextDelete": { "message": "Ištrinti žymę" },
+  "unnamedFolder": { "message": "(be pavadinimo)" },
+  "collapseAllTitle": { "message": "Sutraukti / išskleisti visus aplankus" },
+  "sidePanelBtnTitleOff": { "message": "Atidaryti šoniniame skydelyje" },
+  "sidePanelBtnTitleOn": { "message": "Šoninio skydelio režimas įjungtas – spustelėkite, kad išjungtumėte" },
+  "sidePanelBtnTitle": { "message": "Atidaryti šoniniame skydelyje" },
+  "settingsBtnTitle": { "message": "Nustatymai" },
+  "settingsTitle": { "message": "Nustatymai" },
+  "settingLanguage": { "message": "Kalba" },
+  "settingAuto": { "message": "Automatiškai (naršyklė)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Tamsi" },
+  "settingThemeLight": { "message": "Šviesi" },
+  "settingInterval": { "message": "Tikrinti kas" },
+  "settingRefreshNow": { "message": "Atnaujinti dabar" },
+  "settingBack": { "message": "← Atgal" },
+  "interval1": { "message": "1 min." },
+  "intervalOff": { "message": "Išjungta – netikrinti automatiškai" },
+  "autoCheckOffHint": { "message": "Automatinis tikrinimas išjungtas – naudokite ▶ rankiniam tikrinimui" },
+  "selectionHint": {
+    "message": "Pasirinkta: $1 – Enter atidaryti, Delete ištrinti",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Ištrinti $1 pasirinktas žymes?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Ištrinti pasirinktas ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Atidaryta dabar" },
+  "contextOpenSelected": {
+    "message": "Atidaryti $1 pasirinktas naujuose skirtukuose",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Išjungti automatinį šios žymės tikrinimą" },
+  "enableCheckTooltip": { "message": "Iš naujo įjungti automatinį tikrinimą" },
+  "contextDisableCheck": { "message": "Išjungti automatinį tikrinimą" },
+  "contextEnableCheck": { "message": "Įjungti automatinį tikrinimą" },
+  "checkDisabledBadge": { "message": "IŠJUNGTA" },
+  "allChecksDisabled": { "message": "Visi tikrinimai išjungti" }
+}

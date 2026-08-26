@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Проверка на статусите на отметките" },
+  "extDescription": { "message": "Проверява вашите отметки една по една и показва HTTP кода на състоянието (200, 404, 500 и т.н.)" },
+  "popupTitle": { "message": "Отметки" },
+  "syncBtnTitle": { "message": "Ръчна синхронизация" },
+  "checkNowBtnTitle": { "message": "Провери следващата отметка сега" },
+  "searchPlaceholder": { "message": "Търсене по заглавие, URL или код (200, 404…)" },
+  "intervalLabel": { "message": "На всеки" },
+  "interval15": { "message": "15 мин" },
+  "interval30": { "message": "30 мин" },
+  "interval60": { "message": "1 час" },
+  "interval180": { "message": "3 часа" },
+  "interval360": { "message": "6 часа" },
+  "interval1440": { "message": "24 часа" },
+  "loading": { "message": "Зареждане…" },
+  "emptyNoBookmarks": { "message": "Няма намерени отметки" },
+  "emptyNoResults": { "message": "Нищо не е намерено" },
+  "progressLabel": {
+    "message": "$1 от $2 — следваща на опашка",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Последна проверка: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Все още не е проверено" },
+  "timeJustNow": { "message": "току-що" },
+  "timeMinAgo": {
+    "message": "преди $1 мин",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "преди $1 ч",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "преди $1 д",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Закачени" },
+  "pinTooltip": { "message": "Закачи отгоре" },
+  "unpinTooltip": { "message": "Откачи" },
+  "deleteTooltip": { "message": "Изтрий отметката" },
+  "deleteConfirm": {
+    "message": "Изтриване на отметката „$1“?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Провери сега" },
+  "contextOpenNewTab": { "message": "Отвори в нов раздел" },
+  "contextPin": { "message": "Закачи отгоре" },
+  "contextUnpin": { "message": "Откачи" },
+  "contextDelete": { "message": "Изтрий отметката" },
+  "unnamedFolder": { "message": "(без заглавие)" },
+  "collapseAllTitle": { "message": "Свий/разгъни всички папки" },
+  "sidePanelBtnTitleOff": { "message": "Отвори в страничния панел" },
+  "sidePanelBtnTitleOn": { "message": "Режим на страничния панел е включен — щракнете за изключване" },
+  "sidePanelBtnTitle": { "message": "Отвори в страничния панел" },
+  "settingsBtnTitle": { "message": "Настройки" },
+  "settingsTitle": { "message": "Настройки" },
+  "settingLanguage": { "message": "Език" },
+  "settingAuto": { "message": "Автоматично (браузър)" },
+  "settingTheme": { "message": "Тема" },
+  "settingThemeDark": { "message": "Тъмна" },
+  "settingThemeLight": { "message": "Светла" },
+  "settingInterval": { "message": "Проверка на всеки" },
+  "settingRefreshNow": { "message": "Опресни сега" },
+  "settingBack": { "message": "← Назад" },
+  "interval1": { "message": "1 минута" },
+  "intervalOff": { "message": "Изключено — без автоматична проверка" },
+  "autoCheckOffHint": { "message": "Автоматичната проверка е изключена — използвайте ▶ за ръчна проверка" },
+  "selectionHint": {
+    "message": "Избрани: $1 — Enter за отваряне, Delete за изтриване",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Изтриване на $1 избрани отметки?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Изтрий избраните ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Отворена сега" },
+  "contextOpenSelected": {
+    "message": "Отвори $1 избрани в нови раздели",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Изключи автоматичната проверка за тази отметка" },
+  "enableCheckTooltip": { "message": "Повторно включване на автоматичната проверка" },
+  "contextDisableCheck": { "message": "Изключи автоматичната проверка" },
+  "contextEnableCheck": { "message": "Включи автоматичната проверка" },
+  "checkDisabledBadge": { "message": "ИЗКЛ" },
+  "allChecksDisabled": { "message": "Всички проверки са изключени" }
+}

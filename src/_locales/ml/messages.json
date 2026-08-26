@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "ബുക്ക്‌മാർക്ക് സ്ഥിതി പരിശോധകൻ" },
+  "extDescription": { "message": "നിങ്ങളുടെ ബുക്ക്‌മാർക്കുകൾ ഓരോന്നായി പരിശോധിച്ച് HTTP സ്റ്റാറ്റസ് കോഡ് (200, 404, 500 മുതലായവ) കാണിക്കുന്നു" },
+  "popupTitle": { "message": "ബുക്ക്‌മാർക്കുകൾ" },
+  "syncBtnTitle": { "message": "മാനുവലായി സിങ്ക് ചെയ്യുക" },
+  "checkNowBtnTitle": { "message": "അടുത്ത ബുക്ക്‌മാർക്ക് ഇപ്പോൾ പരിശോധിക്കുക" },
+  "searchPlaceholder": { "message": "തലക്കെട്ട്, URL അല്ലെങ്കിൽ കോഡ് ഉപയോഗിച്ച് തിരയുക (200, 404…)" },
+  "intervalLabel": { "message": "ഓരോ" },
+  "interval15": { "message": "15 മിനിറ്റ്" },
+  "interval30": { "message": "30 മിനിറ്റ്" },
+  "interval60": { "message": "1 മണിക്കൂർ" },
+  "interval180": { "message": "3 മണിക്കൂർ" },
+  "interval360": { "message": "6 മണിക്കൂർ" },
+  "interval1440": { "message": "24 മണിക്കൂർ" },
+  "loading": { "message": "ലോഡ് ചെയ്യുന്നു…" },
+  "emptyNoBookmarks": { "message": "ബുക്ക്‌മാർക്കുകളൊന്നും കണ്ടെത്തിയില്ല" },
+  "emptyNoResults": { "message": "ഒന്നും കണ്ടെത്തിയില്ല" },
+  "progressLabel": {
+    "message": "$2-ൽ $1 — ക്യൂവിൽ അടുത്തത്",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "അവസാന പരിശോധന: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "ഇതുവരെ പരിശോധിച്ചിട്ടില്ല" },
+  "timeJustNow": { "message": "ഇപ്പോൾ മാത്രം" },
+  "timeMinAgo": {
+    "message": "$1 മിനിറ്റ് മുമ്പ്",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 മണിക്കൂർ മുമ്പ്",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 ദിവസം മുമ്പ്",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 പിൻ ചെയ്തവ" },
+  "pinTooltip": { "message": "മുകളിൽ പിൻ ചെയ്യുക" },
+  "unpinTooltip": { "message": "പിൻ മാറ്റുക" },
+  "deleteTooltip": { "message": "ബുക്ക്‌മാർക്ക് ഇല്ലാതാക്കുക" },
+  "deleteConfirm": {
+    "message": "\"$1\" എന്ന ബുക്ക്‌മാർക്ക് ഇല്ലാതാക്കണോ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "ഇപ്പോൾ പരിശോധിക്കുക" },
+  "contextOpenNewTab": { "message": "പുതിയ ടാബിൽ തുറക്കുക" },
+  "contextPin": { "message": "മുകളിൽ പിൻ ചെയ്യുക" },
+  "contextUnpin": { "message": "പിൻ മാറ്റുക" },
+  "contextDelete": { "message": "ബുക്ക്‌മാർക്ക് ഇല്ലാതാക്കുക" },
+  "unnamedFolder": { "message": "(പേരില്ലാത്തത്)" },
+  "collapseAllTitle": { "message": "എല്ലാ ഫോൾഡറുകളും ചുരുക്കുക/വികസിപ്പിക്കുക" },
+  "sidePanelBtnTitleOff": { "message": "സൈഡ് പാനലിൽ തുറക്കുക" },
+  "sidePanelBtnTitleOn": { "message": "സൈഡ് പാനൽ മോഡ് ഓണാണ് — ഓഫ് ചെയ്യാൻ ക്ലിക്ക് ചെയ്യുക" },
+  "sidePanelBtnTitle": { "message": "സൈഡ് പാനലിൽ തുറക്കുക" },
+  "settingsBtnTitle": { "message": "ക്രമീകരണങ്ങൾ" },
+  "settingsTitle": { "message": "ക്രമീകരണങ്ങൾ" },
+  "settingLanguage": { "message": "ഭാഷ" },
+  "settingAuto": { "message": "ഓട്ടോ (ബ്രൗസർ)" },
+  "settingTheme": { "message": "തീം" },
+  "settingThemeDark": { "message": "ഇരുണ്ട" },
+  "settingThemeLight": { "message": "തെളിഞ്ഞ" },
+  "settingInterval": { "message": "പരിശോധന ഇടവേള" },
+  "settingRefreshNow": { "message": "ഇപ്പോൾ പുതുക്കുക" },
+  "settingBack": { "message": "← പിന്നിലേക്ക്" },
+  "interval1": { "message": "1 മിനിറ്റ്" },
+  "intervalOff": { "message": "ഓഫ് — സ്വയമേവ പരിശോധിക്കരുത്" },
+  "autoCheckOffHint": { "message": "ഓട്ടോ-ചെക്ക് ഓഫാണ് — മാനുവൽ പരിശോധനയ്ക്ക് ▶ ഉപയോഗിക്കുക" },
+  "selectionHint": {
+    "message": "$1 തിരഞ്ഞെടുത്തു — തുറക്കാൻ Enter, ഇല്ലാതാക്കാൻ Delete",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "തിരഞ്ഞെടുത്ത $1 ബുക്ക്‌മാർക്കുകൾ ഇല്ലാതാക്കണോ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "തിരഞ്ഞെടുത്തവ ഇല്ലാതാക്കുക ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "ഇപ്പോൾ തുറന്നിരിക്കുന്നു" },
+  "contextOpenSelected": {
+    "message": "തിരഞ്ഞെടുത്ത $1 പുതിയ ടാബുകളിൽ തുറക്കുക",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "ഈ ബുക്ക്‌മാർക്കിന്റെ ഓട്ടോ-ചെക്ക് പ്രവർത്തനരഹിതമാക്കുക" },
+  "enableCheckTooltip": { "message": "ഓട്ടോ-ചെക്ക് വീണ്ടും പ്രവർത്തനക്ഷമമാക്കുക" },
+  "contextDisableCheck": { "message": "ഓട്ടോ-ചെക്ക് പ്രവർത്തനരഹിതമാക്കുക" },
+  "contextEnableCheck": { "message": "ഓട്ടോ-ചെക്ക് പ്രവർത്തനക്ഷമമാക്കുക" },
+  "checkDisabledBadge": { "message": "ഓഫ്" },
+  "allChecksDisabled": { "message": "എല്ലാ പരിശോധനകളും പ്രവർത്തനരഹിതമാക്കി" }
+}

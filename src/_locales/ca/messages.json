@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Comprovador d'estat dels marcadors" },
+  "extDescription": { "message": "Comprova els teus marcadors un per un i mostra el codi d'estat HTTP (200, 404, 500, etc.)" },
+  "popupTitle": { "message": "Marcadors" },
+  "syncBtnTitle": { "message": "Sincronitza manualment" },
+  "checkNowBtnTitle": { "message": "Comprova el següent marcador ara" },
+  "searchPlaceholder": { "message": "Cerca per títol, URL o codi (200, 404…)" },
+  "intervalLabel": { "message": "Cada" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 h" },
+  "interval180": { "message": "3 h" },
+  "interval360": { "message": "6 h" },
+  "interval1440": { "message": "24 h" },
+  "loading": { "message": "S'està carregant…" },
+  "emptyNoBookmarks": { "message": "No s'ha trobat cap marcador" },
+  "emptyNoResults": { "message": "No s'ha trobat res" },
+  "progressLabel": {
+    "message": "$1 de $2 — el següent a la cua",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Última comprovació: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Encara no s'ha comprovat" },
+  "timeJustNow": { "message": "ara mateix" },
+  "timeMinAgo": {
+    "message": "fa $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "fa $1 h",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "fa $1 d",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Fixats" },
+  "pinTooltip": { "message": "Fixa a dalt" },
+  "unpinTooltip": { "message": "Desfixa" },
+  "deleteTooltip": { "message": "Suprimeix el marcador" },
+  "deleteConfirm": {
+    "message": "Vols suprimir el marcador «$1»?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Comprova ara" },
+  "contextOpenNewTab": { "message": "Obre en una pestanya nova" },
+  "contextPin": { "message": "Fixa a dalt" },
+  "contextUnpin": { "message": "Desfixa" },
+  "contextDelete": { "message": "Suprimeix el marcador" },
+  "unnamedFolder": { "message": "(sense títol)" },
+  "collapseAllTitle": { "message": "Replega/expandeix totes les carpetes" },
+  "sidePanelBtnTitleOff": { "message": "Obre al panell lateral" },
+  "sidePanelBtnTitleOn": { "message": "El mode de panell lateral està activat — fes clic per desactivar-lo" },
+  "sidePanelBtnTitle": { "message": "Obre al panell lateral" },
+  "settingsBtnTitle": { "message": "Configuració" },
+  "settingsTitle": { "message": "Configuració" },
+  "settingLanguage": { "message": "Idioma" },
+  "settingAuto": { "message": "Automàtic (navegador)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Fosc" },
+  "settingThemeLight": { "message": "Clar" },
+  "settingInterval": { "message": "Comprova cada" },
+  "settingRefreshNow": { "message": "Actualitza ara" },
+  "settingBack": { "message": "← Enrere" },
+  "interval1": { "message": "1 minut" },
+  "intervalOff": { "message": "Desactivat — no comprovar automàticament" },
+  "autoCheckOffHint": { "message": "La comprovació automàtica està desactivada — fes servir ▶ per comprovar manualment" },
+  "selectionHint": {
+    "message": "$1 seleccionats — Retorn per obrir, Supr per suprimir",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Vols suprimir els $1 marcadors seleccionats?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Suprimeix els seleccionats ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Obert ara" },
+  "contextOpenSelected": {
+    "message": "Obre els $1 seleccionats en pestanyes noves",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Desactiva la comprovació automàtica d'aquest marcador" },
+  "enableCheckTooltip": { "message": "Torna a activar la comprovació automàtica" },
+  "contextDisableCheck": { "message": "Desactiva la comprovació automàtica" },
+  "contextEnableCheck": { "message": "Activa la comprovació automàtica" },
+  "checkDisabledBadge": { "message": "OFF" },
+  "allChecksDisabled": { "message": "Totes les comprovacions estan desactivades" }
+}

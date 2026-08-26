@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Penyemak Status Penanda Buku" },
+  "extDescription": { "message": "Menyemak penanda buku anda satu persatu dan menunjukkan kod status HTTP (200, 404, 500, dll.)" },
+  "popupTitle": { "message": "Penanda Buku" },
+  "syncBtnTitle": { "message": "Segerakkan secara manual" },
+  "checkNowBtnTitle": { "message": "Semak penanda buku seterusnya sekarang" },
+  "searchPlaceholder": { "message": "Cari mengikut tajuk, URL atau kod (200, 404…)" },
+  "intervalLabel": { "message": "Setiap" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 jam" },
+  "interval180": { "message": "3 jam" },
+  "interval360": { "message": "6 jam" },
+  "interval1440": { "message": "24 jam" },
+  "loading": { "message": "Memuatkan…" },
+  "emptyNoBookmarks": { "message": "Tiada penanda buku ditemui" },
+  "emptyNoResults": { "message": "Tiada apa-apa ditemui" },
+  "progressLabel": {
+    "message": "$1 daripada $2 — seterusnya dalam barisan",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Semakan terakhir: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Belum disemak lagi" },
+  "timeJustNow": { "message": "baru sahaja" },
+  "timeMinAgo": {
+    "message": "$1 min yang lalu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 jam yang lalu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 hari yang lalu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Disematkan" },
+  "pinTooltip": { "message": "Sematkan ke atas" },
+  "unpinTooltip": { "message": "Nyahsematkan" },
+  "deleteTooltip": { "message": "Padam penanda buku" },
+  "deleteConfirm": {
+    "message": "Padam penanda buku \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Semak sekarang" },
+  "contextOpenNewTab": { "message": "Buka dalam tab baharu" },
+  "contextPin": { "message": "Sematkan ke atas" },
+  "contextUnpin": { "message": "Nyahsematkan" },
+  "contextDelete": { "message": "Padam penanda buku" },
+  "unnamedFolder": { "message": "(tanpa nama)" },
+  "collapseAllTitle": { "message": "Tutup/buka semua folder" },
+  "sidePanelBtnTitleOff": { "message": "Buka dalam panel sisi" },
+  "sidePanelBtnTitleOn": { "message": "Mod panel sisi dihidupkan — klik untuk mematikan" },
+  "sidePanelBtnTitle": { "message": "Buka dalam panel sisi" },
+  "settingsBtnTitle": { "message": "Tetapan" },
+  "settingsTitle": { "message": "Tetapan" },
+  "settingLanguage": { "message": "Bahasa" },
+  "settingAuto": { "message": "Auto (pelayar)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Gelap" },
+  "settingThemeLight": { "message": "Cerah" },
+  "settingInterval": { "message": "Semak setiap" },
+  "settingRefreshNow": { "message": "Muat semula sekarang" },
+  "settingBack": { "message": "← Kembali" },
+  "interval1": { "message": "1 minit" },
+  "intervalOff": { "message": "Mati — jangan semak secara automatik" },
+  "autoCheckOffHint": { "message": "Semakan automatik dimatikan — gunakan ▶ untuk menyemak secara manual" },
+  "selectionHint": {
+    "message": "$1 dipilih — Enter untuk buka, Delete untuk buang",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Padam $1 penanda buku yang dipilih?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Padam yang dipilih ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Dibuka sekarang" },
+  "contextOpenSelected": {
+    "message": "Buka $1 yang dipilih dalam tab baharu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Lumpuhkan semakan automatik untuk penanda buku ini" },
+  "enableCheckTooltip": { "message": "Dayakan semula semakan automatik" },
+  "contextDisableCheck": { "message": "Lumpuhkan semakan automatik" },
+  "contextEnableCheck": { "message": "Dayakan semakan automatik" },
+  "checkDisabledBadge": { "message": "MATI" },
+  "allChecksDisabled": { "message": "Semua semakan dilumpuhkan" }
+}

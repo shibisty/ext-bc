@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Bokmerkestatuskontroll" },
+  "extDescription": { "message": "Sjekker bokmerkene dine ett for ett og viser HTTP-statuskoden (200, 404, 500, osv.)" },
+  "popupTitle": { "message": "Bokmerker" },
+  "syncBtnTitle": { "message": "Synkroniser manuelt" },
+  "checkNowBtnTitle": { "message": "Sjekk neste bokmerke nå" },
+  "searchPlaceholder": { "message": "Søk etter tittel, URL eller kode (200, 404…)" },
+  "intervalLabel": { "message": "Hver" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 time" },
+  "interval180": { "message": "3 timer" },
+  "interval360": { "message": "6 timer" },
+  "interval1440": { "message": "24 timer" },
+  "loading": { "message": "Laster inn…" },
+  "emptyNoBookmarks": { "message": "Ingen bokmerker funnet" },
+  "emptyNoResults": { "message": "Ingenting funnet" },
+  "progressLabel": {
+    "message": "$1 av $2 — neste i køen",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Siste sjekk: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Ikke sjekket ennå" },
+  "timeJustNow": { "message": "akkurat nå" },
+  "timeMinAgo": {
+    "message": "$1 min siden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 t siden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 d siden",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Festet" },
+  "pinTooltip": { "message": "Fest øverst" },
+  "unpinTooltip": { "message": "Løsne" },
+  "deleteTooltip": { "message": "Slett bokmerke" },
+  "deleteConfirm": {
+    "message": "Slett bokmerket «$1»?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Sjekk nå" },
+  "contextOpenNewTab": { "message": "Åpne i ny fane" },
+  "contextPin": { "message": "Fest øverst" },
+  "contextUnpin": { "message": "Løsne" },
+  "contextDelete": { "message": "Slett bokmerke" },
+  "unnamedFolder": { "message": "(uten navn)" },
+  "collapseAllTitle": { "message": "Skjul/vis alle mapper" },
+  "sidePanelBtnTitleOff": { "message": "Åpne i sidepanel" },
+  "sidePanelBtnTitleOn": { "message": "Sidepanelmodus er på — klikk for å slå av" },
+  "sidePanelBtnTitle": { "message": "Åpne i sidepanel" },
+  "settingsBtnTitle": { "message": "Innstillinger" },
+  "settingsTitle": { "message": "Innstillinger" },
+  "settingLanguage": { "message": "Språk" },
+  "settingAuto": { "message": "Automatisk (nettleser)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Mørk" },
+  "settingThemeLight": { "message": "Lys" },
+  "settingInterval": { "message": "Sjekk hver" },
+  "settingRefreshNow": { "message": "Oppdater nå" },
+  "settingBack": { "message": "← Tilbake" },
+  "interval1": { "message": "1 minutt" },
+  "intervalOff": { "message": "Av — ikke sjekk automatisk" },
+  "autoCheckOffHint": { "message": "Automatisk sjekk er av — bruk ▶ for å sjekke manuelt" },
+  "selectionHint": {
+    "message": "$1 valgt — Enter for å åpne, Delete for å slette",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Slett $1 valgte bokmerker?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Slett valgte ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Åpen nå" },
+  "contextOpenSelected": {
+    "message": "Åpne $1 valgte i nye faner",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Deaktiver automatisk sjekk for dette bokmerket" },
+  "enableCheckTooltip": { "message": "Aktiver automatisk sjekk på nytt" },
+  "contextDisableCheck": { "message": "Deaktiver automatisk sjekk" },
+  "contextEnableCheck": { "message": "Aktiver automatisk sjekk" },
+  "checkDisabledBadge": { "message": "AV" },
+  "allChecksDisabled": { "message": "Alle sjekker er deaktivert" }
+}

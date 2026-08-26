@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "የማጣቀሻ ሁኔታ መፈተሻ" },
+  "extDescription": { "message": "ማጣቀሻዎችዎን እያንዳንዳቸውን በመፈተሽ የ HTTP ሁኔታ ኮድ (200, 404, 500, ወዘተ) ያሳያል" },
+  "popupTitle": { "message": "ማጣቀሻዎች" },
+  "syncBtnTitle": { "message": "በእጅ አዘምን" },
+  "checkNowBtnTitle": { "message": "ቀጣዩን ማጣቀሻ አሁን ፈትሽ" },
+  "searchPlaceholder": { "message": "በርዕስ፣ በ URL ወይም በኮድ ይፈልጉ (200, 404…)" },
+  "intervalLabel": { "message": "በየ" },
+  "interval15": { "message": "15 ደቂቃ" },
+  "interval30": { "message": "30 ደቂቃ" },
+  "interval60": { "message": "1 ሰዓት" },
+  "interval180": { "message": "3 ሰዓት" },
+  "interval360": { "message": "6 ሰዓት" },
+  "interval1440": { "message": "24 ሰዓት" },
+  "loading": { "message": "በመጫን ላይ…" },
+  "emptyNoBookmarks": { "message": "ምንም ማጣቀሻ አልተገኘም" },
+  "emptyNoResults": { "message": "ምንም አልተገኘም" },
+  "progressLabel": {
+    "message": "$1 ከ $2 — ቀጣዩ በሰልፍ",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "የመጨረሻ ፍተሻ: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "እስካሁን አልተፈተሸም" },
+  "timeJustNow": { "message": "አሁን ላይ" },
+  "timeMinAgo": {
+    "message": "ከ $1 ደቂቃ በፊት",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "ከ $1 ሰዓት በፊት",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "ከ $1 ቀን በፊት",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 የተለጠፉ" },
+  "pinTooltip": { "message": "ወደ ላይ አጣብቅ" },
+  "unpinTooltip": { "message": "አላጥቅ" },
+  "deleteTooltip": { "message": "ማጣቀሻ ሰርዝ" },
+  "deleteConfirm": {
+    "message": "“$1” ማጣቀሻን ሰርዝ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "አሁን ፈትሽ" },
+  "contextOpenNewTab": { "message": "በአዲስ ገጽ ክፈት" },
+  "contextPin": { "message": "ወደ ላይ አጣብቅ" },
+  "contextUnpin": { "message": "አላጥቅ" },
+  "contextDelete": { "message": "ማጣቀሻ ሰርዝ" },
+  "unnamedFolder": { "message": "(ርዕስ አልባ)" },
+  "collapseAllTitle": { "message": "ሁሉንም ፎልደሮች አጥብቅ/ዘርጋ" },
+  "sidePanelBtnTitleOff": { "message": "በጎን ፓነል ክፈት" },
+  "sidePanelBtnTitleOn": { "message": "የጎን ፓነል ሁነታ በርቷል — ለማጥፋት ጠቅ ያድርጉ" },
+  "sidePanelBtnTitle": { "message": "በጎን ፓነል ክፈት" },
+  "settingsBtnTitle": { "message": "ቅንብሮች" },
+  "settingsTitle": { "message": "ቅንብሮች" },
+  "settingLanguage": { "message": "ቋንቋ" },
+  "settingAuto": { "message": "ራስ-ሰር (አሳሽ)" },
+  "settingTheme": { "message": "ገጽታ" },
+  "settingThemeDark": { "message": "ጠቆር ያለ" },
+  "settingThemeLight": { "message": "ብሩህ" },
+  "settingInterval": { "message": "የመፈተሻ ጊዜ" },
+  "settingRefreshNow": { "message": "አሁን አድስ" },
+  "settingBack": { "message": "← ወደኋላ" },
+  "interval1": { "message": "1 ደቂቃ" },
+  "intervalOff": { "message": "ጠፍቷል — በራስ-ሰር አትፈትሽ" },
+  "autoCheckOffHint": { "message": "ራስ-ሰር መፈተሻ ጠፍቷል — በእጅ ለመፈተሽ ▶ ይጠቀሙ" },
+  "selectionHint": {
+    "message": "$1 ተመርጧል — ለመክፈት Enter፣ ለመሰረዝ Delete ይጫኑ",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "የተመረጡትን $1 ማጣቀሻዎች ሰርዝ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "የተመረጡትን ሰርዝ ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "አሁን ክፍት ነው" },
+  "contextOpenSelected": {
+    "message": "የተመረጡትን $1 በአዲስ ገጾች ክፈት",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "ለዚህ ማጣቀሻ ራስ-ሰር መፈተሻ አሰናክል" },
+  "enableCheckTooltip": { "message": "ራስ-ሰር መፈተሻን እንደገና አንቃ" },
+  "contextDisableCheck": { "message": "ራስ-ሰር መፈተሻ አሰናክል" },
+  "contextEnableCheck": { "message": "ራስ-ሰር መፈተሻ አንቃ" },
+  "checkDisabledBadge": { "message": "ጠፍቷል" },
+  "allChecksDisabled": { "message": "ሁሉም መፈተሻዎች ጠፍተዋል" }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "ಬುಕ್‌ಮಾರ್ಕ್ ಸ್ಥಿತಿ ಪರಿಶೀಲಕ" },
+  "extDescription": { "message": "ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ಒಂದೊಂದಾಗಿ ಪರಿಶೀಲಿಸಿ HTTP ಸ್ಥಿತಿ ಕೋಡ್ (200, 404, 500, ಇತ್ಯಾದಿ) ತೋರಿಸುತ್ತದೆ" },
+  "popupTitle": { "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು" },
+  "syncBtnTitle": { "message": "ಮ್ಯಾನುವಲ್ ಆಗಿ ಸಿಂಕ್ ಮಾಡಿ" },
+  "checkNowBtnTitle": { "message": "ಮುಂದಿನ ಬುಕ್‌ಮಾರ್ಕ್ ಅನ್ನು ಈಗ ಪರಿಶೀಲಿಸಿ" },
+  "searchPlaceholder": { "message": "ಶೀರ್ಷಿಕೆ, URL ಅಥವಾ ಕೋಡ್ ಮೂಲಕ ಹುಡುಕಿ (200, 404…)" },
+  "intervalLabel": { "message": "ಪ್ರತಿ" },
+  "interval15": { "message": "15 ನಿಮಿಷ" },
+  "interval30": { "message": "30 ನಿಮಿಷ" },
+  "interval60": { "message": "1 ಗಂಟೆ" },
+  "interval180": { "message": "3 ಗಂಟೆ" },
+  "interval360": { "message": "6 ಗಂಟೆ" },
+  "interval1440": { "message": "24 ಗಂಟೆ" },
+  "loading": { "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ…" },
+  "emptyNoBookmarks": { "message": "ಯಾವುದೇ ಬುಕ್‌ಮಾರ್ಕ್ ಕಂಡುಬಂದಿಲ್ಲ" },
+  "emptyNoResults": { "message": "ಏನೂ ಕಂಡುಬಂದಿಲ್ಲ" },
+  "progressLabel": {
+    "message": "$2 ರಲ್ಲಿ $1 — ಸರದಿಯಲ್ಲಿ ಮುಂದಿನದು",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "ಕೊನೆಯ ಪರಿಶೀಲನೆ: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "ಇನ್ನೂ ಪರಿಶೀಲಿಸಲಾಗಿಲ್ಲ" },
+  "timeJustNow": { "message": "ಈಗಷ್ಟೇ" },
+  "timeMinAgo": {
+    "message": "$1 ನಿಮಿಷ ಹಿಂದೆ",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 ಗಂಟೆ ಹಿಂದೆ",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 ದಿನ ಹಿಂದೆ",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 ಪಿನ್ ಮಾಡಲಾಗಿದೆ" },
+  "pinTooltip": { "message": "ಮೇಲೆ ಪಿನ್ ಮಾಡಿ" },
+  "unpinTooltip": { "message": "ಪಿನ್ ತೆಗೆಯಿರಿ" },
+  "deleteTooltip": { "message": "ಬುಕ್‌ಮಾರ್ಕ್ ಅಳಿಸಿ" },
+  "deleteConfirm": {
+    "message": "\"$1\" ಬುಕ್‌ಮಾರ್ಕ್ ಅನ್ನು ಅಳಿಸಬೇಕೆ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "ಈಗ ಪರಿಶೀಲಿಸಿ" },
+  "contextOpenNewTab": { "message": "ಹೊಸ ಟ್ಯಾಬ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ" },
+  "contextPin": { "message": "ಮೇಲೆ ಪಿನ್ ಮಾಡಿ" },
+  "contextUnpin": { "message": "ಪಿನ್ ತೆಗೆಯಿರಿ" },
+  "contextDelete": { "message": "ಬುಕ್‌ಮಾರ್ಕ್ ಅಳಿಸಿ" },
+  "unnamedFolder": { "message": "(ಶೀರ್ಷಿಕೆ ಇಲ್ಲ)" },
+  "collapseAllTitle": { "message": "ಎಲ್ಲಾ ಫೋಲ್ಡರ್‌ಗಳನ್ನು ಸಂಕುಚಿಸಿ/ವಿಸ್ತರಿಸಿ" },
+  "sidePanelBtnTitleOff": { "message": "ಸೈಡ್ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ" },
+  "sidePanelBtnTitleOn": { "message": "ಸೈಡ್ ಪ್ಯಾನೆಲ್ ಮೋಡ್ ಆನ್ ಆಗಿದೆ — ಆಫ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ" },
+  "sidePanelBtnTitle": { "message": "ಸೈಡ್ ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ" },
+  "settingsBtnTitle": { "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು" },
+  "settingsTitle": { "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು" },
+  "settingLanguage": { "message": "ಭಾಷೆ" },
+  "settingAuto": { "message": "ಸ್ವಯಂಚಾಲಿತ (ಬ್ರೌಸರ್)" },
+  "settingTheme": { "message": "ಥೀಮ್" },
+  "settingThemeDark": { "message": "ಗಾಢ" },
+  "settingThemeLight": { "message": "ತಿಳಿ" },
+  "settingInterval": { "message": "ಪರಿಶೀಲನೆ ಅಂತರ" },
+  "settingRefreshNow": { "message": "ಈಗ ರಿಫ್ರೆಶ್ ಮಾಡಿ" },
+  "settingBack": { "message": "← ಹಿಂದೆ" },
+  "interval1": { "message": "1 ನಿಮಿಷ" },
+  "intervalOff": { "message": "ಆಫ್ — ಸ್ವಯಂಚಾಲಿತ ಪರಿಶೀಲನೆ ಬೇಡ" },
+  "autoCheckOffHint": { "message": "ಸ್ವಯಂಚಾಲಿತ ಪರಿಶೀಲನೆ ಆಫ್ ಆಗಿದೆ — ಮ್ಯಾನುವಲ್ ಪರಿಶೀಲನೆಗೆ ▶ ಬಳಸಿ" },
+  "selectionHint": {
+    "message": "$1 ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ — ತೆರೆಯಲು Enter, ಅಳಿಸಲು Delete ಒತ್ತಿ",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "ಆಯ್ಕೆ ಮಾಡಲಾದ $1 ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ಅಳಿಸಬೇಕೆ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "ಆಯ್ಕೆ ಮಾಡಲಾದವುಗಳನ್ನು ಅಳಿಸಿ ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "ಈಗ ತೆರೆದಿದೆ" },
+  "contextOpenSelected": {
+    "message": "ಆಯ್ಕೆ ಮಾಡಲಾದ $1 ಅನ್ನು ಹೊಸ ಟ್ಯಾಬ್‌ಗಳಲ್ಲಿ ತೆರೆಯಿರಿ",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "ಈ ಬುಕ್‌ಮಾರ್ಕ್‌ಗೆ ಸ್ವಯಂಚಾಲಿತ ಪರಿಶೀಲನೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
+  "enableCheckTooltip": { "message": "ಸ್ವಯಂಚಾಲಿತ ಪರಿಶೀಲನೆಯನ್ನು ಮರು-ಸಕ್ರಿಯಗೊಳಿಸಿ" },
+  "contextDisableCheck": { "message": "ಸ್ವಯಂಚಾಲಿತ ಪರಿಶೀಲನೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
+  "contextEnableCheck": { "message": "ಸ್ವಯಂಚಾಲಿತ ಪರಿಶೀಲನೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ" },
+  "checkDisabledBadge": { "message": "ಆಫ್" },
+  "allChecksDisabled": { "message": "ಎಲ್ಲಾ ಪರಿಶೀಲನೆಗಳು ನಿಷ್ಕ್ರಿಯಗೊಂಡಿವೆ" }
+}

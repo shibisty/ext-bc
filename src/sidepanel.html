@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Bookmark Status Checker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body class="side-panel-mode">
+  <header class="header">
+    <div class="title">
+      <span class="dot"></span>
+      <h1 data-i18n="popupTitle">Bookmarks</h1>
+    </div>
+    <div class="actions">
+      <button id="settingsBtn" class="icon-btn" data-i18n-title="settingsBtnTitle" title="Settings">⚙</button>
+      <button id="sidePanelBtn" class="icon-btn" data-i18n-title="sidePanelBtnTitle" title="Open in side panel">▤</button>
+      <button id="collapseAllBtn" class="icon-btn" data-i18n-title="collapseAllTitle" title="Collapse/expand all">⤢</button>
+      <!-- <button id="syncBtn" class="icon-btn" data-i18n-title="syncBtnTitle" title="Sync manually">⟳</button> -->
+      <!-- <button id="checkNowBtn" class="icon-btn" data-i18n-title="checkNowBtnTitle" title="Check the next bookmark now">▶</button> -->
+    </div>
+  </header>
+
+  <div class="searchbar" id="searchbarWrap">
+    <input id="searchInput" type="text" data-i18n-placeholder="searchPlaceholder" placeholder="Search by title, address or code (200, 404…)" />
+  </div>
+
+  <main id="list" class="list" tabindex="-1">
+    <div class="empty" id="emptyState" data-i18n="loading">Loading…</div>
+  </main>
+
+  <section id="settingsView" class="settings-view" hidden>
+    <h2 class="settings-title" data-i18n="settingsTitle">Settings</h2>
+
+    <div class="settings-row">
+      <label data-i18n="settingLanguage">Language</label>
+      <select id="languageSelect">
+        <option value="auto" data-i18n="settingAuto">Auto (browser)</option>
+        <option value="ar">العربية</option>
+        <option value="am">አማርኛ</option>
+        <option value="bg">Български</option>
+        <option value="bn">বাংলা</option>
+        <option value="ca">Català</option>
+        <option value="cs">Čeština</option>
+        <option value="da">Dansk</option>
+        <option value="de">Deutsch</option>
+        <option value="el">Ελληνικά</option>
+        <option value="en">English</option>
+        <option value="en_GB">English (UK)</option>
+        <option value="en_US">English (US)</option>
+        <option value="es">Español</option>
+        <option value="es_419">Español (Latinoamérica)</option>
+        <option value="et">Eesti</option>
+        <option value="fa">فارسی</option>
+        <option value="fi">Suomi</option>
+        <option value="fil">Filipino</option>
+        <option value="fr">Français</option>
+        <option value="gu">ગુજરાતી</option>
+        <option value="he">עברית</option>
+        <option value="hi">हिन्दी</option>
+        <option value="hr">Hrvatski</option>
+        <option value="hu">Magyar</option>
+        <option value="id">Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="ja">日本語</option>
+        <option value="kn">ಕನ್ನಡ</option>
+        <option value="ko">한국어</option>
+        <option value="lt">Lietuvių</option>
+        <option value="lv">Latviešu</option>
+        <option value="ml">മലയാളം</option>
+        <option value="mr">मराठी</option>
+        <option value="ms">Bahasa Melayu</option>
+        <option value="nl">Nederlands</option>
+        <option value="no">Norsk</option>
+        <option value="pl">Polski</option>
+        <option value="pt_BR">Português (Brasil)</option>
+        <option value="pt_PT">Português (Portugal)</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="sk">Slovenčina</option>
+        <option value="sl">Slovenščina</option>
+        <option value="sr">Српски</option>
+        <option value="sv">Svenska</option>
+        <option value="sw">Kiswahili</option>
+        <option value="ta">தமிழ்</option>
+        <option value="te">తెలుగు</option>
+        <option value="th">ไทย</option>
+        <option value="tr">Türkçe</option>
+        <option value="uk">Українська</option>
+        <option value="vi">Tiếng Việt</option>
+        <option value="zh_CN">中文 (简体)</option>
+        <option value="zh_TW">中文 (繁體)</option>
+      </select>
+    </div>
+
+    <div class="settings-row">
+      <label data-i18n="settingTheme">Theme</label>
+      <select id="themeSelect">
+        <option value="dark" data-i18n="settingThemeDark">Dark</option>
+        <option value="light" data-i18n="settingThemeLight">Light</option>
+      </select>
+    </div>
+
+    <div class="settings-row">
+      <label data-i18n="settingInterval">Check every</label>
+      <select id="intervalSelect">
+        <option value="0" data-i18n="intervalOff">Off — don't auto-check</option>
+        <option value="1" data-i18n="interval1">1 minute</option>
+        <option value="15" data-i18n="interval15">15 min</option>
+        <option value="30" data-i18n="interval30">30 min</option>
+        <option value="60" data-i18n="interval60" selected>1 hour</option>
+        <option value="180" data-i18n="interval180">3 hours</option>
+        <option value="360" data-i18n="interval360">6 hours</option>
+        <option value="1440" data-i18n="interval1440">24 hours</option>
+      </select>
+    </div>
+
+    <button id="refreshNowBtn" class="btn-secondary" data-i18n="settingRefreshNow">Refresh now</button>
+    <button id="closeSettingsBtn" class="btn-secondary" data-i18n="settingBack">← Back</button>
+    <div id="versionLabel" class="muted" style="text-align:center; font-size:11px; padding-top:4px;">v0.0.0</div>
+  </section>
+
+  <footer class="footer">
+    <div id="progressLabel" class="muted footer-line">—</div>
+    <!-- <div id="lastCheckLabel" class="muted footer-line" data-i18n="neverChecked">Not checked yet</div> -->
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

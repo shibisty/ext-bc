@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Kagua hali ya alamisho" },
+  "extDescription": { "message": "Hukagua alamisho zako moja baada ya nyingine na kuonyesha msimbo wa hali ya HTTP (200, 404, 500, n.k.)" },
+  "popupTitle": { "message": "Alamisho" },
+  "syncBtnTitle": { "message": "Sawazisha kwa mikono" },
+  "checkNowBtnTitle": { "message": "Kagua alamisho linalofuata sasa" },
+  "searchPlaceholder": { "message": "Tafuta kwa kichwa, URL au msimbo (200, 404…)" },
+  "intervalLabel": { "message": "Kila" },
+  "interval15": { "message": "dak 15" },
+  "interval30": { "message": "dak 30" },
+  "interval60": { "message": "saa 1" },
+  "interval180": { "message": "saa 3" },
+  "interval360": { "message": "saa 6" },
+  "interval1440": { "message": "saa 24" },
+  "loading": { "message": "Inapakia…" },
+  "emptyNoBookmarks": { "message": "Hakuna alamisho lililopatikana" },
+  "emptyNoResults": { "message": "Hakuna kilichopatikana" },
+  "progressLabel": {
+    "message": "$1 kati ya $2 — linalofuata kwenye foleni",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Ukaguzi wa mwisho: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Bado haujakaguliwa" },
+  "timeJustNow": { "message": "sasa hivi" },
+  "timeMinAgo": {
+    "message": "dak $1 zilizopita",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "saa $1 zilizopita",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "siku $1 zilizopita",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Iliyobandikwa" },
+  "pinTooltip": { "message": "Bandika juu" },
+  "unpinTooltip": { "message": "Ondoa bandiko" },
+  "deleteTooltip": { "message": "Futa alamisho" },
+  "deleteConfirm": {
+    "message": "Futa alamisho \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Kagua sasa" },
+  "contextOpenNewTab": { "message": "Fungua kwenye kichupo kipya" },
+  "contextPin": { "message": "Bandika juu" },
+  "contextUnpin": { "message": "Ondoa bandiko" },
+  "contextDelete": { "message": "Futa alamisho" },
+  "unnamedFolder": { "message": "(bila jina)" },
+  "collapseAllTitle": { "message": "Kunja/panua folda zote" },
+  "sidePanelBtnTitleOff": { "message": "Fungua kwenye paneli ya pembeni" },
+  "sidePanelBtnTitleOn": { "message": "Hali ya paneli ya pembeni imewashwa — bonyeza kuzima" },
+  "sidePanelBtnTitle": { "message": "Fungua kwenye paneli ya pembeni" },
+  "settingsBtnTitle": { "message": "Mipangilio" },
+  "settingsTitle": { "message": "Mipangilio" },
+  "settingLanguage": { "message": "Lugha" },
+  "settingAuto": { "message": "Kiotomatiki (kivinjari)" },
+  "settingTheme": { "message": "Mandhari" },
+  "settingThemeDark": { "message": "Giza" },
+  "settingThemeLight": { "message": "Mwanga" },
+  "settingInterval": { "message": "Kagua kila" },
+  "settingRefreshNow": { "message": "Onyesha upya sasa" },
+  "settingBack": { "message": "← Rudi" },
+  "interval1": { "message": "dak 1" },
+  "intervalOff": { "message": "Imezimwa — usikague kiotomatiki" },
+  "autoCheckOffHint": { "message": "Ukaguzi wa kiotomatiki umezimwa — tumia ▶ kukagua kwa mikono" },
+  "selectionHint": {
+    "message": "$1 limechaguliwa — Enter kufungua, Delete kufuta",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Futa alamisho $1 zilizochaguliwa?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Futa zilizochaguliwa ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Imefunguliwa sasa" },
+  "contextOpenSelected": {
+    "message": "Fungua $1 zilizochaguliwa kwenye vichupo vipya",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Zima ukaguzi wa kiotomatiki kwa alamisho hili" },
+  "enableCheckTooltip": { "message": "Washa tena ukaguzi wa kiotomatiki" },
+  "contextDisableCheck": { "message": "Zima ukaguzi wa kiotomatiki" },
+  "contextEnableCheck": { "message": "Washa ukaguzi wa kiotomatiki" },
+  "checkDisabledBadge": { "message": "IMEZIMWA" },
+  "allChecksDisabled": { "message": "Ukaguzi wote umezimwa" }
+}

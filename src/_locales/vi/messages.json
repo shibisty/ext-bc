@@ -1,0 +1,94 @@
+{
+ "extName": {  "message":  "Trình kiểm tra trạng thái dấu trang" },
+ "extDescription": {  "message":  "Kiểm tra từng dấu trang của bạn và hiển thị mã trạng thái HTTP (200, 404, 500, v.v.)" },
+ "popupTitle": {  "message":  "Dấu trang" },
+ "syncBtnTitle": {  "message":  "Đồng bộ thủ công" },
+ "checkNowBtnTitle": {  "message":  "Kiểm tra dấu trang tiếp theo ngay" },
+ "searchPlaceholder": {  "message":  "Tìm theo tiêu đề, URL hoặc mã (200, 404…)" },
+ "intervalLabel": {  "message":  "Mỗi" },
+ "interval15": {  "message":  "15 phút" },
+ "interval30": {  "message":  "30 phút" },
+ "interval60": {  "message":  "1 giờ" },
+ "interval180": {  "message":  "3 giờ" },
+ "interval360": {  "message":  "6 giờ" },
+ "interval1440": {  "message":  "24 giờ" },
+ "loading": {  "message":  "Đang tải…" },
+ "emptyNoBookmarks": {  "message":  "Không tìm thấy dấu trang nào" },
+ "emptyNoResults": {  "message":  "Không tìm thấy kết quả" },
+ "progressLabel": {
+ "message":  "$1 / $2 — tiếp theo trong hàng đợi",
+ "placeholders": {  "1": {  "content":  "$1" },  "2": {  "content":  "$2" } }
+},
+ "lastCheckPrefix": {
+ "message":  "Lần kiểm tra cuối: $1",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "neverChecked": {  "message":  "Chưa được kiểm tra" },
+ "timeJustNow": {  "message":  "vừa xong" },
+ "timeMinAgo": {
+ "message":  "$1 phút trước",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeHoursAgo": {
+ "message":  "$1 giờ trước",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeDaysAgo": {
+ "message":  "$1 ngày trước",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "pinnedSectionLabel": {  "message":  "📌 Đã ghim" },
+ "pinTooltip": {  "message":  "Ghim lên đầu" },
+ "unpinTooltip": {  "message":  "Bỏ ghim" },
+ "deleteTooltip": {  "message":  "Xóa dấu trang" },
+ "deleteConfirm": {
+ "message":  "Xóa dấu trang «$1»?",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextCheckNow": {  "message":  "Kiểm tra ngay" },
+ "contextOpenNewTab": {  "message":  "Mở trong tab mới" },
+ "contextPin": {  "message":  "Ghim lên đầu" },
+ "contextUnpin": {  "message":  "Bỏ ghim" },
+ "contextDelete": {  "message":  "Xóa dấu trang" },
+ "unnamedFolder": {  "message":  "(không có tiêu đề)" },
+ "collapseAllTitle": {  "message":  "Thu gọn/mở rộng tất cả thư mục" },
+ "sidePanelBtnTitleOff": {  "message":  "Mở trong bảng bên" },
+ "sidePanelBtnTitleOn": {  "message":  "Chế độ bảng bên đang bật — nhấp để tắt" },
+ "sidePanelBtnTitle": {  "message":  "Mở trong bảng bên" },
+ "settingsBtnTitle": {  "message":  "Cài đặt" },
+ "settingsTitle": {  "message":  "Cài đặt" },
+ "settingLanguage": {  "message":  "Ngôn ngữ" },
+ "settingAuto": {  "message":  "Tự động (trình duyệt)" },
+ "settingTheme": {  "message":  "Giao diện" },
+ "settingThemeDark": {  "message":  "Tối" },
+ "settingThemeLight": {  "message":  "Sáng" },
+ "settingInterval": {  "message":  "Kiểm tra mỗi" },
+ "settingRefreshNow": {  "message":  "Làm mới ngay" },
+ "settingBack": {  "message":  "← Quay lại" },
+ "interval1": {  "message":  "1 phút" },
+ "intervalOff": {  "message":  "Tắt — không kiểm tra tự động" },
+ "autoCheckOffHint": {  "message":  "Kiểm tra tự động đã tắt — dùng ▶ để kiểm tra thủ công" },
+ "selectionHint": {
+ "message":  "Đã chọn $1 mục — Enter để mở, Delete để xóa",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "deleteManyConfirm": {
+ "message":  "Xóa $1 dấu trang đã chọn?",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextDeleteSelected": {
+ "message":  "Xóa mục đã chọn ($1)",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "currentPageBadge": {  "message":  "Đang mở" },
+ "contextOpenSelected": {
+ "message":  "Mở $1 mục đã chọn trong tab mới",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "disableCheckTooltip": {  "message":  "Tắt kiểm tra tự động cho dấu trang này" },
+ "enableCheckTooltip": {  "message":  "Bật lại kiểm tra tự động" },
+ "contextDisableCheck": {  "message":  "Tắt kiểm tra tự động" },
+ "contextEnableCheck": {  "message":  "Bật kiểm tra tự động" },
+ "checkDisabledBadge": {  "message":  "TẮT" },
+ "allChecksDisabled": {  "message":  "Tất cả kiểm tra đã bị tắt" }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Provjera statusa oznaka" },
+  "extDescription": { "message": "Provjerava vaše oznake jednu po jednu i prikazuje HTTP statusni kod (200, 404, 500 itd.)" },
+  "popupTitle": { "message": "Oznake" },
+  "syncBtnTitle": { "message": "Ručna sinkronizacija" },
+  "checkNowBtnTitle": { "message": "Provjeri sljedeću oznaku sada" },
+  "searchPlaceholder": { "message": "Traži po naslovu, URL-u ili kodu (200, 404…)" },
+  "intervalLabel": { "message": "Svakih" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 sat" },
+  "interval180": { "message": "3 sata" },
+  "interval360": { "message": "6 sati" },
+  "interval1440": { "message": "24 sata" },
+  "loading": { "message": "Učitavanje…" },
+  "emptyNoBookmarks": { "message": "Nema pronađenih oznaka" },
+  "emptyNoResults": { "message": "Ništa nije pronađeno" },
+  "progressLabel": {
+    "message": "$1 od $2 — sljedeća u redu",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Posljednja provjera: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Još nije provjereno" },
+  "timeJustNow": { "message": "upravo sada" },
+  "timeMinAgo": {
+    "message": "prije $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "prije $1 h",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "prije $1 d",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Prikvačeno" },
+  "pinTooltip": { "message": "Prikvači na vrh" },
+  "unpinTooltip": { "message": "Otkvači" },
+  "deleteTooltip": { "message": "Izbriši oznaku" },
+  "deleteConfirm": {
+    "message": "Izbrisati oznaku „$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Provjeri sada" },
+  "contextOpenNewTab": { "message": "Otvori u novoj kartici" },
+  "contextPin": { "message": "Prikvači na vrh" },
+  "contextUnpin": { "message": "Otkvači" },
+  "contextDelete": { "message": "Izbriši oznaku" },
+  "unnamedFolder": { "message": "(bez naslova)" },
+  "collapseAllTitle": { "message": "Sažmi/proširi sve mape" },
+  "sidePanelBtnTitleOff": { "message": "Otvori u bočnoj ploči" },
+  "sidePanelBtnTitleOn": { "message": "Način bočne ploče je uključen — kliknite za isključivanje" },
+  "sidePanelBtnTitle": { "message": "Otvori u bočnoj ploči" },
+  "settingsBtnTitle": { "message": "Postavke" },
+  "settingsTitle": { "message": "Postavke" },
+  "settingLanguage": { "message": "Jezik" },
+  "settingAuto": { "message": "Automatski (preglednik)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Tamna" },
+  "settingThemeLight": { "message": "Svijetla" },
+  "settingInterval": { "message": "Provjeri svakih" },
+  "settingRefreshNow": { "message": "Osvježi sada" },
+  "settingBack": { "message": "← Natrag" },
+  "interval1": { "message": "1 minuta" },
+  "intervalOff": { "message": "Isključeno — ne provjeravaj automatski" },
+  "autoCheckOffHint": { "message": "Automatska provjera je isključena — koristite ▶ za ručnu provjeru" },
+  "selectionHint": {
+    "message": "Odabrano: $1 — Enter za otvaranje, Delete za brisanje",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Izbrisati $1 odabranih oznaka?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Izbriši odabrane ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Otvoreno sada" },
+  "contextOpenSelected": {
+    "message": "Otvori $1 odabranih u novim karticama",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Onemogući automatsku provjeru za ovu oznaku" },
+  "enableCheckTooltip": { "message": "Ponovno omogući automatsku provjeru" },
+  "contextDisableCheck": { "message": "Onemogući automatsku provjeru" },
+  "contextEnableCheck": { "message": "Omogući automatsku provjeru" },
+  "checkDisabledBadge": { "message": "ISKLJ" },
+  "allChecksDisabled": { "message": "Sve provjere su onemogućene" }
+}

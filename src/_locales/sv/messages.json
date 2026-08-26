@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Bokmärkesstatuskontroll" },
+  "extDescription": { "message": "Kontrollerar dina bokmärken ett efter ett och visar HTTP-statuskoden (200, 404, 500, osv.)" },
+  "popupTitle": { "message": "Bokmärken" },
+  "syncBtnTitle": { "message": "Synkronisera manuellt" },
+  "checkNowBtnTitle": { "message": "Kontrollera nästa bokmärke nu" },
+  "searchPlaceholder": { "message": "Sök efter titel, URL eller kod (200, 404…)" },
+  "intervalLabel": { "message": "Varje" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 tim" },
+  "interval180": { "message": "3 tim" },
+  "interval360": { "message": "6 tim" },
+  "interval1440": { "message": "24 tim" },
+  "loading": { "message": "Laddar…" },
+  "emptyNoBookmarks": { "message": "Inga bokmärken hittades" },
+  "emptyNoResults": { "message": "Inget hittades" },
+  "progressLabel": {
+    "message": "$1 av $2 — nästa i kön",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Senaste kontroll: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Inte kontrollerat ännu" },
+  "timeJustNow": { "message": "just nu" },
+  "timeMinAgo": {
+    "message": "$1 min sedan",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 tim sedan",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 d sedan",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Fästa" },
+  "pinTooltip": { "message": "Fäst högst upp" },
+  "unpinTooltip": { "message": "Lossa" },
+  "deleteTooltip": { "message": "Ta bort bokmärke" },
+  "deleteConfirm": {
+    "message": "Ta bort bokmärket \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Kontrollera nu" },
+  "contextOpenNewTab": { "message": "Öppna i ny flik" },
+  "contextPin": { "message": "Fäst högst upp" },
+  "contextUnpin": { "message": "Lossa" },
+  "contextDelete": { "message": "Ta bort bokmärke" },
+  "unnamedFolder": { "message": "(namnlös)" },
+  "collapseAllTitle": { "message": "Minimera/maximera alla mappar" },
+  "sidePanelBtnTitleOff": { "message": "Öppna i sidopanel" },
+  "sidePanelBtnTitleOn": { "message": "Sidopanelläge är på — klicka för att stänga av" },
+  "sidePanelBtnTitle": { "message": "Öppna i sidopanel" },
+  "settingsBtnTitle": { "message": "Inställningar" },
+  "settingsTitle": { "message": "Inställningar" },
+  "settingLanguage": { "message": "Språk" },
+  "settingAuto": { "message": "Automatiskt (webbläsare)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Mörkt" },
+  "settingThemeLight": { "message": "Ljust" },
+  "settingInterval": { "message": "Kontrollera varje" },
+  "settingRefreshNow": { "message": "Uppdatera nu" },
+  "settingBack": { "message": "← Tillbaka" },
+  "interval1": { "message": "1 minut" },
+  "intervalOff": { "message": "Av — kontrollera inte automatiskt" },
+  "autoCheckOffHint": { "message": "Automatisk kontroll är av — använd ▶ för manuell kontroll" },
+  "selectionHint": {
+    "message": "$1 valda — Enter för att öppna, Delete för att ta bort",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Ta bort $1 valda bokmärken?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Ta bort valda ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Öppen nu" },
+  "contextOpenSelected": {
+    "message": "Öppna $1 valda i nya flikar",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Inaktivera automatisk kontroll för detta bokmärke" },
+  "enableCheckTooltip": { "message": "Återaktivera automatisk kontroll" },
+  "contextDisableCheck": { "message": "Inaktivera automatisk kontroll" },
+  "contextEnableCheck": { "message": "Aktivera automatisk kontroll" },
+  "checkDisabledBadge": { "message": "AV" },
+  "allChecksDisabled": { "message": "Alla kontroller inaktiverade" }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Lesezeichen-Status-Prüfer" },
+  "extDescription": { "message": "Prüft Ihre Lesezeichen nacheinander und zeigt den HTTP-Statuscode (200, 404, 500 usw.) an" },
+  "popupTitle": { "message": "Lesezeichen" },
+  "syncBtnTitle": { "message": "Manuell synchronisieren" },
+  "checkNowBtnTitle": { "message": "Nächstes Lesezeichen jetzt prüfen" },
+  "searchPlaceholder": { "message": "Nach Titel, URL oder Code suchen (200, 404…)" },
+  "intervalLabel": { "message": "Alle" },
+  "interval15": { "message": "15 Min." },
+  "interval30": { "message": "30 Min." },
+  "interval60": { "message": "1 Stunde" },
+  "interval180": { "message": "3 Stunden" },
+  "interval360": { "message": "6 Stunden" },
+  "interval1440": { "message": "24 Stunden" },
+  "loading": { "message": "Wird geladen…" },
+  "emptyNoBookmarks": { "message": "Keine Lesezeichen gefunden" },
+  "emptyNoResults": { "message": "Nichts gefunden" },
+  "progressLabel": {
+    "message": "$1 von $2 – als Nächstes in der Warteschlange",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Letzte Prüfung: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Noch nicht geprüft" },
+  "timeJustNow": { "message": "gerade eben" },
+  "timeMinAgo": {
+    "message": "vor $1 Min.",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "vor $1 Std.",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "vor $1 T.",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Angeheftet" },
+  "pinTooltip": { "message": "Oben anheften" },
+  "unpinTooltip": { "message": "Anheftung aufheben" },
+  "deleteTooltip": { "message": "Lesezeichen löschen" },
+  "deleteConfirm": {
+    "message": "Lesezeichen „$1“ löschen?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Jetzt prüfen" },
+  "contextOpenNewTab": { "message": "In neuem Tab öffnen" },
+  "contextPin": { "message": "Oben anheften" },
+  "contextUnpin": { "message": "Anheftung aufheben" },
+  "contextDelete": { "message": "Lesezeichen löschen" },
+  "unnamedFolder": { "message": "(unbenannt)" },
+  "collapseAllTitle": { "message": "Alle Ordner ein-/ausklappen" },
+  "sidePanelBtnTitleOff": { "message": "In Seitenleiste öffnen" },
+  "sidePanelBtnTitleOn": { "message": "Seitenleistenmodus aktiv – klicken zum Deaktivieren" },
+  "sidePanelBtnTitle": { "message": "In Seitenleiste öffnen" },
+  "settingsBtnTitle": { "message": "Einstellungen" },
+  "settingsTitle": { "message": "Einstellungen" },
+  "settingLanguage": { "message": "Sprache" },
+  "settingAuto": { "message": "Auto (Browser)" },
+  "settingTheme": { "message": "Design" },
+  "settingThemeDark": { "message": "Dunkel" },
+  "settingThemeLight": { "message": "Hell" },
+  "settingInterval": { "message": "Prüfen alle" },
+  "settingRefreshNow": { "message": "Jetzt aktualisieren" },
+  "settingBack": { "message": "← Zurück" },
+  "interval1": { "message": "1 Minute" },
+  "intervalOff": { "message": "Aus – nicht automatisch prüfen" },
+  "autoCheckOffHint": { "message": "Automatische Prüfung aus – ▶ für manuelle Prüfung nutzen" },
+  "selectionHint": {
+    "message": "$1 ausgewählt – Enter zum Öffnen, Entf zum Löschen",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "$1 ausgewählte Lesezeichen löschen?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Ausgewählte löschen ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Jetzt geöffnet" },
+  "contextOpenSelected": {
+    "message": "$1 ausgewählte in neuen Tabs öffnen",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Automatische Prüfung für dieses Lesezeichen deaktivieren" },
+  "enableCheckTooltip": { "message": "Automatische Prüfung wieder aktivieren" },
+  "contextDisableCheck": { "message": "Automatische Prüfung deaktivieren" },
+  "contextEnableCheck": { "message": "Automatische Prüfung aktivieren" },
+  "checkDisabledBadge": { "message": "AUS" },
+  "allChecksDisabled": { "message": "Alle Prüfungen deaktiviert" }
+}

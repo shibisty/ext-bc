@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Bookmark Status Checker" },
+  "extDescription": { "message": "Sinusuri ang iyong mga bookmark isa-isa at ipinapakita ang HTTP status code (200, 404, 500, atbp.)" },
+  "popupTitle": { "message": "Mga Bookmark" },
+  "syncBtnTitle": { "message": "I-sync nang manu-mano" },
+  "checkNowBtnTitle": { "message": "Suriin ang susunod na bookmark ngayon" },
+  "searchPlaceholder": { "message": "Maghanap ayon sa pamagat, URL, o code (200, 404…)" },
+  "intervalLabel": { "message": "Bawat" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 oras" },
+  "interval180": { "message": "3 oras" },
+  "interval360": { "message": "6 oras" },
+  "interval1440": { "message": "24 oras" },
+  "loading": { "message": "Naglo-load…" },
+  "emptyNoBookmarks": { "message": "Walang nahanap na bookmark" },
+  "emptyNoResults": { "message": "Walang nahanap" },
+  "progressLabel": {
+    "message": "$1 ng $2 — susunod sa pila",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Huling pagsusuri: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Hindi pa nasusuri" },
+  "timeJustNow": { "message": "ngayon lang" },
+  "timeMinAgo": {
+    "message": "$1 min ang nakalipas",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 oras ang nakalipas",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 araw ang nakalipas",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Mga Naka-pin" },
+  "pinTooltip": { "message": "I-pin sa taas" },
+  "unpinTooltip": { "message": "I-unpin" },
+  "deleteTooltip": { "message": "Tanggalin ang bookmark" },
+  "deleteConfirm": {
+    "message": "Tanggalin ang bookmark na \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Suriin ngayon" },
+  "contextOpenNewTab": { "message": "Buksan sa bagong tab" },
+  "contextPin": { "message": "I-pin sa taas" },
+  "contextUnpin": { "message": "I-unpin" },
+  "contextDelete": { "message": "Tanggalin ang bookmark" },
+  "unnamedFolder": { "message": "(walang pamagat)" },
+  "collapseAllTitle": { "message": "I-collapse/expand lahat ng folder" },
+  "sidePanelBtnTitleOff": { "message": "Buksan sa side panel" },
+  "sidePanelBtnTitleOn": { "message": "Naka-on ang side panel mode — i-click para i-off" },
+  "sidePanelBtnTitle": { "message": "Buksan sa side panel" },
+  "settingsBtnTitle": { "message": "Mga Setting" },
+  "settingsTitle": { "message": "Mga Setting" },
+  "settingLanguage": { "message": "Wika" },
+  "settingAuto": { "message": "Auto (browser)" },
+  "settingTheme": { "message": "Tema" },
+  "settingThemeDark": { "message": "Madilim" },
+  "settingThemeLight": { "message": "Maliwanag" },
+  "settingInterval": { "message": "Suriin bawat" },
+  "settingRefreshNow": { "message": "I-refresh ngayon" },
+  "settingBack": { "message": "← Bumalik" },
+  "interval1": { "message": "1 minuto" },
+  "intervalOff": { "message": "Naka-off — huwag awtomatikong suriin" },
+  "autoCheckOffHint": { "message": "Naka-off ang auto-check — gamitin ang ▶ para manu-manong pagsusuri" },
+  "selectionHint": {
+    "message": "$1 ang napili — Enter para buksan, Delete para tanggalin",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Tanggalin ang $1 napiling bookmark?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Tanggalin ang napili ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Bukas ngayon" },
+  "contextOpenSelected": {
+    "message": "Buksan ang $1 napili sa bagong tab",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "I-disable ang auto-check para sa bookmark na ito" },
+  "enableCheckTooltip": { "message": "I-re-enable ang auto-check" },
+  "contextDisableCheck": { "message": "I-disable ang auto-check" },
+  "contextEnableCheck": { "message": "I-enable ang auto-check" },
+  "checkDisabledBadge": { "message": "OFF" },
+  "allChecksDisabled": { "message": "Lahat ng pagsusuri ay naka-disable" }
+}

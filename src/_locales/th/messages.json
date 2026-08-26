@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "ตัวตรวจสอบสถานะบุ๊กมาร์ก" },
+  "extDescription": { "message": "ตรวจสอบบุ๊กมาร์กของคุณทีละรายการและแสดงรหัสสถานะ HTTP (200, 404, 500 ฯลฯ)" },
+  "popupTitle": { "message": "บุ๊กมาร์ก" },
+  "syncBtnTitle": { "message": "ซิงค์ด้วยตนเอง" },
+  "checkNowBtnTitle": { "message": "ตรวจสอบบุ๊กมาร์กถัดไปตอนนี้" },
+  "searchPlaceholder": { "message": "ค้นหาตามชื่อ, URL หรือรหัส (200, 404…)" },
+  "intervalLabel": { "message": "ทุก" },
+  "interval15": { "message": "15 นาที" },
+  "interval30": { "message": "30 นาที" },
+  "interval60": { "message": "1 ชม." },
+  "interval180": { "message": "3 ชม." },
+  "interval360": { "message": "6 ชม." },
+  "interval1440": { "message": "24 ชม." },
+  "loading": { "message": "กำลังโหลด…" },
+  "emptyNoBookmarks": { "message": "ไม่พบบุ๊กมาร์ก" },
+  "emptyNoResults": { "message": "ไม่พบผลลัพธ์" },
+  "progressLabel": {
+    "message": "$1 จาก $2 — ถัดไปในคิว",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "ตรวจสอบล่าสุด: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "ยังไม่ได้ตรวจสอบ" },
+  "timeJustNow": { "message": "เมื่อสักครู่" },
+  "timeMinAgo": {
+    "message": "$1 นาทีที่แล้ว",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "$1 ชม.ที่แล้ว",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "$1 วันที่แล้ว",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 ตรึงไว้" },
+  "pinTooltip": { "message": "ตรึงไว้ด้านบน" },
+  "unpinTooltip": { "message": "เลิกตรึง" },
+  "deleteTooltip": { "message": "ลบบุ๊กมาร์ก" },
+  "deleteConfirm": {
+    "message": "ลบบุ๊กมาร์ก \"$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "ตรวจสอบตอนนี้" },
+  "contextOpenNewTab": { "message": "เปิดในแท็บใหม่" },
+  "contextPin": { "message": "ตรึงไว้ด้านบน" },
+  "contextUnpin": { "message": "เลิกตรึง" },
+  "contextDelete": { "message": "ลบบุ๊กมาร์ก" },
+  "unnamedFolder": { "message": "(ไม่มีชื่อ)" },
+  "collapseAllTitle": { "message": "ยุบ/ขยายโฟลเดอร์ทั้งหมด" },
+  "sidePanelBtnTitleOff": { "message": "เปิดในแผงด้านข้าง" },
+  "sidePanelBtnTitleOn": { "message": "โหมดแผงด้านข้างเปิดอยู่ — คลิกเพื่อปิด" },
+  "sidePanelBtnTitle": { "message": "เปิดในแผงด้านข้าง" },
+  "settingsBtnTitle": { "message": "การตั้งค่า" },
+  "settingsTitle": { "message": "การตั้งค่า" },
+  "settingLanguage": { "message": "ภาษา" },
+  "settingAuto": { "message": "อัตโนมัติ (เบราว์เซอร์)" },
+  "settingTheme": { "message": "ธีม" },
+  "settingThemeDark": { "message": "มืด" },
+  "settingThemeLight": { "message": "สว่าง" },
+  "settingInterval": { "message": "ตรวจสอบทุก" },
+  "settingRefreshNow": { "message": "รีเฟรชตอนนี้" },
+  "settingBack": { "message": "← กลับ" },
+  "interval1": { "message": "1 นาที" },
+  "intervalOff": { "message": "ปิด — ไม่ต้องตรวจสอบอัตโนมัติ" },
+  "autoCheckOffHint": { "message": "การตรวจสอบอัตโนมัติปิดอยู่ — ใช้ ▶ เพื่อตรวจสอบด้วยตนเอง" },
+  "selectionHint": {
+    "message": "เลือก $1 รายการ — Enter เพื่อเปิด, Delete เพื่อลบ",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "ลบบุ๊กมาร์กที่เลือก $1 รายการ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "ลบที่เลือก ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "เปิดอยู่ตอนนี้" },
+  "contextOpenSelected": {
+    "message": "เปิด $1 ที่เลือกในแท็บใหม่",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "ปิดใช้งานการตรวจสอบอัตโนมัติสำหรับบุ๊กมาร์กนี้" },
+  "enableCheckTooltip": { "message": "เปิดใช้งานการตรวจสอบอัตโนมัติอีกครั้ง" },
+  "contextDisableCheck": { "message": "ปิดใช้งานการตรวจสอบอัตโนมัติ" },
+  "contextEnableCheck": { "message": "เปิดใช้งานการตรวจสอบอัตโนมัติ" },
+  "checkDisabledBadge": { "message": "ปิด" },
+  "allChecksDisabled": { "message": "การตรวจสอบทั้งหมดถูกปิดใช้งาน" }
+}

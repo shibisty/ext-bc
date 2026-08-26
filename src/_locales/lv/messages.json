@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Grāmatzīmju statusa pārbaudītājs" },
+  "extDescription": { "message": "Pārbauda jūsu grāmatzīmes vienu pēc otras un parāda HTTP statusa kodu (200, 404, 500 utt.)" },
+  "popupTitle": { "message": "Grāmatzīmes" },
+  "syncBtnTitle": { "message": "Sinhronizēt manuāli" },
+  "checkNowBtnTitle": { "message": "Pārbaudīt nākamo grāmatzīmi tagad" },
+  "searchPlaceholder": { "message": "Meklēt pēc nosaukuma, URL vai koda (200, 404…)" },
+  "intervalLabel": { "message": "Ik" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 st" },
+  "interval180": { "message": "3 st" },
+  "interval360": { "message": "6 st" },
+  "interval1440": { "message": "24 st" },
+  "loading": { "message": "Ielādē…" },
+  "emptyNoBookmarks": { "message": "Grāmatzīmes nav atrastas" },
+  "emptyNoResults": { "message": "Nekas nav atrasts" },
+  "progressLabel": {
+    "message": "$1 no $2 — nākamais rindā",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Pēdējā pārbaude: $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Vēl nav pārbaudīts" },
+  "timeJustNow": { "message": "tikko" },
+  "timeMinAgo": {
+    "message": "pirms $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "pirms $1 st",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "pirms $1 d",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Piesprausts" },
+  "pinTooltip": { "message": "Piespraust augšā" },
+  "unpinTooltip": { "message": "Noņemt piespraudi" },
+  "deleteTooltip": { "message": "Dzēst grāmatzīmi" },
+  "deleteConfirm": {
+    "message": "Dzēst grāmatzīmi „$1\"?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Pārbaudīt tagad" },
+  "contextOpenNewTab": { "message": "Atvērt jaunā cilnē" },
+  "contextPin": { "message": "Piespraust augšā" },
+  "contextUnpin": { "message": "Noņemt piespraudi" },
+  "contextDelete": { "message": "Dzēst grāmatzīmi" },
+  "unnamedFolder": { "message": "(bez nosaukuma)" },
+  "collapseAllTitle": { "message": "Sakļaut/izvērst visas mapes" },
+  "sidePanelBtnTitleOff": { "message": "Atvērt sānu panelī" },
+  "sidePanelBtnTitleOn": { "message": "Sānu paneļa režīms ir ieslēgts — noklikšķiniet, lai izslēgtu" },
+  "sidePanelBtnTitle": { "message": "Atvērt sānu panelī" },
+  "settingsBtnTitle": { "message": "Iestatījumi" },
+  "settingsTitle": { "message": "Iestatījumi" },
+  "settingLanguage": { "message": "Valoda" },
+  "settingAuto": { "message": "Automātiski (pārlūkprogramma)" },
+  "settingTheme": { "message": "Motīvs" },
+  "settingThemeDark": { "message": "Tumšs" },
+  "settingThemeLight": { "message": "Gaišs" },
+  "settingInterval": { "message": "Pārbaudīt ik" },
+  "settingRefreshNow": { "message": "Atsvaidzināt tagad" },
+  "settingBack": { "message": "← Atpakaļ" },
+  "interval1": { "message": "1 min" },
+  "intervalOff": { "message": "Izslēgts — nepārbaudīt automātiski" },
+  "autoCheckOffHint": { "message": "Automātiskā pārbaude ir izslēgta — izmantojiet ▶ manuālai pārbaudei" },
+  "selectionHint": {
+    "message": "Atlasīts: $1 — Enter, lai atvērtu, Delete, lai dzēstu",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Dzēst $1 atlasītās grāmatzīmes?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Dzēst atlasītos ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Atvērts tagad" },
+  "contextOpenSelected": {
+    "message": "Atvērt $1 atlasītos jaunās cilnēs",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Atspējot automātisko pārbaudi šai grāmatzīmei" },
+  "enableCheckTooltip": { "message": "Atkārtoti iespējot automātisko pārbaudi" },
+  "contextDisableCheck": { "message": "Atspējot automātisko pārbaudi" },
+  "contextEnableCheck": { "message": "Iespējot automātisko pārbaudi" },
+  "checkDisabledBadge": { "message": "IZSLĒGTS" },
+  "allChecksDisabled": { "message": "Visas pārbaudes atspējotas" }
+}

@@ -1,0 +1,219 @@
+{
+  "extName": {
+    "message": "Bookmark Status Checker"
+  },
+  "extDescription": {
+    "message": "Checks your bookmarks one by one and shows the HTTP status code (200, 404, 500, etc.)"
+  },
+  "popupTitle": {
+    "message": "Bookmarks"
+  },
+  "syncBtnTitle": {
+    "message": "Sync manually"
+  },
+  "checkNowBtnTitle": {
+    "message": "Check the next bookmark now"
+  },
+  "searchPlaceholder": {
+    "message": "Search by title, address or code (200, 404…)"
+  },
+  "intervalLabel": {
+    "message": "Every"
+  },
+  "interval15": {
+    "message": "15 min"
+  },
+  "interval30": {
+    "message": "30 min"
+  },
+  "interval60": {
+    "message": "1 hour"
+  },
+  "interval180": {
+    "message": "3 hours"
+  },
+  "interval360": {
+    "message": "6 hours"
+  },
+  "interval1440": {
+    "message": "24 hours"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "emptyNoBookmarks": {
+    "message": "No bookmarks found"
+  },
+  "emptyNoResults": {
+    "message": "Nothing found"
+  },
+  "progressLabel": {
+    "message": "$1 of $2 — next in queue",
+    "placeholders": {
+      "1": { "content": "$1" },
+      "2": { "content": "$2" }
+    }
+  },
+  "lastCheckPrefix": {
+    "message": "Last check: $1",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "neverChecked": {
+    "message": "Not checked yet"
+  },
+  "timeJustNow": {
+    "message": "just now"
+  },
+  "timeMinAgo": {
+    "message": "$1 min ago",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "timeHoursAgo": {
+    "message": "$1 h ago",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "timeDaysAgo": {
+    "message": "$1 d ago",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "pinnedSectionLabel": {
+    "message": "📌 Pinned"
+  },
+  "pinTooltip": {
+    "message": "Pin to top"
+  },
+  "unpinTooltip": {
+    "message": "Unpin"
+  },
+  "deleteTooltip": {
+    "message": "Delete bookmark"
+  },
+  "deleteConfirm": {
+    "message": "Delete bookmark “$1”?",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "contextCheckNow": {
+    "message": "Check now"
+  },
+  "contextOpenNewTab": {
+    "message": "Open in new tab"
+  },
+  "contextPin": {
+    "message": "Pin to top"
+  },
+  "contextUnpin": {
+    "message": "Unpin"
+  },
+  "contextDelete": {
+    "message": "Delete bookmark"
+  },
+  "unnamedFolder": {
+    "message": "(untitled)"
+  },
+  "collapseAllTitle": {
+    "message": "Collapse/expand all folders"
+  },
+  "sidePanelBtnTitleOff": {
+    "message": "Open in side panel"
+  },
+  "sidePanelBtnTitleOn": {
+    "message": "Side panel mode is on — click to turn off"
+  },
+  "sidePanelBtnTitle": {
+    "message": "Open in side panel"
+  },
+  "settingsBtnTitle": {
+    "message": "Settings"
+  },
+  "settingsTitle": {
+    "message": "Settings"
+  },
+  "settingLanguage": {
+    "message": "Language"
+  },
+  "settingAuto": {
+    "message": "Auto (browser)"
+  },
+  "settingTheme": {
+    "message": "Theme"
+  },
+  "settingThemeDark": {
+    "message": "Dark"
+  },
+  "settingThemeLight": {
+    "message": "Light"
+  },
+  "settingInterval": {
+    "message": "Check every"
+  },
+  "settingRefreshNow": {
+    "message": "Refresh now"
+  },
+  "settingBack": {
+    "message": "← Back"
+  },
+  "interval1": {
+    "message": "1 minute"
+  },
+  "intervalOff": {
+    "message": "Off — don't auto-check"
+  },
+  "autoCheckOffHint": {
+    "message": "Auto-check is off — use ▶ to check manually"
+  },
+  "selectionHint": {
+    "message": "$1 selected — Enter to open, Delete to remove",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "deleteManyConfirm": {
+    "message": "Delete $1 selected bookmarks?",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "contextDeleteSelected": {
+    "message": "Delete selected ($1)",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "currentPageBadge": {
+    "message": "Open now"
+  },
+  "contextOpenSelected": {
+    "message": "Open $1 selected in new tabs",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "disableCheckTooltip": {
+    "message": "Disable auto-check for this bookmark"
+  },
+  "enableCheckTooltip": {
+    "message": "Re-enable auto-check"
+  },
+  "contextDisableCheck": {
+    "message": "Disable auto-check"
+  },
+  "contextEnableCheck": {
+    "message": "Enable auto-check"
+  },
+  "checkDisabledBadge": {
+    "message": "OFF"
+  },
+  "allChecksDisabled": {
+    "message": "All checks disabled"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "extName": { "message": "Vérificateur d'état des favoris" },
+  "extDescription": { "message": "Vérifie vos favoris un par un et affiche le code d'état HTTP (200, 404, 500, etc.)" },
+  "popupTitle": { "message": "Favoris" },
+  "syncBtnTitle": { "message": "Synchroniser manuellement" },
+  "checkNowBtnTitle": { "message": "Vérifier le prochain favori maintenant" },
+  "searchPlaceholder": { "message": "Rechercher par titre, URL ou code (200, 404…)" },
+  "intervalLabel": { "message": "Toutes les" },
+  "interval15": { "message": "15 min" },
+  "interval30": { "message": "30 min" },
+  "interval60": { "message": "1 heure" },
+  "interval180": { "message": "3 heures" },
+  "interval360": { "message": "6 heures" },
+  "interval1440": { "message": "24 heures" },
+  "loading": { "message": "Chargement…" },
+  "emptyNoBookmarks": { "message": "Aucun favori trouvé" },
+  "emptyNoResults": { "message": "Aucun résultat" },
+  "progressLabel": {
+    "message": "$1 sur $2 — suivant dans la file d'attente",
+    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+  },
+  "lastCheckPrefix": {
+    "message": "Dernière vérification : $1",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "neverChecked": { "message": "Pas encore vérifié" },
+  "timeJustNow": { "message": "à l'instant" },
+  "timeMinAgo": {
+    "message": "il y a $1 min",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeHoursAgo": {
+    "message": "il y a $1 h",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "timeDaysAgo": {
+    "message": "il y a $1 j",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "pinnedSectionLabel": { "message": "📌 Épinglés" },
+  "pinTooltip": { "message": "Épingler en haut" },
+  "unpinTooltip": { "message": "Désépingler" },
+  "deleteTooltip": { "message": "Supprimer le favori" },
+  "deleteConfirm": {
+    "message": "Supprimer le favori « $1 » ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextCheckNow": { "message": "Vérifier maintenant" },
+  "contextOpenNewTab": { "message": "Ouvrir dans un nouvel onglet" },
+  "contextPin": { "message": "Épingler en haut" },
+  "contextUnpin": { "message": "Désépingler" },
+  "contextDelete": { "message": "Supprimer le favori" },
+  "unnamedFolder": { "message": "(sans titre)" },
+  "collapseAllTitle": { "message": "Réduire/développer tous les dossiers" },
+  "sidePanelBtnTitleOff": { "message": "Ouvrir dans le panneau latéral" },
+  "sidePanelBtnTitleOn": { "message": "Mode panneau latéral activé — cliquer pour désactiver" },
+  "sidePanelBtnTitle": { "message": "Ouvrir dans le panneau latéral" },
+  "settingsBtnTitle": { "message": "Paramètres" },
+  "settingsTitle": { "message": "Paramètres" },
+  "settingLanguage": { "message": "Langue" },
+  "settingAuto": { "message": "Auto (navigateur)" },
+  "settingTheme": { "message": "Thème" },
+  "settingThemeDark": { "message": "Sombre" },
+  "settingThemeLight": { "message": "Clair" },
+  "settingInterval": { "message": "Vérifier toutes les" },
+  "settingRefreshNow": { "message": "Actualiser maintenant" },
+  "settingBack": { "message": "← Retour" },
+  "interval1": { "message": "1 minute" },
+  "intervalOff": { "message": "Désactivé — ne pas vérifier automatiquement" },
+  "autoCheckOffHint": { "message": "Vérification auto désactivée — utilisez ▶ pour vérifier manuellement" },
+  "selectionHint": {
+    "message": "$1 sélectionné(s) — Entrée pour ouvrir, Suppr pour supprimer",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "deleteManyConfirm": {
+    "message": "Supprimer les $1 favoris sélectionnés ?",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "contextDeleteSelected": {
+    "message": "Supprimer la sélection ($1)",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "currentPageBadge": { "message": "Ouvert maintenant" },
+  "contextOpenSelected": {
+    "message": "Ouvrir les $1 sélectionnés dans de nouveaux onglets",
+    "placeholders": { "1": { "content": "$1" } }
+  },
+  "disableCheckTooltip": { "message": "Désactiver la vérification auto pour ce favori" },
+  "enableCheckTooltip": { "message": "Réactiver la vérification auto" },
+  "contextDisableCheck": { "message": "Désactiver la vérification auto" },
+  "contextEnableCheck": { "message": "Activer la vérification auto" },
+  "checkDisabledBadge": { "message": "OFF" },
+  "allChecksDisabled": { "message": "Toutes les vérifications désactivées" }
+}

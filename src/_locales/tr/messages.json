@@ -1,0 +1,94 @@
+{
+ "extName": {  "message":  "Yer İşaretleri Durum Denetleyicisi" },
+ "extDescription": {  "message":  "Yer işaretlerinizi tek tek kontrol eder ve HTTP durum kodunu (200, 404, 500 vb.) gösterir" },
+ "popupTitle": {  "message":  "Yer İşaretleri" },
+ "syncBtnTitle": {  "message":  "Manuel olarak senkronize et" },
+ "checkNowBtnTitle": {  "message":  "Sıradaki yer işaretini şimdi kontrol et" },
+ "searchPlaceholder": {  "message":  "Başlık, URL veya koda göre ara (200, 404…)" },
+ "intervalLabel": {  "message":  "Her" },
+ "interval15": {  "message":  "15 dk" },
+ "interval30": {  "message":  "30 dk" },
+ "interval60": {  "message":  "1 saat" },
+ "interval180": {  "message":  "3 saat" },
+ "interval360": {  "message":  "6 saat" },
+ "interval1440": {  "message":  "24 saat" },
+ "loading": {  "message":  "Yükleniyor…" },
+ "emptyNoBookmarks": {  "message":  "Yer işareti bulunamadı" },
+ "emptyNoResults": {  "message":  "Hiçbir şey bulunamadı" },
+ "progressLabel": {
+ "message":  "$1 / $2 — sırada",
+ "placeholders": {  "1": {  "content":  "$1" },  "2": {  "content":  "$2" } }
+},
+ "lastCheckPrefix": {
+ "message":  "Son kontrol: $1",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "neverChecked": {  "message":  "Henüz kontrol edilmedi" },
+ "timeJustNow": {  "message":  "az önce" },
+ "timeMinAgo": {
+ "message":  "$1 dk önce",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeHoursAgo": {
+ "message":  "$1 sa önce",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "timeDaysAgo": {
+ "message":  "$1 g önce",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "pinnedSectionLabel": {  "message":  "📌 Sabitlenmiş" },
+ "pinTooltip": {  "message":  "Yukarı sabitle" },
+ "unpinTooltip": {  "message":  "Sabitlemeyi kaldır" },
+ "deleteTooltip": {  "message":  "Yer işaretini sil" },
+ "deleteConfirm": {
+ "message":  "«$1» yer işareti silinsin mi?",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextCheckNow": {  "message":  "Şimdi kontrol et" },
+ "contextOpenNewTab": {  "message":  "Yeni sekmede aç" },
+ "contextPin": {  "message":  "Yukarı sabitle" },
+ "contextUnpin": {  "message":  "Sabitlemeyi kaldır" },
+ "contextDelete": {  "message":  "Yer işaretini sil" },
+ "unnamedFolder": {  "message":  "(başlıksız)" },
+ "collapseAllTitle": {  "message":  "Tüm klasörleri daralt/genişlet" },
+ "sidePanelBtnTitleOff": {  "message":  "Yan panelde aç" },
+ "sidePanelBtnTitleOn": {  "message":  "Yan panel modu etkin — kapatmak için tıklayın" },
+ "sidePanelBtnTitle": {  "message":  "Yan panelde aç" },
+ "settingsBtnTitle": {  "message":  "Ayarlar" },
+ "settingsTitle": {  "message":  "Ayarlar" },
+ "settingLanguage": {  "message":  "Dil" },
+ "settingAuto": {  "message":  "Otomatik (tarayıcı)" },
+ "settingTheme": {  "message":  "Tema" },
+ "settingThemeDark": {  "message":  "Koyu" },
+ "settingThemeLight": {  "message":  "Açık" },
+ "settingInterval": {  "message":  "Kontrol aralığı" },
+ "settingRefreshNow": {  "message":  "Şimdi yenile" },
+ "settingBack": {  "message":  "← Geri" },
+ "interval1": {  "message":  "1 dakika" },
+ "intervalOff": {  "message":  "Kapalı — otomatik kontrol etme" },
+ "autoCheckOffHint": {  "message":  "Otomatik kontrol kapalı — manuel kontrol etmek için ▶ kullanın" },
+ "selectionHint": {
+ "message":  "$1 öğe seçildi — açmak için Enter, silmek için Delete",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "deleteManyConfirm": {
+ "message":  "Seçili $1 yer işareti silinsin mi?",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "contextDeleteSelected": {
+ "message":  "Seçilenleri sil ($1)",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "currentPageBadge": {  "message":  "Şu an açık" },
+ "contextOpenSelected": {
+ "message":  "Seçili $1 öğeyi yeni sekmelerde aç",
+ "placeholders": {  "1": {  "content":  "$1" } }
+},
+ "disableCheckTooltip": {  "message":  "Bu yer işareti için otomatik kontrolü kapat" },
+ "enableCheckTooltip": {  "message":  "Otomatik kontrolü yeniden etkinleştir" },
+ "contextDisableCheck": {  "message":  "Otomatik kontrolü kapat" },
+ "contextEnableCheck": {  "message":  "Otomatik kontrolü aç" },
+ "checkDisabledBadge": {  "message":  "KAPALI" },
+ "allChecksDisabled": {  "message":  "Tüm kontroller kapatıldı" }
+}
