@@ -1,5 +1,7 @@
 # Bookmark Status Checker
 
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/cw/shibisty)
+
 A browser extension that checks your bookmarks one by one and displays the HTTP response status code (200, 404, 500, etc.) next to each bookmark.
 
 ## Repository Structure
@@ -82,5 +84,8 @@ This builds `dist/chrome/`, `dist/firefox/`, and two ready-to-use archives:
 ## Publishing
 
 - **Chrome Web Store**: upload `dist/bookmark-status-checker-chrome.zip` as is.
-
 - **Firefox Add-ons (AMO)**: upload `dist/bookmark-status-checker-firefox.zip`; before publishing, replace `gecko.id` in `firefox/manifest.json` with your own ID (for example, `your-name@yourdomain.com`), and verify `strict_min_version` against the current minimum version that supports MV3.
+
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/cw/shibisty)
+
+If this project helps you, consider supporting its development on Patreon ❤️
