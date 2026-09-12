@@ -218,6 +218,32 @@ Other scripts:
 | `npm run coverage` | test suite with a coverage report |
 | `npm run check` | typecheck + tests + build |
 
+## Continuous integration
+
+`.github/workflows/ci.yml` runs on every push and pull request: `npm ci`, then
+the typecheck and the test suite on Node 20 and 22, then one build job that
+produces both extensions, asserts each generated manifest carries the version
+from `package.json` and contains the files it should, and uploads the two store
+archives as a build artifact. A second push to the same branch cancels the run
+still in flight.
+
+`.github/workflows/release.yml` runs on a `v*` tag: the same gates, plus a check
+that the tag matches `package.json`, and then a **draft** GitHub release with
+both archives attached — so nothing is published until you look it over. To cut
+one:
+
+```bash
+npm version patch      # bumps package.json and creates the tag
+git push --follow-tags
+```
+
+To show the badge, add this near the top of this file, with your own repository
+in the path:
+
+```markdown
+[![CI](https://github.com/<owner>/<repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<owner>/<repo>/actions/workflows/ci.yml)
+```
+
 ## Tests
 
 Vitest with jsdom. `tests/mocks/browser.ts` is an in-memory stand-in for the
