@@ -1,0 +1,27 @@
+{
+  "name": "bookmark-status-checker",
+  "version": "1.5.5",
+  "description": "Checks your bookmarks one by one and shows the HTTP status code (200, 404, 500, etc.)",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/yazl": "^2.4.5",
+    "@vitest/coverage-v8": "^2.1.9",
+    "esbuild": "^0.23.1",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.9",
+    "yazl": "^3.3.1"
+  }
+}

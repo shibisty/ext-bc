@@ -17,6 +17,9 @@
   "searchPlaceholder": {
     "message": "Search by title, address or code (200, 404…)"
   },
+  "searchClearTitle": {
+    "message": "खोज साफ़ करें"
+  },
   "intervalLabel": {
     "message": "Every"
   },
@@ -183,7 +186,7 @@
     "message": "Off — don't auto-जाँच"
   },
   "autoCheckOffHint": {
-    "message": "Auto-जाँच is off — use ▶ to जाँच manually"
+    "message": "Auto-जाँच is off"
   },
   "selectionHint": {
     "message": "$1 selected — Enter to open, हटाएँ to remove",
