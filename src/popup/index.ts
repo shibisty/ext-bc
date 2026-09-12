@@ -1,6 +1,7 @@
 // ===== Bookmark Status Checker — popup / side panel =====
 
 import { api, hasSidePanel, onEvent } from "../shared/api";
+import { applyPlatformClass, isAndroid, looksLikeAndroid } from "../shared/platform";
 import { t } from "../shared/i18n";
 import { loadLocale, setLocalePref } from "../shared/i18n";
 import { sendMessage } from "../shared/messages";
@@ -54,7 +55,10 @@ const VIEWPORT_SETTLE_MS = 250;
  * fits, nothing is touched.
  */
 function fitToViewport(): void {
-  if (isSidePanelContext || isTabContext) return; // those have real viewports of their own
+  // The side panel, the tab view and Android all have real viewports of their
+  // own; only a desktop popup is sized from its document.
+  if (isSidePanelContext || isTabContext) return;
+  if (document.body.classList.contains("android-mode")) return;
 
   const viewport = document.documentElement.clientHeight;
 
@@ -171,6 +175,12 @@ async function init(): Promise<void> {
   }
 
   localizeStaticMarkup(language);
+
+  // Before any measuring or height work: on Android the browser sizes the page
+  // and none of the popup-window machinery applies.
+  applyPlatformClass(looksLikeAndroid());
+  void isAndroid().then(applyPlatformClass);
+
   applyStoredHeight();
   applyPreferences();
   initTabs();

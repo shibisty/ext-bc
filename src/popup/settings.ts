@@ -120,8 +120,9 @@ function bindHeightField(): void {
   const field = dom.popupHeightInput;
   if (!field) return;
 
-  if (isSidePanelContext || isTabContext) {
-    // The browser sizes the side panel and the tab; there is nothing here to set.
+  if (isSidePanelContext || isTabContext || document.body.classList.contains("android-mode")) {
+    // The browser sizes the side panel, the tab and the Android page; there is
+    // nothing here to set.
     field.closest(".settings-row")?.setAttribute("hidden", "");
     return;
   }

@@ -96,6 +96,13 @@ export interface State {
   lastCheck: number | null;
   checking: boolean;
   checkingSince: number | null;
+  /**
+   * Why the last walk of the bookmarks produced nothing, when it produced
+   * nothing. An empty list is ambiguous — no bookmarks, or a browser that would
+   * not hand them over — and on Firefox for Android it was the second. Shown
+   * under the empty state so the difference is visible without a debugger.
+   */
+  lastSyncError: string | null;
 }
 
 export type DropPosition = "before" | "after" | "inside";

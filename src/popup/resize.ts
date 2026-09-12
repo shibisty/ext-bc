@@ -34,6 +34,14 @@ function forgetHeight(): void {
   }
 }
 
+/**
+ * Whether the browser, not this document, decides the window size: the side
+ * panel, the tab view, and Firefox for Android, where the popup is a page.
+ */
+function sizedByBrowser(): boolean {
+  return isSidePanelContext || isTabContext || document.body.classList.contains("android-mode");
+}
+
 function clamp(height: number): number {
   return clampAgainst(height, window.screen?.availHeight);
 }
@@ -70,7 +78,7 @@ export function setHeight(height: number): number {
 
 /** Re-applies the remembered height, shrunk to what the screen can show. */
 export function applyStoredHeight(): void {
-  if (isSidePanelContext || isTabContext) return; // the browser sizes those
+  if (sizedByBrowser()) return;
   const stored = readStoredHeight();
   if (stored === null) return;
   applyHeight(clamp(stored));
@@ -80,7 +88,7 @@ export function registerResizeHandle(): void {
   const grip = dom.resizeGrip;
   if (!grip) return;
 
-  if (isSidePanelContext || isTabContext) {
+  if (sizedByBrowser()) {
     grip.hidden = true;
     return;
   }

@@ -372,5 +372,8 @@
   },
   "hostAccessGrant": {
     "message": "Разрешить"
+  },
+  "bookmarksUnavailable": {
+    "message": "Этот браузер не даёт расширениям доступ к закладкам, поэтому проверять нечего. Известный случай — Firefox для Android."
   }
 }

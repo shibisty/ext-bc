@@ -2,6 +2,13 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+  <!--
+    Without this, Firefox for Android lays the document out in a virtual 980px
+    viewport and then scales the whole thing down to the screen: the list came
+    out as unreadably small desktop UI. A desktop popup has a real viewport of
+    its own, so the tag changes nothing there.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Bookmark Status Checker</title>
   <link rel="stylesheet" href="popup.css" />
 </head>
@@ -184,7 +191,7 @@
       </select>
     </div>
 
-    <div class="settings-row">
+    <div class="settings-row desktop-only">
       <label data-i18n="settingPopupHeight">Popup height</label>
       <input id="popupHeightInput" type="number" min="200" step="10" inputmode="numeric" />
     </div>

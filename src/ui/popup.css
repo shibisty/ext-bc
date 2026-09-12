@@ -63,6 +63,93 @@ body.side-panel-mode #sidePanelBtn {
   display: none;
 }
 
+/* ---------- Firefox for Android ---------- */
+
+/*
+ * There is no popup window there: the action opens this document as a page in
+ * the browser, so it should fill the screen rather than sit at 360px in the
+ * middle of it. Everything that only makes sense for a desktop popup goes.
+ */
+body.android-mode {
+  width: 100%;
+  height: 100vh;
+  max-height: none;
+  /* Read at arm's length, not at desk distance. */
+  font-size: 15px;
+}
+
+body.android-mode .resize-grip,
+body.android-mode #sidePanelBtn {
+  display: none;
+}
+
+/* Android has no sidebar and sizes the page itself. */
+body.android-mode .settings-row.desktop-only {
+  display: none;
+}
+
+/*
+ * One control per line, label above it. Side by side, every row started its
+ * control at a different x — the labels differ in width — and the column read
+ * as ragged. Stacking also gives each control the full width to be tapped.
+ */
+body.android-mode .settings-row {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+body.android-mode .settings-row label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+body.android-mode .settings-row input[type="number"],
+body.android-mode .settings-row select {
+  flex: 1 1 auto;
+  width: auto;
+  max-width: none;
+  font-size: 15px;
+  padding: 8px 10px;
+}
+
+/*
+ * Touch sizing: everything above is laid out for a mouse pointer, and a finger
+ * needs roughly 40px of target.
+ */
+body.android-mode .row {
+  padding: 12px 10px;
+  gap: 10px;
+}
+
+body.android-mode .row-btn {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+}
+
+body.android-mode .icon-btn {
+  width: 38px;
+  height: 34px;
+  font-size: 16px;
+}
+
+body.android-mode .tab {
+  padding: 12px 10px;
+  font-size: 14px;
+}
+
+body.android-mode .searchbar input {
+  font-size: 15px;
+  padding: 10px 12px;
+}
+
+body.android-mode .context-menu button {
+  padding: 12px 12px;
+  font-size: 15px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -550,6 +637,14 @@ body.settings-open .searchbar,
 body.settings-open .permission-banner,
 body.settings-open .list {
   display: none;
+}
+
+/* The browser's own reason for an empty list, under the empty-state message. */
+.empty-detail {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+  word-break: break-word;
 }
 
 /* ---------- missing site access ---------- */

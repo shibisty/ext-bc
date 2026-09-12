@@ -1,6 +1,6 @@
 import { api } from "../shared/api";
 import { t } from "../shared/i18n";
-import { readState, writeState } from "../shared/storage";
+import { NO_BOOKMARKS_API, readState, writeState } from "../shared/storage";
 import type { DropPosition, FlatBookmark, Item, State, TreeNode } from "../shared/types";
 import { collectSubtreeIds } from "../shared/archive";
 import { pruneToolbarPins } from "./toolbar";
@@ -97,15 +97,70 @@ export type SyncResult = Pick<
   | "archived"
   | "toolbarPins"
   | "currentIndex"
+  | "lastSyncError"
 >;
 
+/**
+ * Fills in children the browser did not hand over.
+ *
+ * `bookmarks.getTree()` is documented as returning the whole tree, and on
+ * Chrome and desktop Firefox it does. Firefox for Android answers with folders
+ * whose `children` is missing, so the walk found no leaves at all and the list
+ * came up empty with bookmarks plainly present in the browser. Asking for the
+ * children explicitly costs nothing where they were already there.
+ */
+async function hydrate(
+  node: chrome.bookmarks.BookmarkTreeNode,
+): Promise<chrome.bookmarks.BookmarkTreeNode> {
+  if (node.url) return node; // a bookmark, not a folder
+
+  let children = node.children;
+  if (children === undefined) {
+    try {
+      children = await api.bookmarks.getChildren(node.id);
+
+    } catch {
+      children = []; // a root this browser will not open — skip it, don't fail
+    }
+  }
+
+  return { ...node, children: await Promise.all(children.map(hydrate)) };
+}
+
 export async function syncBookmarks(): Promise<SyncResult> {
-  const treeRoot = await api.bookmarks.getTree();
-  const topNodes = treeRoot[0]?.children ?? [];
+  let topNodes: chrome.bookmarks.BookmarkTreeNode[] = [];
+  let lastSyncError: string | null = null;
+  let lastSyncErrorCode: string | null = null;
+
+  try {
+    if (api.bookmarks === undefined) {
+      // Firefox for Android does not expose the bookmarks namespace at all —
+      // the permission is dropped at install, so there is nothing to ask for
+      // and nothing to read. A code rather than a sentence: the popup turns it
+      // into something the user can act on, in their own language.
+      lastSyncErrorCode = NO_BOOKMARKS_API;
+      throw new Error(NO_BOOKMARKS_API);
+    }
+    const treeRoot = await api.bookmarks.getTree();
+    const root = treeRoot[0];
+    topNodes = root === undefined ? [] : ((await hydrate(root)).children ?? []);
+  } catch (err) {
+    lastSyncError =
+      lastSyncErrorCode ??
+      `bookmarks.getTree: ${err instanceof Error ? err.message : String(err)}`;
+  }
+
   const flat: FlatBookmark[] = [];
   const tree = topNodes
     .map((node) => processNode(node, flat))
     .filter((node): node is TreeNode => node !== null);
+
+  // Nothing found, and no error to explain it: say what the browser did hand
+  // over, which is the difference between "you have no bookmarks" and "this
+  // browser answered strangely".
+  if (lastSyncError === null && flat.length === 0) {
+    lastSyncError = `no bookmarks in ${topNodes.length} top-level folder(s)`;
+  }
 
   const state = await readState();
   const { items, order, seen } = reconcileItems(state.items, flat);
@@ -130,6 +185,7 @@ export async function syncBookmarks(): Promise<SyncResult> {
     archived,
     toolbarPins,
     currentIndex,
+    lastSyncError: flat.length > 0 ? null : lastSyncError,
   };
   await writeState(result);
   return result;

@@ -80,13 +80,16 @@ function scheduleSync(): void {
   syncDebounce = setTimeout(() => void withLock(syncBookmarks), SYNC_DEBOUNCE_MS);
 }
 
-// Firefox implements only some of these — onChildrenReordered is missing there,
-// and touching it directly used to throw and take the whole script down.
-onEvent(api.bookmarks.onCreated, scheduleSync);
-onEvent(api.bookmarks.onRemoved, scheduleSync);
-onEvent(api.bookmarks.onChanged, scheduleSync);
-onEvent(api.bookmarks.onMoved, scheduleSync);
-onEvent(api.bookmarks.onChildrenReordered, scheduleSync);
-onEvent(api.bookmarks.onImportEnded, scheduleSync);
+// Firefox implements only some of these — onChildrenReordered is missing there
+// — and Firefox for Android may not expose `bookmarks` at all, so even the
+// namespace is reached through `?.`. Touching any of it directly used to throw
+// and take the whole background script down with it.
+const bookmarkEvents = api.bookmarks as typeof chrome.bookmarks | undefined;
+onEvent(bookmarkEvents?.onCreated, scheduleSync);
+onEvent(bookmarkEvents?.onRemoved, scheduleSync);
+onEvent(bookmarkEvents?.onChanged, scheduleSync);
+onEvent(bookmarkEvents?.onMoved, scheduleSync);
+onEvent(bookmarkEvents?.onChildrenReordered, scheduleSync);
+onEvent(bookmarkEvents?.onImportEnded, scheduleSync);
 
 registerMessageRouter();

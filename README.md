@@ -218,6 +218,54 @@ Other scripts:
 | `npm run coverage` | test suite with a coverage report |
 | `npm run check` | typecheck + tests + build |
 
+## Firefox for Android
+
+**It cannot work there, and that is a fact about the browser.** Firefox for
+Android exposes no `bookmarks` API to extensions at all: the permission is
+dropped at install — the add-on's permission screen lists only "Access browser
+tabs" — and `browser.bookmarks` is `undefined`. Everything this extension does
+starts from reading the bookmark tree, so there is nothing to fall back to.
+
+What the code does about it:
+
+- the background never touches `api.bookmarks` without `?.`, so a missing
+  namespace cannot take the whole script down at load;
+- a walk that finds nothing records *why* in `lastSyncError`, and the popup
+  prints it under the empty state. The missing-API case is stored as the code
+  `NO_BOOKMARKS_API` and rendered as a translated sentence, so the user reads an
+  explanation rather than an internal error;
+- the Firefox manifest carries no `browser_specific_settings.gecko_android`
+  key, which is what AMO uses to opt an add-on in to Android. Without it the
+  add-on is not offered there, and nobody installs something that cannot work.
+
+The layout work for Android is still in place and still correct — a `viewport`
+meta tag, a `body.android-mode` class that fills the screen and sizes targets
+for a finger, settings stacked one per line — so if Mozilla ever ships the
+bookmarks API on Android, the UI side is ready.
+
+### Trying it on a device
+
+For whenever that matters again. Firefox for Android cannot load an unsigned
+folder the way desktop does, so the quickest loop is `web-ext` over ADB against
+**Firefox Nightly**, with *Settings → Remote debugging via USB* turned on and
+`adb devices` listing the device as `device` rather than `unauthorized`:
+
+```bash
+npm run build
+adb devices
+npx web-ext run --target firefox-android --android-device emulator-5554 --firefox-apk org.mozilla.fenix --source-dir dist/firefox
+```
+
+Pass the id exactly as `adb devices` printed it, with no angle brackets around
+it: on Windows `cmd` reads `<` as input redirection and answers "The system
+cannot find the file specified" before web-ext is ever started. The APK id above
+is Nightly's; release Firefox is `org.mozilla.firefox`, but it will not load an
+unsigned build.
+
+On Android the action has no toolbar button — it opens from the browser menu,
+and `about:debugging` on a desktop, connected to the device, gives the console
+for the background script.
+
 ## Continuous integration
 
 `.github/workflows/ci.yml` runs on every push and pull request: `npm ci`, then

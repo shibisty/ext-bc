@@ -220,9 +220,40 @@ describe("message router", () => {
   });
 
   it("answers with ok:false when a handler throws", async () => {
-    mockBrowser().bookmarks.getTree.mockRejectedValueOnce(new Error("unavailable"));
+    mockBrowser().storage.local.set.mockRejectedValueOnce(new Error("quota"));
     const res = await send({ type: "SYNC" });
     expect(res.ok).toBe(false);
+    expect(res.error).toContain("quota");
+  });
+
+  /**
+   * A browser that will not hand over its bookmarks is not a crash: the walk
+   * reports why, and the popup prints it under the empty state instead of
+   * claiming there are no bookmarks.
+   */
+  it("reports an unreadable bookmark tree without failing", async () => {
+    mockBrowser().bookmarks.getTree.mockRejectedValueOnce(new Error("unavailable"));
+
+    const res = await send({ type: "SYNC" });
+
+    expect(res.ok).toBe(true);
+    expect(res.state?.order).toEqual([]);
+    expect(res.state?.lastSyncError).toContain("unavailable");
+  });
+
+  it("says so when the tree is readable but holds nothing", async () => {
+    mockBrowser().__setTree([{ id: "1", title: "Bookmarks bar", children: [] }]);
+
+    const res = await send({ type: "SYNC" });
+
+    expect(res.state?.lastSyncError).toContain("top-level folder");
+  });
+
+  it("clears the explanation once bookmarks are found", async () => {
+    const res = await send({ type: "SYNC" });
+
+    expect(res.state?.order.length).toBeGreaterThan(0);
+    expect(res.state?.lastSyncError).toBeNull();
   });
 
   /**

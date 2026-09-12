@@ -372,5 +372,8 @@
   },
   "hostAccessGrant": {
     "message": "Grant access"
+  },
+  "bookmarksUnavailable": {
+    "message": "This browser gives extensions no access to bookmarks, so there is nothing to check. Firefox for Android is the known case."
   }
 }

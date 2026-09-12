@@ -41,3 +41,36 @@ describe("background start-up", () => {
     expect(mockBrowser().bookmarks.onCreated.listeners.length).toBe(1);
   });
 });
+
+/**
+ * Firefox for Android may not expose the bookmarks namespace to an extension at
+ * all — reported as `can't access property "getTree", s.bookmarks is
+ * undefined`. Nothing here can work without it, but the extension must still
+ * come up and say why rather than dying at load.
+ */
+describe("a browser with no bookmarks API", () => {
+  it("still registers the message router", async () => {
+    const api = mockBrowser() as unknown as Record<string, unknown>;
+    const saved = api["bookmarks"];
+    api["bookmarks"] = undefined;
+
+    await expect(loadBackground()).resolves.toBeUndefined();
+    expect(mockBrowser().runtime.onMessage.listeners.length).toBe(1);
+
+    api["bookmarks"] = saved;
+  });
+
+  it("explains itself instead of reporting an empty list", async () => {
+    const api = mockBrowser() as unknown as Record<string, unknown>;
+    const saved = api["bookmarks"];
+    api["bookmarks"] = undefined;
+
+    const { syncBookmarks } = await import("../../src/background/bookmarks");
+    const result = await syncBookmarks();
+
+    expect(result.order).toEqual([]);
+    expect(result.lastSyncError).toBe("NO_BOOKMARKS_API");
+
+    api["bookmarks"] = saved;
+  });
+});

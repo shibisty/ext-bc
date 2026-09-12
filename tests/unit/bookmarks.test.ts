@@ -187,3 +187,45 @@ describe("syncBookmarks", () => {
     await expect(readState()).resolves.toMatchObject({ currentIndex: 0 });
   });
 });
+
+/**
+ * Reported from Firefox for Android: the browser had a bookmark, the extension
+ * showed "No bookmarks found". `bookmarks.getTree()` is documented as returning
+ * the whole tree, and Chrome and desktop Firefox do — Android hands back
+ * folders with no `children` at all, so the walk found nothing to walk.
+ */
+describe("a browser whose getTree() does not nest", () => {
+  it("fetches the children it was not given", async () => {
+    mockBrowser().__setTree([
+      {
+        id: "1",
+        title: "Bookmarks bar",
+        children: [
+          { id: "2", title: "Alpha", url: "https://a.example/" },
+          {
+            id: "3",
+            title: "Work",
+            children: [{ id: "4", title: "Beta", url: "https://b.example/" }],
+          },
+        ],
+      },
+    ]);
+    mockBrowser().__setShallowTree(true);
+
+    const result = await syncBookmarks();
+
+    expect(result.order).toEqual(["2", "4"]);
+    const bar = result.tree[0];
+    const childIds = bar && bar.type === "folder" ? bar.children.map((child) => child.id) : [];
+    expect(childIds).toEqual(["2", "3"]);
+    expect(mockBrowser().bookmarks.getChildren).toHaveBeenCalled();
+  });
+
+  it("survives a root folder the browser refuses to open", async () => {
+    mockBrowser().__setTree([{ id: "1", title: "Bookmarks bar", children: [] }]);
+    mockBrowser().__setShallowTree(true);
+    mockBrowser().bookmarks.getChildren.mockRejectedValueOnce(new Error("no access"));
+
+    await expect(syncBookmarks()).resolves.toMatchObject({ order: [] });
+  });
+});

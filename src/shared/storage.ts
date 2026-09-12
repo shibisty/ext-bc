@@ -4,6 +4,14 @@ import type { State } from "./types";
 export const DEFAULT_INTERVAL_MINUTES = 60;
 
 /**
+ * Recorded in `lastSyncError` when the browser exposes no bookmarks API at all.
+ * A code, not a sentence: the background records it and the popup renders it in
+ * the user's language. Lives here because both sides need it and neither should
+ * have to import the other's bundle.
+ */
+export const NO_BOOKMARKS_API = "NO_BOOKMARKS_API";
+
+/**
  * Default value for every persisted key. The key list used by `readState()` is
  * derived from this object, so adding a field to `State` + a default here is
  * all it takes to make it available on both sides of the extension.
@@ -22,6 +30,7 @@ export const DEFAULTS: State = {
   lastCheck: null,
   checking: false,
   checkingSince: null,
+  lastSyncError: null,
 };
 
 export const STATE_KEYS = Object.keys(DEFAULTS) as (keyof State)[];

@@ -1,5 +1,6 @@
 import { archiveTree, hiddenBookmarkIds, mainTree } from "../../shared/archive";
 import { t } from "../../shared/i18n";
+import { NO_BOOKMARKS_API } from "../../shared/storage";
 import { activeQueueId, buildQueue } from "../../shared/queue";
 import { badgeText } from "../../shared/status";
 import type { Item, State, TreeNode } from "../../shared/types";
@@ -45,9 +46,33 @@ export function filterBySearch(
   });
 }
 
-function renderEmpty(messageKey: string): void {
+/**
+ * Turns the recorded reason into something worth reading. One case has a
+ * translation of its own: Firefox for Android gives extensions no access to
+ * bookmarks whatsoever, which is a fact about the browser rather than a fault
+ * the user can fix.
+ */
+function explainEmpty(reason: string | null): string | null {
+  if (reason === NO_BOOKMARKS_API) return t("bookmarksUnavailable");
+  return reason;
+}
+
+/**
+ * `detail` is the browser's own account of why there was nothing to show. An
+ * empty list used to be silent, and on Firefox for Android — where `getTree()`
+ * answers without children — it was indistinguishable from having no bookmarks.
+ */
+function renderEmpty(messageKey: string, detail?: string | null): void {
   dom.emptyState.style.display = "block";
-  dom.emptyState.textContent = t(messageKey);
+  dom.emptyState.replaceChildren(document.createTextNode(t(messageKey)));
+
+  if (detail) {
+    const line = document.createElement("div");
+    line.className = "empty-detail";
+    line.textContent = detail;
+    dom.emptyState.appendChild(line);
+  }
+
   const frag = document.createDocumentFragment();
   frag.appendChild(dom.emptyState);
   dom.list.replaceChildren(frag);
@@ -100,7 +125,7 @@ export function render(state: State): void {
     : order.filter((id) => !hidden.has(id));
 
   if (order.length === 0) {
-    renderEmpty("emptyNoBookmarks");
+    renderEmpty("emptyNoBookmarks", explainEmpty(state.lastSyncError));
     return;
   }
 

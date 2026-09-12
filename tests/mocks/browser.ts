@@ -76,6 +76,14 @@ export function createBrowserMock() {
     });
   }
 
+  /** Firefox for Android answers getTree() without nested children. */
+  let shallowTree = false;
+
+  /** Copies a node without its children, the way a shallow browser answers. */
+  function strip(nodes: BookmarkNodeFixture[]): BookmarkNodeFixture[] {
+    return nodes.map(({ children: _children, ...rest }) => ({ ...rest }));
+  }
+
   const api = {
     storage: {
       local: {
@@ -101,7 +109,10 @@ export function createBrowserMock() {
     },
 
     bookmarks: {
-      getTree: vi.fn(async () => structuredClone([{ id: "0", title: "", children: tree }])),
+      getTree: vi.fn(async () => {
+        const children = shallowTree ? strip(tree) : tree;
+        return structuredClone([{ id: "0", title: "", children }]);
+      }),
       get: vi.fn(async (id: string) => {
         const hit = findNode(id);
         return hit ? [structuredClone(hit.node)] : [];
@@ -191,6 +202,7 @@ export function createBrowserMock() {
       sendMessage: vi.fn(),
       getURL: (path: string) => `chrome-extension://test/${path}`,
       getManifest: () => ({ version: "9.9.9" }),
+      getPlatformInfo: vi.fn(async () => ({ os: "linux" as chrome.runtime.PlatformOs })),
       onMessage: makeEvent<
         [unknown, chrome.runtime.MessageSender, (response: unknown) => void]
       >(),
@@ -238,6 +250,10 @@ export function createBrowserMock() {
       decorate(tree);
     },
     __tree: () => tree,
+    /** Make getTree() answer without nested children, as Android does. */
+    __setShallowTree: (on: boolean) => {
+      shallowTree = on;
+    },
     __setMoveSemantics: (mode: "before-removal" | "after-removal") => {
       moveSemantics = mode;
     },
@@ -252,6 +268,7 @@ export function createBrowserMock() {
       store = {};
       tree = [];
       moveSemantics = "before-removal";
+      shallowTree = false;
       nextId = 1;
       for (const event of allEvents) event.listeners.length = 0;
     },

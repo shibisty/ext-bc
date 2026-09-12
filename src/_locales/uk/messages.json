@@ -372,5 +372,8 @@
   },
   "hostAccessGrant": {
     "message": "Дозволити"
+  },
+  "bookmarksUnavailable": {
+    "message": "Цей браузер не дає розширенням доступ до закладок, тому перевіряти нічого. Відомий випадок — Firefox для Android."
   }
 }
