@@ -17,6 +17,9 @@
   "searchPlaceholder": {
     "message": "Поиск по названию, адресу или коду (200, 404…)"
   },
+  "searchClearTitle": {
+    "message": "Очистить поиск"
+  },
   "intervalLabel": {
     "message": "Раз в"
   },
@@ -50,14 +53,20 @@
   "progressLabel": {
     "message": "$1 из $2 — следующая на очереди",
     "placeholders": {
-      "1": { "content": "$1" },
-      "2": { "content": "$2" }
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
     }
   },
   "lastCheckPrefix": {
     "message": "Последняя проверка: $1",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "neverChecked": {
@@ -69,19 +78,25 @@
   "timeMinAgo": {
     "message": "$1 мин назад",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "timeHoursAgo": {
     "message": "$1 ч назад",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "timeDaysAgo": {
     "message": "$1 дн назад",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "pinnedSectionLabel": {
@@ -99,7 +114,9 @@
   "deleteConfirm": {
     "message": "Удалить закладку «$1»?",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "contextCheckNow": {
@@ -169,24 +186,30 @@
     "message": "Отключено — не проверять"
   },
   "autoCheckOffHint": {
-    "message": "Автопроверка отключена — ▶ для проверки вручную"
+    "message": "Автопроверка отключена"
   },
   "selectionHint": {
     "message": "Выбрано: $1 — Enter открыть, Delete удалить",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "deleteManyConfirm": {
     "message": "Удалить выбранные закладки ($1)?",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "contextDeleteSelected": {
     "message": "Удалить выбранные ($1)",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "currentPageBadge": {
@@ -195,7 +218,9 @@
   "contextOpenSelected": {
     "message": "Открыть выбранные ($1) в новых вкладках",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "disableCheckTooltip": {
@@ -215,5 +240,140 @@
   },
   "allChecksDisabled": {
     "message": "Все проверки отключены"
+  },
+  "tabBookmarks": {
+    "message": "Закладки"
+  },
+  "tabArchive": {
+    "message": "Архив"
+  },
+  "contextArchive": {
+    "message": "В архив"
+  },
+  "contextUnarchive": {
+    "message": "Вернуть из архива"
+  },
+  "contextArchiveFolder": {
+    "message": "Папку в архив"
+  },
+  "contextUnarchiveFolder": {
+    "message": "Вернуть папку"
+  },
+  "archiveTooltip": {
+    "message": "В архив"
+  },
+  "unarchiveTooltip": {
+    "message": "Вернуть из архива"
+  },
+  "emptyArchive": {
+    "message": "Архив пуст"
+  },
+  "contextRename": {
+    "message": "Переименовать…"
+  },
+  "renameTitle": {
+    "message": "Переименовать закладку"
+  },
+  "renameSave": {
+    "message": "Сохранить"
+  },
+  "renameCancel": {
+    "message": "Отмена"
+  },
+  "resizeGripTitle": {
+    "message": "Потяните, чтобы изменить высоту · двойной клик — сбросить"
+  },
+  "settingOpenTrigger": {
+    "message": "Открывать закладку"
+  },
+  "openTriggerDouble": {
+    "message": "Двойным кликом"
+  },
+  "openTriggerSingle": {
+    "message": "Одним кликом"
+  },
+  "settingOpenTarget": {
+    "message": "Открывать в"
+  },
+  "openTargetNew": {
+    "message": "Новой вкладке"
+  },
+  "openTargetCurrent": {
+    "message": "Текущей вкладке"
+  },
+  "settingAfterOpen": {
+    "message": "После перехода"
+  },
+  "afterOpenKeep": {
+    "message": "Оставить попап открытым"
+  },
+  "afterOpenClose": {
+    "message": "Закрыть попап"
+  },
+  "settingRowDetail": {
+    "message": "В строке показывать"
+  },
+  "rowDetailFull": {
+    "message": "Всё"
+  },
+  "rowDetailTitle": {
+    "message": "Только заголовок"
+  },
+  "settingRowActions": {
+    "message": "Действия в строке"
+  },
+  "rowActionsButtons": {
+    "message": "Кнопки и меню"
+  },
+  "rowActionsMenu": {
+    "message": "Только контекстное меню"
+  },
+  "actionFailed": {
+    "message": "Не удалось — перезагрузите расширение"
+  },
+  "settingTitleLines": {
+    "message": "Заголовок"
+  },
+  "titleLinesOne": {
+    "message": "В одну строку"
+  },
+  "titleLinesTwo": {
+    "message": "В две строки"
+  },
+  "settingPinToToolbar": {
+    "message": "Закрепление также"
+  },
+  "pinToToolbarOff": {
+    "message": "Только здесь"
+  },
+  "pinToToolbarOn": {
+    "message": "Копирует на панель закладок"
+  },
+  "settingPopupHeight": {
+    "message": "Высота попапа"
+  },
+  "settingCredentials": {
+    "message": "Проверять как"
+  },
+  "credentialsOmit": {
+    "message": "Неавторизованный гость"
+  },
+  "credentialsInclude": {
+    "message": "Авторизованный (с куками)"
+  },
+  "settingOpenInTab": {
+    "message": "Открыть во вкладке (во всю высоту)"
+  },
+  "workerOutdated": {
+    "message": "Фоновая часть устарела — удалите и загрузите расширение заново"
+  },
+  "hostAccessMissing": {
+    "message": "Доступ к сайтам выключен — большинство проверок не проходит."
+  },
+  "hostAccessGrant": {
+    "message": "Разрешить"
+  },
+  "bookmarksUnavailable": {
+    "message": "Этот браузер не даёт расширениям доступ к закладкам, поэтому проверять нечего. Известный случай — Firefox для Android."
   }
 }

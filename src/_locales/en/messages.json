@@ -17,6 +17,9 @@
   "searchPlaceholder": {
     "message": "Search by title, address or code (200, 404…)"
   },
+  "searchClearTitle": {
+    "message": "Clear search"
+  },
   "intervalLabel": {
     "message": "Every"
   },
@@ -50,14 +53,20 @@
   "progressLabel": {
     "message": "$1 of $2 — next in queue",
     "placeholders": {
-      "1": { "content": "$1" },
-      "2": { "content": "$2" }
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
     }
   },
   "lastCheckPrefix": {
     "message": "Last check: $1",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "neverChecked": {
@@ -69,19 +78,25 @@
   "timeMinAgo": {
     "message": "$1 min ago",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "timeHoursAgo": {
     "message": "$1 h ago",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "timeDaysAgo": {
     "message": "$1 d ago",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "pinnedSectionLabel": {
@@ -99,7 +114,9 @@
   "deleteConfirm": {
     "message": "Delete bookmark “$1”?",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "contextCheckNow": {
@@ -169,24 +186,30 @@
     "message": "Off — don't auto-check"
   },
   "autoCheckOffHint": {
-    "message": "Auto-check is off — use ▶ to check manually"
+    "message": "Auto-check is off"
   },
   "selectionHint": {
     "message": "$1 selected — Enter to open, Delete to remove",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "deleteManyConfirm": {
     "message": "Delete $1 selected bookmarks?",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "contextDeleteSelected": {
     "message": "Delete selected ($1)",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "currentPageBadge": {
@@ -195,7 +218,9 @@
   "contextOpenSelected": {
     "message": "Open $1 selected in new tabs",
     "placeholders": {
-      "1": { "content": "$1" }
+      "1": {
+        "content": "$1"
+      }
     }
   },
   "disableCheckTooltip": {
@@ -215,5 +240,140 @@
   },
   "allChecksDisabled": {
     "message": "All checks disabled"
+  },
+  "tabBookmarks": {
+    "message": "Bookmarks"
+  },
+  "tabArchive": {
+    "message": "Archive"
+  },
+  "contextArchive": {
+    "message": "Move to archive"
+  },
+  "contextUnarchive": {
+    "message": "Restore from archive"
+  },
+  "contextArchiveFolder": {
+    "message": "Move folder to archive"
+  },
+  "contextUnarchiveFolder": {
+    "message": "Restore folder"
+  },
+  "archiveTooltip": {
+    "message": "Move to archive"
+  },
+  "unarchiveTooltip": {
+    "message": "Restore from archive"
+  },
+  "emptyArchive": {
+    "message": "The archive is empty"
+  },
+  "contextRename": {
+    "message": "Rename…"
+  },
+  "renameTitle": {
+    "message": "Rename bookmark"
+  },
+  "renameSave": {
+    "message": "Save"
+  },
+  "renameCancel": {
+    "message": "Cancel"
+  },
+  "resizeGripTitle": {
+    "message": "Drag to resize · double-click to reset"
+  },
+  "settingOpenTrigger": {
+    "message": "Open a bookmark"
+  },
+  "openTriggerDouble": {
+    "message": "On double click"
+  },
+  "openTriggerSingle": {
+    "message": "On single click"
+  },
+  "settingOpenTarget": {
+    "message": "Open in"
+  },
+  "openTargetNew": {
+    "message": "A new tab"
+  },
+  "openTargetCurrent": {
+    "message": "The current tab"
+  },
+  "settingAfterOpen": {
+    "message": "After opening"
+  },
+  "afterOpenKeep": {
+    "message": "Keep the popup open"
+  },
+  "afterOpenClose": {
+    "message": "Close the popup"
+  },
+  "settingRowDetail": {
+    "message": "Each row shows"
+  },
+  "rowDetailFull": {
+    "message": "Everything"
+  },
+  "rowDetailTitle": {
+    "message": "Title only"
+  },
+  "settingRowActions": {
+    "message": "Row actions"
+  },
+  "rowActionsButtons": {
+    "message": "Buttons and menu"
+  },
+  "rowActionsMenu": {
+    "message": "Context menu only"
+  },
+  "actionFailed": {
+    "message": "Action failed — reload the extension"
+  },
+  "settingTitleLines": {
+    "message": "Title"
+  },
+  "titleLinesOne": {
+    "message": "One line"
+  },
+  "titleLinesTwo": {
+    "message": "Two lines"
+  },
+  "settingPinToToolbar": {
+    "message": "Pinning also"
+  },
+  "pinToToolbarOff": {
+    "message": "Only pins here"
+  },
+  "pinToToolbarOn": {
+    "message": "Copies to the toolbar"
+  },
+  "settingPopupHeight": {
+    "message": "Popup height"
+  },
+  "settingCredentials": {
+    "message": "Check as"
+  },
+  "credentialsOmit": {
+    "message": "A signed-out visitor"
+  },
+  "credentialsInclude": {
+    "message": "Signed-in (sends cookies)"
+  },
+  "settingOpenInTab": {
+    "message": "Open in a tab (full height)"
+  },
+  "workerOutdated": {
+    "message": "Background part is outdated — remove and re-add the extension"
+  },
+  "hostAccessMissing": {
+    "message": "Site access is off, so most checks fail."
+  },
+  "hostAccessGrant": {
+    "message": "Grant access"
+  },
+  "bookmarksUnavailable": {
+    "message": "This browser gives extensions no access to bookmarks, so there is nothing to check. Firefox for Android is the known case."
   }
 }

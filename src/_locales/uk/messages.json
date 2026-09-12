@@ -1,94 +1,379 @@
 {
-  "extName": { "message": "Перевірка статусу закладок" },
-  "extDescription": { "message": "Послідовно перевіряє ваші закладки та показує HTTP-код статусу (200, 404, 500 тощо)" },
-  "popupTitle": { "message": "Закладки" },
-  "syncBtnTitle": { "message": "Синхронізувати вручну" },
-  "checkNowBtnTitle": { "message": "Перевірити наступну закладку зараз" },
-  "searchPlaceholder": { "message": "Пошук за назвою, URL або кодом (200, 404…)" },
-  "intervalLabel": { "message": "Кожні" },
-  "interval15": { "message": "15 хв" },
-  "interval30": { "message": "30 хв" },
-  "interval60": { "message": "1 год" },
-  "interval180": { "message": "3 год" },
-  "interval360": { "message": "6 год" },
-  "interval1440": { "message": "24 год" },
-  "loading": { "message": "Завантаження…" },
-  "emptyNoBookmarks": { "message": "Закладок не знайдено" },
-  "emptyNoResults": { "message": "Нічого не знайдено" },
+  "extName": {
+    "message": "Перевірка статусу закладок"
+  },
+  "extDescription": {
+    "message": "Послідовно перевіряє ваші закладки та показує HTTP-код статусу (200, 404, 500 тощо)"
+  },
+  "popupTitle": {
+    "message": "Закладки"
+  },
+  "syncBtnTitle": {
+    "message": "Синхронізувати вручну"
+  },
+  "checkNowBtnTitle": {
+    "message": "Перевірити наступну закладку зараз"
+  },
+  "searchPlaceholder": {
+    "message": "Пошук за назвою, URL або кодом (200, 404…)"
+  },
+  "searchClearTitle": {
+    "message": "Очистити пошук"
+  },
+  "intervalLabel": {
+    "message": "Кожні"
+  },
+  "interval15": {
+    "message": "15 хв"
+  },
+  "interval30": {
+    "message": "30 хв"
+  },
+  "interval60": {
+    "message": "1 год"
+  },
+  "interval180": {
+    "message": "3 год"
+  },
+  "interval360": {
+    "message": "6 год"
+  },
+  "interval1440": {
+    "message": "24 год"
+  },
+  "loading": {
+    "message": "Завантаження…"
+  },
+  "emptyNoBookmarks": {
+    "message": "Закладок не знайдено"
+  },
+  "emptyNoResults": {
+    "message": "Нічого не знайдено"
+  },
   "progressLabel": {
     "message": "$1 з $2 — наступна в черзі",
-    "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      },
+      "2": {
+        "content": "$2"
+      }
+    }
   },
   "lastCheckPrefix": {
     "message": "Остання перевірка: $1",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
-  "neverChecked": { "message": "Ще не перевірено" },
-  "timeJustNow": { "message": "щойно" },
+  "neverChecked": {
+    "message": "Ще не перевірено"
+  },
+  "timeJustNow": {
+    "message": "щойно"
+  },
   "timeMinAgo": {
     "message": "$1 хв тому",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
   "timeHoursAgo": {
     "message": "$1 год тому",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
   "timeDaysAgo": {
     "message": "$1 д тому",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
-  "pinnedSectionLabel": { "message": "📌 Закріплені" },
-  "pinTooltip": { "message": "Закріпити зверху" },
-  "unpinTooltip": { "message": "Відкріпити" },
-  "deleteTooltip": { "message": "Видалити закладку" },
+  "pinnedSectionLabel": {
+    "message": "📌 Закріплені"
+  },
+  "pinTooltip": {
+    "message": "Закріпити зверху"
+  },
+  "unpinTooltip": {
+    "message": "Відкріпити"
+  },
+  "deleteTooltip": {
+    "message": "Видалити закладку"
+  },
   "deleteConfirm": {
     "message": "Видалити закладку «$1»?",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
-  "contextCheckNow": { "message": "Перевірити зараз" },
-  "contextOpenNewTab": { "message": "Відкрити в новій вкладці" },
-  "contextPin": { "message": "Закріпити зверху" },
-  "contextUnpin": { "message": "Відкріпити" },
-  "contextDelete": { "message": "Видалити закладку" },
-  "unnamedFolder": { "message": "(без назви)" },
-  "collapseAllTitle": { "message": "Згорнути/розгорнути всі папки" },
-  "sidePanelBtnTitleOff": { "message": "Відкрити на бічній панелі" },
-  "sidePanelBtnTitleOn": { "message": "Режим бічної панелі увімкнено — натисніть, щоб вимкнути" },
-  "sidePanelBtnTitle": { "message": "Відкрити на бічній панелі" },
-  "settingsBtnTitle": { "message": "Налаштування" },
-  "settingsTitle": { "message": "Налаштування" },
-  "settingLanguage": { "message": "Мова" },
-  "settingAuto": { "message": "Авто (браузер)" },
-  "settingTheme": { "message": "Тема" },
-  "settingThemeDark": { "message": "Темна" },
-  "settingThemeLight": { "message": "Світла" },
-  "settingInterval": { "message": "Перевіряти кожні" },
-  "settingRefreshNow": { "message": "Оновити зараз" },
-  "settingBack": { "message": "← Назад" },
-  "interval1": { "message": "1 хвилина" },
-  "intervalOff": { "message": "Вимкнено — не перевіряти автоматично" },
-  "autoCheckOffHint": { "message": "Автоперевірку вимкнено — використовуйте ▶ для ручної перевірки" },
+  "contextCheckNow": {
+    "message": "Перевірити зараз"
+  },
+  "contextOpenNewTab": {
+    "message": "Відкрити в новій вкладці"
+  },
+  "contextPin": {
+    "message": "Закріпити зверху"
+  },
+  "contextUnpin": {
+    "message": "Відкріпити"
+  },
+  "contextDelete": {
+    "message": "Видалити закладку"
+  },
+  "unnamedFolder": {
+    "message": "(без назви)"
+  },
+  "collapseAllTitle": {
+    "message": "Згорнути/розгорнути всі папки"
+  },
+  "sidePanelBtnTitleOff": {
+    "message": "Відкрити на бічній панелі"
+  },
+  "sidePanelBtnTitleOn": {
+    "message": "Режим бічної панелі увімкнено — натисніть, щоб вимкнути"
+  },
+  "sidePanelBtnTitle": {
+    "message": "Відкрити на бічній панелі"
+  },
+  "settingsBtnTitle": {
+    "message": "Налаштування"
+  },
+  "settingsTitle": {
+    "message": "Налаштування"
+  },
+  "settingLanguage": {
+    "message": "Мова"
+  },
+  "settingAuto": {
+    "message": "Авто (браузер)"
+  },
+  "settingTheme": {
+    "message": "Тема"
+  },
+  "settingThemeDark": {
+    "message": "Темна"
+  },
+  "settingThemeLight": {
+    "message": "Світла"
+  },
+  "settingInterval": {
+    "message": "Перевіряти кожні"
+  },
+  "settingRefreshNow": {
+    "message": "Оновити зараз"
+  },
+  "settingBack": {
+    "message": "← Назад"
+  },
+  "interval1": {
+    "message": "1 хвилина"
+  },
+  "intervalOff": {
+    "message": "Вимкнено — не перевіряти автоматично"
+  },
+  "autoCheckOffHint": {
+    "message": "Автоперевірку вимкнено"
+  },
   "selectionHint": {
     "message": "Вибрано $1 — Enter для відкриття, Delete для видалення",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
   "deleteManyConfirm": {
     "message": "Видалити вибрані закладки ($1)?",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
   "contextDeleteSelected": {
     "message": "Видалити вибрані ($1)",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
-  "currentPageBadge": { "message": "Відкрито зараз" },
+  "currentPageBadge": {
+    "message": "Відкрито зараз"
+  },
   "contextOpenSelected": {
     "message": "Відкрити вибрані ($1) у нових вкладках",
-    "placeholders": { "1": { "content": "$1" } }
+    "placeholders": {
+      "1": {
+        "content": "$1"
+      }
+    }
   },
-  "disableCheckTooltip": { "message": "Вимкнути автоперевірку для цієї закладки" },
-  "enableCheckTooltip": { "message": "Увімкнути автоперевірку знову" },
-  "contextDisableCheck": { "message": "Вимкнути автоперевірку" },
-  "contextEnableCheck": { "message": "Увімкнути автоперевірку" },
-  "checkDisabledBadge": { "message": "ВИМК" },
-  "allChecksDisabled": { "message": "Усі перевірки вимкнено" }
+  "disableCheckTooltip": {
+    "message": "Вимкнути автоперевірку для цієї закладки"
+  },
+  "enableCheckTooltip": {
+    "message": "Увімкнути автоперевірку знову"
+  },
+  "contextDisableCheck": {
+    "message": "Вимкнути автоперевірку"
+  },
+  "contextEnableCheck": {
+    "message": "Увімкнути автоперевірку"
+  },
+  "checkDisabledBadge": {
+    "message": "ВИМК"
+  },
+  "allChecksDisabled": {
+    "message": "Усі перевірки вимкнено"
+  },
+  "tabBookmarks": {
+    "message": "Закладки"
+  },
+  "tabArchive": {
+    "message": "Архів"
+  },
+  "contextArchive": {
+    "message": "До архіву"
+  },
+  "contextUnarchive": {
+    "message": "Повернути з архіву"
+  },
+  "contextArchiveFolder": {
+    "message": "Папку до архіву"
+  },
+  "contextUnarchiveFolder": {
+    "message": "Повернути папку"
+  },
+  "archiveTooltip": {
+    "message": "До архіву"
+  },
+  "unarchiveTooltip": {
+    "message": "Повернути з архіву"
+  },
+  "emptyArchive": {
+    "message": "Архів порожній"
+  },
+  "contextRename": {
+    "message": "Перейменувати…"
+  },
+  "renameTitle": {
+    "message": "Перейменувати закладку"
+  },
+  "renameSave": {
+    "message": "Зберегти"
+  },
+  "renameCancel": {
+    "message": "Скасувати"
+  },
+  "resizeGripTitle": {
+    "message": "Потягніть, щоб змінити висоту · подвійний клік — скинути"
+  },
+  "settingOpenTrigger": {
+    "message": "Відкривати закладку"
+  },
+  "openTriggerDouble": {
+    "message": "Подвійним кліком"
+  },
+  "openTriggerSingle": {
+    "message": "Одним кліком"
+  },
+  "settingOpenTarget": {
+    "message": "Відкривати в"
+  },
+  "openTargetNew": {
+    "message": "Новій вкладці"
+  },
+  "openTargetCurrent": {
+    "message": "Поточній вкладці"
+  },
+  "settingAfterOpen": {
+    "message": "Після переходу"
+  },
+  "afterOpenKeep": {
+    "message": "Залишити попап відкритим"
+  },
+  "afterOpenClose": {
+    "message": "Закрити попап"
+  },
+  "settingRowDetail": {
+    "message": "У рядку показувати"
+  },
+  "rowDetailFull": {
+    "message": "Усе"
+  },
+  "rowDetailTitle": {
+    "message": "Лише заголовок"
+  },
+  "settingRowActions": {
+    "message": "Дії в рядку"
+  },
+  "rowActionsButtons": {
+    "message": "Кнопки та меню"
+  },
+  "rowActionsMenu": {
+    "message": "Лише контекстне меню"
+  },
+  "actionFailed": {
+    "message": "Не вдалося — перезавантажте розширення"
+  },
+  "settingTitleLines": {
+    "message": "Заголовок"
+  },
+  "titleLinesOne": {
+    "message": "В один рядок"
+  },
+  "titleLinesTwo": {
+    "message": "У два рядки"
+  },
+  "settingPinToToolbar": {
+    "message": "Закріплення також"
+  },
+  "pinToToolbarOff": {
+    "message": "Лише тут"
+  },
+  "pinToToolbarOn": {
+    "message": "Копіює на панель закладок"
+  },
+  "settingPopupHeight": {
+    "message": "Висота попапа"
+  },
+  "settingCredentials": {
+    "message": "Перевіряти як"
+  },
+  "credentialsOmit": {
+    "message": "Неавторизований гість"
+  },
+  "credentialsInclude": {
+    "message": "Авторизований (з куками)"
+  },
+  "settingOpenInTab": {
+    "message": "Відкрити у вкладці (на всю висоту)"
+  },
+  "workerOutdated": {
+    "message": "Фонова частина застаріла — видаліть і завантажте розширення знову"
+  },
+  "hostAccessMissing": {
+    "message": "Доступ до сайтів вимкнено — більшість перевірок не проходить."
+  },
+  "hostAccessGrant": {
+    "message": "Дозволити"
+  },
+  "bookmarksUnavailable": {
+    "message": "Цей браузер не дає розширенням доступ до закладок, тому перевіряти нічого. Відомий випадок — Firefox для Android."
+  }
 }

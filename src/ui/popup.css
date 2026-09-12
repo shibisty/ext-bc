@@ -1,0 +1,1241 @@
+:root {
+  --bg: #17181c;
+  --bg-elevated: #1f2126;
+  --border: #2b2e35;
+  --text: #e6e6ea;
+  --text-muted: #8b8f98;
+  --accent: #5fd08a;
+  --accent-dim: #35543f;
+  --danger: #e06c6c;
+  --warn: #e0b45f;
+  --neutral: #7a8bd8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3d45 var(--bg);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 360px;
+  height: auto;
+  /* Starting height only: resize.ts overrides both height and max-height once
+     the user has chosen one, and fitToViewport() shrinks it when the browser
+     grants less. Viewport units are useless here — the popup window is sized
+     from the document, so 100vh depends on the height it is meant to constrain
+     and collapses the popup to nothing. */
+  max-height: 600px;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+body.side-panel-mode,
+/* Opened as a tab: fill the window. No popup ceiling applies here. */
+body.tab-mode {
+  width: 100%;
+  height: 100vh;
+  max-height: none;
+}
+
+body.tab-mode {
+  max-width: 720px;
+  margin: 0 auto;
+  border-inline: 1px solid var(--border);
+}
+
+body.tab-mode .resize-grip,
+body.tab-mode #sidePanelBtn {
+  display: none;
+}
+
+body.side-panel-mode #sidePanelBtn {
+  display: none;
+}
+
+/* ---------- Firefox for Android ---------- */
+
+/*
+ * There is no popup window there: the action opens this document as a page in
+ * the browser, so it should fill the screen rather than sit at 360px in the
+ * middle of it. Everything that only makes sense for a desktop popup goes.
+ */
+body.android-mode {
+  width: 100%;
+  height: 100vh;
+  max-height: none;
+  /* Read at arm's length, not at desk distance. */
+  font-size: 15px;
+}
+
+body.android-mode .resize-grip,
+body.android-mode #sidePanelBtn {
+  display: none;
+}
+
+/* Android has no sidebar and sizes the page itself. */
+body.android-mode .settings-row.desktop-only {
+  display: none;
+}
+
+/*
+ * One control per line, label above it. Side by side, every row started its
+ * control at a different x — the labels differ in width — and the column read
+ * as ragged. Stacking also gives each control the full width to be tapped.
+ */
+body.android-mode .settings-row {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+body.android-mode .settings-row label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+body.android-mode .settings-row input[type="number"],
+body.android-mode .settings-row select {
+  flex: 1 1 auto;
+  width: auto;
+  max-width: none;
+  font-size: 15px;
+  padding: 8px 10px;
+}
+
+/*
+ * Touch sizing: everything above is laid out for a mouse pointer, and a finger
+ * needs roughly 40px of target.
+ */
+body.android-mode .row {
+  padding: 12px 10px;
+  gap: 10px;
+}
+
+body.android-mode .row-btn {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+}
+
+body.android-mode .icon-btn {
+  width: 38px;
+  height: 34px;
+  font-size: 16px;
+}
+
+body.android-mode .tab {
+  padding: 12px 10px;
+  font-size: 14px;
+}
+
+body.android-mode .searchbar input {
+  font-size: 15px;
+  padding: 10px 12px;
+}
+
+body.android-mode .context-menu button {
+  padding: 12px 12px;
+  font-size: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px 7px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title h1 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-btn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.icon-btn:hover {
+  background: #262932;
+}
+
+.icon-btn:active {
+  transform: scale(0.94);
+}
+
+.icon-btn.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ---------- tabs ---------- */
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px 12px 0;
+  flex-shrink: 0;
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tab.active {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: var(--accent-dim);
+}
+
+.tab-count {
+  min-width: 18px;
+  padding: 1px 5px;
+  border-radius: 9px;
+  background: var(--border);
+  color: var(--text-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+}
+
+.tab.active .tab-count {
+  background: var(--accent-dim);
+  color: var(--text);
+}
+
+.searchbar {
+  padding: 8px 14px 0;
+  flex-shrink: 0;
+}
+
+.searchbar-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-clear {
+  position: absolute;
+  inset-inline-end: 6px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* The class sets display:flex, which outranks the browser's own
+   [hidden] { display: none } — without this the button never hides. */
+.search-clear[hidden] {
+  display: none;
+}
+
+.search-clear:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+#searchInput {
+  width: 100%;
+  padding-inline-end: 30px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: var(--accent-dim);
+}
+
+#searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+.muted {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.interval {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: #3a3d45 var(--bg);
+}
+
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #3a3d45;
+  border-radius: 8px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background: #4a4d55;
+}
+
+.empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 12px;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 8px 6px 2px;
+}
+
+.folder {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.folder > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 6px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-weight: 600;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.folder > summary::-webkit-details-marker {
+  display: none;
+}
+
+.folder > summary:hover {
+  background: var(--bg-elevated);
+}
+
+.folder > summary::before {
+  content: "▸";
+  font-size: 10px;
+  transition: transform 0.12s ease;
+  color: var(--text-muted);
+}
+
+.folder[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.folder-children {
+  margin-inline-start: 14px;
+  padding-inline-start: 6px;
+  border-inline-start: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 8px;
+  border-radius: 10px;
+  background: var(--bg-elevated);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.row.active {
+  border-color: var(--accent-dim);
+  background: #1c2620;
+}
+
+.row.pinned-row {
+  background: #23231c;
+  border-color: #4a4530;
+}
+
+.row.selected {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}
+
+.row.current-page {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.current-tag {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent);
+  border: 1px solid var(--accent-dim);
+  background: #17281f;
+  border-radius: 5px;
+  padding: 2px 5px;
+  white-space: nowrap;
+}
+
+.lazy-sentinel {
+  height: 1px;
+}
+
+.skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 8px;
+  border-radius: 10px;
+  background: var(--bg-elevated);
+}
+
+.skeleton-fav {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #2b2e35;
+  flex-shrink: 0;
+}
+
+.skeleton-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skeleton-bar {
+  height: 9px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #24262d 25%, #2f323b 37%, #24262d 63%);
+  background-size: 400% 100%;
+  animation: skeleton-shimmer 1.3s ease infinite;
+}
+
+.skeleton-title {
+  width: 62%;
+}
+
+.skeleton-url {
+  width: 40%;
+  height: 7px;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.row-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.row-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.row-btn:hover {
+  background: #2a2d34;
+  color: var(--text);
+}
+
+.row-btn.pin-active {
+  color: var(--warn);
+  border-color: #5a4e2a;
+  background: #2c2718;
+}
+
+.row.check-disabled {
+  opacity: 0.55;
+}
+
+.badge.disabled {
+  background: #2b2e35;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.row-btn.disable-active {
+  color: var(--warn);
+  border-color: #5a4e2a;
+  background: #2c2718;
+}
+
+body.theme-light .badge.disabled {
+  background: #eceef2;
+  color: var(--text-muted);
+}
+
+/* The bin used to be the same muted grey as its neighbours and only became
+   legible on hover; it now reads as a destructive action at rest. */
+.row-btn.delete-btn {
+  color: #e8797a;
+  border-color: #4a2b2d;
+}
+
+.row-btn.delete-btn:hover {
+  color: #fff;
+  border-color: var(--danger);
+  background: var(--danger);
+}
+
+body.theme-light .row-btn.delete-btn {
+  color: #c0392b;
+  border-color: #e3b7b2;
+}
+
+body.theme-light .row-btn.delete-btn:hover {
+  color: #fff;
+  border-color: var(--danger);
+  background: var(--danger);
+}
+
+.breadcrumb {
+  color: var(--text-muted);
+  font-size: 10.5px;
+}
+
+/* ---------- search matches ---------- */
+
+mark.match {
+  background: #f5d76e;
+  color: #1b1d21;
+  border-radius: 3px;
+  padding: 0 1px;
+}
+
+/* While the settings screen is open the list and everything that steers it are
+   out of the way; a visible tab bar that does nothing reads as broken. */
+.settings-row[hidden] {
+  display: none;
+}
+
+body.settings-open .tabs,
+body.settings-open .searchbar,
+body.settings-open .permission-banner,
+body.settings-open .list {
+  display: none;
+}
+
+/* The browser's own reason for an empty list, under the empty-state message. */
+.empty-detail {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+  word-break: break-word;
+}
+
+/* ---------- missing site access ---------- */
+
+/*
+ * Firefox MV3 treats host_permissions as optional, so until the user grants
+ * them every check fails as a network error. Built entirely from theme
+ * variables, so the light theme needs no counterpart rule.
+ */
+.permission-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 10px 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--warn);
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.permission-banner[hidden] {
+  display: none;
+}
+
+.permission-banner button {
+  flex: none;
+  margin-inline-start: auto;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.permission-banner button:hover {
+  border-color: var(--warn);
+}
+
+/* ---------- row display preferences ---------- */
+
+/* "Title only": everything but the title, the status and the favicon goes. */
+body.rows-title-only .row-url,
+body.rows-title-only .breadcrumb,
+body.rows-title-only .current-tag {
+  display: none;
+}
+
+body.rows-title-only .row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* Two-line titles: more of a long name is visible, at the cost of row height. */
+body.titles-two-lines .row-title {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* "Context menu only": the per-row buttons are hidden, the menu still has them. */
+body.actions-menu-only .row-actions {
+  display: none;
+}
+
+/* ---------- archive ---------- */
+
+.row-btn.archive-btn {
+  font-size: 11px;
+}
+
+summary.archived-folder {
+  color: var(--warn);
+}
+
+/* ---------- resize grip ---------- */
+
+.resize-grip {
+  height: 14px;
+  flex-shrink: 0;
+  cursor: ns-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.resize-grip::before {
+  content: "";
+  width: 34px;
+  height: 3px;
+  border-radius: 2px;
+  background: #3a3d45;
+}
+
+.resize-grip:hover::before {
+  background: var(--text-muted);
+}
+
+.resize-grip[hidden] {
+  display: none;
+}
+
+/* No text selection anywhere while dragging the grip. */
+body.resizing {
+  user-select: none;
+}
+
+/* ---------- rename dialog ---------- */
+
+.rename-dialog {
+  width: 280px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-elevated);
+  color: var(--text);
+  padding: 14px;
+}
+
+.rename-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.rename-title {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#renameInput {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 12.5px;
+}
+
+#renameInput:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.rename-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-primary {
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: #10241a;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.08);
+}
+
+.context-menu {
+  position: fixed;
+  z-index: 1000;
+  min-width: 200px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.context-menu .cm-title {
+  padding: 6px 10px 4px;
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 260px;
+}
+
+.context-menu .cm-sep {
+  height: 1px;
+  background: var(--border);
+  margin: 4px 2px;
+}
+
+.context-menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: start;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 12.5px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.context-menu button:hover {
+  background: #2a2d34;
+}
+
+.context-menu button.danger:hover {
+  background: #2c1818;
+  color: var(--danger);
+}
+
+.context-menu button .cm-icon {
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.context-menu button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
+.favicon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: #2b2e35;
+}
+
+.row-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.row-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12.5px;
+}
+
+.row-url {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.badge {
+  flex-shrink: 0;
+  min-width: 40px;
+  text-align: center;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.badge.pending {
+  background: #2b2e35;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.badge.ok {
+  background: #1e3a2a;
+  color: var(--accent);
+}
+
+.badge.redirect {
+  background: #3a331e;
+  color: var(--neutral);
+}
+
+.badge.clienterr {
+  background: #3a2a1e;
+  color: var(--warn);
+}
+
+.badge.servererr {
+  background: #3a1e1e;
+  color: var(--danger);
+}
+
+.badge.neterr {
+  background: #2a2233;
+  color: #b493e0;
+}
+
+/* A code that came from a bot-protection service, not from the site itself. */
+.badge.challenge {
+  background: #33291a;
+  color: var(--warn);
+  box-shadow: inset 0 0 0 1px #7a6126;
+}
+
+
+body.theme-light .badge.challenge {
+  background: #fdf3dd;
+  box-shadow: inset 0 0 0 1px #d9b566;
+}
+
+
+.footer-line.notice {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.footer {
+  padding: 6px 14px 8px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.footer-line {
+  line-height: 1.5;
+}
+
+/* ---------- settings screen ---------- */
+
+.settings-view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.settings-view[hidden] {
+  display: none;
+}
+
+.settings-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.settings-row label {
+  font-size: 12.5px;
+  color: var(--text);
+}
+
+/* All three selects share one width so the settings column lines up; without
+   it each one sized to its own longest option. */
+.settings-row input[type="number"],
+.settings-row select {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 12.5px;
+  flex: 0 0 175px;
+  width: 175px;
+  max-width: 175px;
+}
+
+.btn-secondary {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12.5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background: #262932;
+}
+
+/* ---------- drag & drop ---------- */
+
+.row[draggable="true"] {
+  cursor: grab;
+}
+
+.row.drag-over-before {
+  box-shadow: inset 0 2px 0 0 var(--accent);
+}
+
+.row.drag-over-after {
+  box-shadow: inset 0 -2px 0 0 var(--accent);
+}
+
+.folder > summary.drag-over {
+  background: var(--accent-dim);
+  color: var(--text);
+}
+
+/* ---------- light theme ---------- */
+
+body.theme-light {
+  --bg: #f4f5f7;
+  --bg-elevated: #ffffff;
+  --border: #e1e3e8;
+  --text: #1b1d21;
+  --text-muted: #6b7280;
+  --accent: #1a9c5a;
+  --accent-dim: #cdeedd;
+  --danger: #c94444;
+  --warn: #a5720c;
+  --neutral: #4653c9;
+}
+
+body.theme-light html,
+body.theme-light {
+  scrollbar-color: #c7cad1 var(--bg);
+}
+
+body.theme-light .list::-webkit-scrollbar-thumb {
+  background: #c7cad1;
+}
+
+body.theme-light .list::-webkit-scrollbar-thumb:hover {
+  background: #b3b6bf;
+}
+
+body.theme-light .badge.pending {
+  background: #eceef2;
+  color: var(--text-muted);
+}
+
+body.theme-light .badge.ok {
+  background: #e2f6ea;
+  color: var(--accent);
+}
+
+body.theme-light .badge.redirect {
+  background: #eaecfb;
+  color: var(--neutral);
+}
+
+body.theme-light .badge.clienterr {
+  background: #fbf1de;
+  color: var(--warn);
+}
+
+body.theme-light .badge.servererr {
+  background: #fbe6e6;
+  color: var(--danger);
+}
+
+body.theme-light .badge.neterr {
+  background: #efe7fb;
+  color: #7c4fd6;
+}
+
+body.theme-light .row.pinned-row {
+  background: #fdf7e6;
+  border-color: #ecdca0;
+}
+
+body.theme-light .skeleton-bar {
+  background: linear-gradient(90deg, #e6e8ed 25%, #f1f2f6 37%, #e6e8ed 63%);
+  background-size: 400% 100%;
+}
+
+body.theme-light .skeleton-fav {
+  background: #e1e3e8;
+}
+
+body.theme-light .context-menu {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+body.theme-light .icon-btn:hover {
+  background: #eceff3;
+}
+
+body.theme-light .row-btn:hover {
+  background: #eceff3;
+}
+
+body.theme-light .btn-secondary:hover {
+  background: #eceff3;
+}
+
+/* The states below were only ever given dark values, so in the light theme they
+   rendered as dark blocks: the row the queue points at, the "open now" chip,
+   the two toggled row buttons, the context-menu hovers and the favicon
+   placeholder. */
+
+body.theme-light .row.active {
+  background: #edf9f2;
+}
+
+body.theme-light .current-tag {
+  background: #e2f6ea;
+}
+
+body.theme-light .row-btn.pin-active,
+body.theme-light .row-btn.disable-active {
+  color: var(--warn);
+  border-color: #e0c579;
+  background: #fdf3dd;
+}
+
+body.theme-light .context-menu button:hover {
+  background: #eceff3;
+}
+
+body.theme-light .context-menu button.danger:hover {
+  background: #fbe6e6;
+}
+
+body.theme-light .favicon {
+  background: #eceef2;
+}
+
+body.theme-light mark.match {
+  background: #ffe066;
+  color: #1b1d21;
+}
+
+body.theme-light .resize-grip::before {
+  background: #c7cad1;
+}
+
+body.theme-light .btn-primary {
+  color: #ffffff;
+}
+
+/* ---------- right-to-left languages (Arabic, Persian, Hebrew, …) ---------- */
+
+/* Layout mirrors on its own: the flex rows, the logical margins above and the
+   folder indent all follow `dir`. These are the parts that do not. */
+
+/* The disclosure triangle points into the text, so it starts mirrored and
+   still rotates down when the folder opens. */
+[dir="rtl"] .folder > summary::before {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .folder[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+/* Text whose direction depends on its content rather than on the UI language:
+   bookmark titles, folder names and the footer line, which mixes translated
+   words with digits. `plaintext` lets each string pick its own direction, so a
+   Latin title inside an Arabic UI still reads left to right and a leading
+   number does not jump to the far end of the sentence. */
+.row-title,
+.folder > summary,
+.cm-title,
+.footer-line {
+  unicode-bidi: plaintext;
+}
+
+/* URLs and status codes stay left-to-right even inside RTL text, otherwise
+   punctuation jumps to the wrong end of the address. */
+[dir="rtl"] .row-url,
+[dir="rtl"] .breadcrumb {
+  direction: ltr;
+  text-align: right;
+}
+
+[dir="rtl"] .badge {
+  direction: ltr;
+}
