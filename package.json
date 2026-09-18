@@ -1,6 +1,6 @@
 {
   "name": "bookmark-status-checker",
-  "version": "1.5.5",
+  "version": "1.5.7",
   "description": "Checks your bookmarks one by one and shows the HTTP status code (200, 404, 500, etc.)",
   "license": "MIT",
   "private": true,

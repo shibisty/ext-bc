@@ -32,6 +32,7 @@ export const dom = {
   rowActionsSelect: optional<HTMLSelectElement>("rowActionsSelect"),
   titleLinesSelect: optional<HTMLSelectElement>("titleLinesSelect"),
   pinToToolbarSelect: optional<HTMLSelectElement>("pinToToolbarSelect"),
+  rememberSearchSelect: optional<HTMLSelectElement>("rememberSearchSelect"),
   popupHeightInput: optional<HTMLInputElement>("popupHeightInput"),
   openInTabBtn: optional<HTMLButtonElement>("openInTabBtn"),
   sidePanelBtn: optional<HTMLButtonElement>("sidePanelBtn"),

@@ -386,7 +386,7 @@ export function createBrowserMock() {
     },
     bookmarks: { /* getTree, get, getChildren, move, remove, on* */ },
     alarms:    { create: vi.fn(), clear: vi.fn(), onAlarm: { addListener: vi.fn() } },
-    runtime:   { sendMessage: vi.fn(), getURL: (p: string) => `/${p}`, getManifest: () => ({ version: "1.5.5" }) },
+    runtime:   { sendMessage: vi.fn(), getURL: (p: string) => `/${p}`, getManifest: () => ({ version: "1.5.7" }) },
     i18n:      { getMessage: (k: string) => k, getUILanguage: () => "en-US" },
     __reset:   () => { store = {}; },
   };
@@ -459,7 +459,7 @@ it.each([
 ```json
 {
   "name": "bookmark-status-checker",
-  "version": "1.5.5",
+  "version": "1.5.7",
   "type": "module",
   "private": true,
   "scripts": {

@@ -375,5 +375,14 @@
   },
   "bookmarksUnavailable": {
     "message": "Этот браузер не даёт расширениям доступ к закладкам, поэтому проверять нечего. Известный случай — Firefox для Android."
+  },
+  "settingRememberSearch": {
+    "message": "Поле поиска"
+  },
+  "rememberSearchKeep": {
+    "message": "Запоминает запрос"
+  },
+  "rememberSearchReset": {
+    "message": "Очищается при открытии"
   }
 }

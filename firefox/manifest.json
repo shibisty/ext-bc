@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Bookmarks 2 - Bookmarks Checker",
-  "version": "1.5.5",
+  "version": "1.5.7",
   "description": "Checks your bookmarks one by one and shows the HTTP status code (200, 404, 500, etc.)",
   "default_locale": "en",
   "permissions": ["bookmarks", "storage", "alarms", "tabs"],

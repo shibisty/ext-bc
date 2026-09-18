@@ -294,6 +294,28 @@ describe("the settings screen", () => {
     expect(document.body.className).not.toContain("settings-open");
     expect(document.getElementById("settingsView")?.hidden).toBe(true);
   });
+
+  /**
+   * The gear is a toggle: pressing it from inside settings used to do nothing
+   * visible, leaving the × as the only way back to the list.
+   */
+  it("closes again when the gear is pressed a second time", async () => {
+    await mountWithHandlers();
+    open();
+    open();
+
+    expect(document.body.className).not.toContain("settings-open");
+    expect(document.getElementById("settingsView")?.hidden).toBe(true);
+  });
+
+  it("reopens on the press after that", async () => {
+    await mountWithHandlers();
+    open();
+    open();
+    open();
+
+    expect(document.getElementById("settingsView")?.hidden).toBe(false);
+  });
 });
 
 describe("stored values", () => {

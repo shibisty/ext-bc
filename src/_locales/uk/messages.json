@@ -375,5 +375,14 @@
   },
   "bookmarksUnavailable": {
     "message": "Цей браузер не дає розширенням доступ до закладок, тому перевіряти нічого. Відомий випадок — Firefox для Android."
+  },
+  "settingRememberSearch": {
+    "message": "Поле пошуку"
+  },
+  "rememberSearchKeep": {
+    "message": "Запам'ятовує запит"
+  },
+  "rememberSearchReset": {
+    "message": "Очищається при відкритті"
   }
 }

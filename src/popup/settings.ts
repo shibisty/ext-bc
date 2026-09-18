@@ -17,6 +17,7 @@ import {
   type Preferences,
 } from "./preferences";
 import { currentHeight, setHeight } from "./resize";
+import { forgetSearch } from "./search";
 import { applyState, rerender } from "./ui-state";
 
 const THEME_KEY = "bscTheme";
@@ -74,6 +75,16 @@ function closeSettings(): void {
   document.body.classList.remove("settings-open");
 }
 
+/**
+ * The gear is the way in and the way back out: pressing it again from inside
+ * settings returns to the list, which is what pressing an already-active toggle
+ * is expected to do.
+ */
+function toggleSettings(): void {
+  if (dom.settingsView.hidden) openSettings();
+  else closeSettings();
+}
+
 /** Wires one preference select: reflect the stored value, save on change. */
 function bindPreference<K extends keyof Preferences>(
   select: HTMLSelectElement | null,
@@ -107,6 +118,11 @@ export function applyPreferences(): void {
   bindPreference(dom.rowActionsSelect, "rowActions", () => applyDisplayPreferences());
   bindPreference(dom.titleLinesSelect, "titleLines", () => applyDisplayPreferences());
   bindPreference(dom.pinToToolbarSelect, "pinToToolbar");
+  // Switching to "clears on each open" throws away what is already stored, so
+  // the old query cannot come back if the setting is switched again.
+  bindPreference(dom.rememberSearchSelect, "rememberSearch", () => {
+    if (loadPreferences().rememberSearch === "reset") forgetSearch();
+  });
 
   bindHeightField();
 }
@@ -149,7 +165,7 @@ function bindHeightField(): void {
 }
 
 export function registerSettingsHandlers(): void {
-  dom.settingsBtn.addEventListener("click", openSettings);
+  dom.settingsBtn.addEventListener("click", toggleSettings);
   dom.closeSettingsBtn.addEventListener("click", closeSettings);
 
   dom.languageSelect.addEventListener("change", () => {

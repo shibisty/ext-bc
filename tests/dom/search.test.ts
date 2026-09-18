@@ -41,8 +41,12 @@ async function mount() {
   vi.resetModules();
 
   const { render } = await import("../../src/popup/render/list");
+  const { loadPreferences } = await import("../../src/popup/preferences");
   const search = await import("../../src/popup/search");
 
+  // index.ts loads the preferences before restoring: whether the query comes
+  // back at all is one of them.
+  loadPreferences();
   search.restoreSearch();
   search.registerSearchHandlers();
   render(twoBookmarks());
@@ -183,5 +187,64 @@ describe("focus", () => {
 
     expect(input().selectionStart).toBe(5);
     expect(input().selectionEnd).toBe(5);
+  });
+});
+
+/**
+ * Keeping the query across closes is the default, and it is what the search box
+ * did unconditionally before. Some people want a clean box every time instead.
+ */
+describe("the \"search box\" setting", () => {
+  it("does not bring the query back when set to clear", async () => {
+    await mount();
+    type("alpha");
+    expect(localStorage.getItem("bscSearch")).toBe("alpha");
+
+    localStorage.setItem("bscRememberSearch", "reset");
+    await mount();
+
+    expect(input().value).toBe("");
+    expect(rowIds()).toEqual(["a", "b"]);
+  });
+
+  it("stops recording the query altogether", async () => {
+    localStorage.setItem("bscRememberSearch", "reset");
+    await mount();
+
+    type("beta");
+
+    // Filtering still works — it is only the memory of it that is off.
+    expect(rowIds()).toEqual(["b"]);
+    expect(localStorage.getItem("bscSearch")).toBeNull();
+  });
+
+  /**
+   * Switching the setting must not leave a query lying in storage that would
+   * reappear the moment it was switched back.
+   */
+  it("throws away what was already stored when the setting is turned off", async () => {
+    await mount();
+    type("alpha");
+
+    // After mount(): it resets the module registry, and a settings module
+    // imported before that would hold element references from the old document.
+    const { applyPreferences } = await import("../../src/popup/settings");
+    applyPreferences();
+
+    const select = document.getElementById("rememberSearchSelect") as HTMLSelectElement;
+    select.value = "reset";
+    select.dispatchEvent(new Event("change", { bubbles: true }));
+
+    expect(localStorage.getItem("bscSearch")).toBeNull();
+  });
+
+  it("keeps the query when set to remember", async () => {
+    localStorage.setItem("bscRememberSearch", "remember");
+    await mount();
+    type("alpha");
+
+    await mount();
+
+    expect(input().value).toBe("alpha");
   });
 });

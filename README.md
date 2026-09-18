@@ -79,8 +79,9 @@ from `package.json` — bump it in one place.
 
 ### Search
 
-The query is remembered across closes, so reopening the popup lands back where
-you were. A × button clears it, the field is focused on open, and every match —
+The query is remembered across closes by default, so reopening the popup lands
+back where you were; the **Search box** setting switches that to a clean box
+every time, and turning it off also drops whatever query was already stored. A × button clears it, the field is focused on open, and every match —
 in titles, URLs and status codes alike — is highlighted in place. The highlight
 is built as DOM nodes rather than through `innerHTML`, so a bookmark title can
 contain anything at all.
@@ -132,6 +133,7 @@ Beyond the interval, theme and language, the settings view holds:
 | Row content | everything / title only | everything |
 | Row buttons | buttons + menu / context menu only | buttons + menu |
 | Title | one line / two lines | one line |
+| Search box | keeps the query / clears on each open | keeps the query |
 | Mirror pinned to the bookmarks toolbar | off / on | off |
 | Send cookies while checking | omit / include | omit |
 | Popup height | a number, at least 200 | measured |

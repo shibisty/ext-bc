@@ -375,5 +375,14 @@
   },
   "bookmarksUnavailable": {
     "message": "This browser gives extensions no access to bookmarks, so there is nothing to check. Firefox for Android is the known case."
+  },
+  "settingRememberSearch": {
+    "message": "Search box"
+  },
+  "rememberSearchKeep": {
+    "message": "Keeps the query"
+  },
+  "rememberSearchReset": {
+    "message": "Clears on each open"
   }
 }

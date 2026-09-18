@@ -1,4 +1,5 @@
 import { dom } from "./dom";
+import { preferences } from "./preferences";
 import { forgetScroll } from "./scroll";
 import { rerender } from "./ui-state";
 
@@ -7,7 +8,12 @@ import { rerender } from "./ui-state";
  * per-view convenience, and the popup and the side panel share an origin, so
  * they already share it without any storage traffic or change notifications.
  */
-const SEARCH_KEY = "bscSearch";
+export const SEARCH_KEY = "bscSearch";
+
+/** Whether the query outlives this view, per the user's setting. */
+function remembering(): boolean {
+  return preferences().rememberSearch === "remember";
+}
 
 function readStoredQuery(): string {
   try {
@@ -19,7 +25,10 @@ function readStoredQuery(): string {
 
 function storeQuery(query: string): void {
   try {
-    if (query) localStorage.setItem(SEARCH_KEY, query);
+    // "Reset each time" means nothing is kept at all, not merely that it is
+    // ignored on the way back in: a query left in storage would resurface the
+    // moment the setting was switched back.
+    if (query && remembering()) localStorage.setItem(SEARCH_KEY, query);
     else localStorage.removeItem(SEARCH_KEY);
   } catch {
     // Not being able to remember the query is not worth failing over.
@@ -38,10 +47,22 @@ export function clearSearch(): void {
   dom.searchInput.focus();
 }
 
-/** Restores the previous query. Call before the first render. */
+/**
+ * Restores the previous query, when the user asked for that. Call before the
+ * first render, and after the preferences have been loaded.
+ */
 export function restoreSearch(): void {
-  dom.searchInput.value = readStoredQuery();
+  dom.searchInput.value = remembering() ? readStoredQuery() : "";
   syncClearButton();
+}
+
+/** Drops whatever query was being kept. For when the setting is turned off. */
+export function forgetSearch(): void {
+  try {
+    localStorage.removeItem(SEARCH_KEY);
+  } catch {
+    // Nothing to forget, then.
+  }
 }
 
 export function registerSearchHandlers(): void {

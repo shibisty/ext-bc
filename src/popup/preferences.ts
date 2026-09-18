@@ -21,6 +21,8 @@ export type AfterOpen = "keep" | "close";
 export type TitleLines = "one" | "two";
 /** Whether pinning also puts a copy on the bookmarks toolbar. */
 export type PinToToolbar = "off" | "on";
+/** Whether the search box still holds the query the next time it is opened. */
+export type RememberSearch = "remember" | "reset";
 
 export interface Preferences {
   openTrigger: OpenTrigger;
@@ -30,6 +32,7 @@ export interface Preferences {
   afterOpen: AfterOpen;
   titleLines: TitleLines;
   pinToToolbar: PinToToolbar;
+  rememberSearch: RememberSearch;
 }
 
 export const DEFAULT_PREFERENCES: Preferences = {
@@ -40,6 +43,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   afterOpen: "keep",
   titleLines: "one",
   pinToToolbar: "off",
+  rememberSearch: "remember",
 };
 
 const STORAGE_KEYS: Record<keyof Preferences, string> = {
@@ -50,6 +54,7 @@ const STORAGE_KEYS: Record<keyof Preferences, string> = {
   afterOpen: "bscAfterOpen",
   titleLines: "bscTitleLines",
   pinToToolbar: "bscPinToToolbar",
+  rememberSearch: "bscRememberSearch",
 };
 
 const ALLOWED: Record<keyof Preferences, readonly string[]> = {
@@ -60,6 +65,7 @@ const ALLOWED: Record<keyof Preferences, readonly string[]> = {
   afterOpen: ["keep", "close"],
   titleLines: ["one", "two"],
   pinToToolbar: ["off", "on"],
+  rememberSearch: ["remember", "reset"],
 };
 
 /** Narrows a stored string back to its preference type, or the default. */
@@ -93,6 +99,7 @@ export function loadPreferences(): Preferences {
     afterOpen: coerce("afterOpen", read("afterOpen")),
     titleLines: coerce("titleLines", read("titleLines")),
     pinToToolbar: coerce("pinToToolbar", read("pinToToolbar")),
+    rememberSearch: coerce("rememberSearch", read("rememberSearch")),
   };
   return current;
 }
